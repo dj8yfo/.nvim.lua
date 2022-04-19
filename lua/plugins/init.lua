@@ -18,8 +18,16 @@ local function init()
     })
     use 'lewis6991/impatient.nvim'
     -- }}}
+    -- {{{ groups
+    local auxiliary = require('plugins.auxiliary')
+    auxiliary.init(use)
+
     local colorschemes = require('plugins.colorschemes')
     colorschemes.init(use)
+
+    local fuzzy_search = require('plugins.fuzzy_search')
+    fuzzy_search.init(use)
+    -- }}}
 
 end
 -- }}}
