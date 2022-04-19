@@ -18,6 +18,8 @@ local function init()
     })
     use 'lewis6991/impatient.nvim'
     -- }}}
+    local colorschemes = require('plugins.colorschemes')
+    colorschemes.init(use)
 
 end
 -- }}}
