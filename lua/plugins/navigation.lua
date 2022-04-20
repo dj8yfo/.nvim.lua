@@ -13,6 +13,7 @@ local function init(use)
     use 'justinmk/vim-dirvish'
     use 'kshenoy/vim-signature'
     use { 'tversteeg/registers.nvim', keys = { { 'n', '"' }, { 'i', '<c-r>' } } }
+    use { 'chaoren/vim-wordmotion', 'justinmk/vim-sneak' }
 end
 -- }}}
 return { init = init }
