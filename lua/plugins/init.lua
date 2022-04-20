@@ -33,6 +33,12 @@ local function init()
 
     local fuzzy_search = require('plugins.fuzzy_search')
     fuzzy_search.init(use)
+
+    local lsp = require('plugins.lsp')
+    lsp.init(use)
+
+    local zk_notes = require('plugins.zk_notes')
+    zk_notes.init(use)
     -- }}}
 
 end

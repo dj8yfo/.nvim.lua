@@ -9,11 +9,12 @@ local function init(use)
 		cmd = 'Sayonara',
 	})
 
-	use 'romainl/vim-cool'
-	use 'justinmk/vim-dirvish'
-	use 'kshenoy/vim-signature'
-	use { 'tversteeg/registers.nvim', keys = { { 'n', '"' }, { 'i', '<c-r>' } } }
-	use { 'chaoren/vim-wordmotion', 'justinmk/vim-sneak' }
+	use('romainl/vim-cool')
+	use('justinmk/vim-dirvish')
+	use('kshenoy/vim-signature')
+	use({'tversteeg/registers.nvim', keys = { { 'n', '"' }, { 'i', '<c-r>' } } })
+	use({'chaoren/vim-wordmotion', 'justinmk/vim-sneak' })
+	use('thinca/vim-visualstar')
 end
 -- }}}
 return { init = init }
