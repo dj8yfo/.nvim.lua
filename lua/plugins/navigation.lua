@@ -11,6 +11,10 @@ local function init(use)
 
     use 'romainl/vim-cool'
     use 'justinmk/vim-dirvish'
+    use 'kshenoy/vim-signature'
+    use { 'tversteeg/registers.nvim', keys = { { 'n', '"' }, { 'i', '<c-r>' } } }
 end
 -- }}}
 return { init = init }
+
+
