@@ -26,6 +26,7 @@ local function init(use)
 	},
 	{
 	    'nvim-telescope/telescope-fzf-native.nvim',
+	    after = 'telescope.nvim',
 	    config = function()
 		require("telescope").load_extension("fzf")
 	    end,
