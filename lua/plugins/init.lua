@@ -22,6 +22,9 @@ local function init()
     local auxiliary = require('plugins.auxiliary')
     auxiliary.init(use)
 
+    local navigation = require('plugins.navigation')
+    navigation.init(use)
+
     local colorschemes = require('plugins.colorschemes')
     colorschemes.init(use)
 
