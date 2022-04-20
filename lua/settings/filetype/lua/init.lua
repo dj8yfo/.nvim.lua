@@ -3,7 +3,7 @@ exec(
 [[
 	augroup LuaFiles
 	autocmd!
-	autocmd FileType lua :set shiftwidth=4
+	autocmd FileType lua :set shiftwidth=4 tabstop=4
 	autocmd FileType lua :set foldmethod=marker
 	augroup end
 ]], false

@@ -25,6 +25,9 @@ local function init()
     local navigation = require('plugins.navigation')
     navigation.init(use)
 
+    local appearance = require('plugins.appearance')
+    appearance.init(use)
+
     local colorschemes = require('plugins.colorschemes')
     colorschemes.init(use)
 
