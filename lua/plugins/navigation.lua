@@ -8,6 +8,9 @@ local function init(use)
 	end,
 	cmd = 'Sayonara',
     })
+
+    use 'romainl/vim-cool'
+    use 'justinmk/vim-dirvish'
 end
 -- }}}
 return { init = init }
