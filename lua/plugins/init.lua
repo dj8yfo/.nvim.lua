@@ -39,6 +39,9 @@ local function init()
 
     local zk_notes = require('plugins.zk_notes')
     zk_notes.init(use)
+
+    local windows = require('plugins.windows')
+    windows.init(use)
     -- }}}
 
 end
