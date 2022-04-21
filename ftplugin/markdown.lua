@@ -26,3 +26,8 @@ if require("zk.util").notebook_root(vim.fn.expand('%:p')) ~= nil then
 	-- Open the code actions for a visual selection.
 	map("v", "<leader>za", ":'<,'>lua vim.lsp.buf.range_code_action()<CR>", opts)
 end
+
+
+local function map(...) vim.api.nvim_buf_set_keymap(0, ...) end
+local opts = { noremap=true, silent=false }
+map("n", "gp", ":!ghostwriter %:p<CR>", opts)
