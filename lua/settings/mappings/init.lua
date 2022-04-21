@@ -10,3 +10,7 @@ map('n', '<m-j>', '<c-w>j', default_opts)
 map('n', '<m-k>', '<c-w>k', default_opts)
 map('n', '<m-h>', '<c-w>h', default_opts)
 map('n', '<m-l>', '<c-w>l', default_opts)
+
+map('n', 'cp', ':let @" = expand("%")<cr>', default_opts)
+map('n', 'cP', ':let @" = expand("%:p")<cr>', default_opts)
+map('n', 'gw', ':w!<cr>', default_opts)
