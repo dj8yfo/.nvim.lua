@@ -1,22 +1,30 @@
-local packer = nil
+local fn = vim.fn
+
+local install_path = fn.stdpath(
+	'data'
+	)..'/site/pack/packer/start/packer.nvim'
+
+if fn.empty(fn.glob(install_path)) > 0 then
+  packer_bootstrap = fn.system({
+	  'git', 
+	  'clone', 
+	  '--depth', 
+	  '1', 
+	  'https://github.com/wbthomason/packer.nvim', 
+	  install_path
+  })
+end
+
+vim.cmd([[packadd packer.nvim]])
 
 -- {{{ init
-local function init()
-    if packer == nil then
-	packer = require('packer')
-	packer.init({})
-    end
+return require('packer').startup(function(use)
 
-    local use = packer.use
-    packer.reset()
+	packer = require('packer')
 
     -- {{{ root
-    use({'wbthomason/packer.nvim', 
-        config = function()
-	    vim.cmd([[command! PackerSync lua require('plugins').sync()]])
-	end,
-    })
-    use 'lewis6991/impatient.nvim'
+    use('wbthomason/packer.nvim')
+    use('lewis6991/impatient.nvim')
     -- }}}
     -- {{{ groups
     local auxiliary = require('plugins.auxiliary')
@@ -28,11 +36,15 @@ local function init()
     local appearance = require('plugins.appearance')
     appearance.init(use)
 
+
     local colorschemes = require('plugins.colorschemes')
     colorschemes.init(use)
 
     local fuzzy_search = require('plugins.fuzzy_search')
     fuzzy_search.init(use)
+
+    local nifty_edit = require('plugins.nifty_edit')
+    nifty_edit.init(use)
 
     local lsp = require('plugins.lsp')
     lsp.init(use)
@@ -43,15 +55,10 @@ local function init()
     local windows = require('plugins.windows')
     windows.init(use)
     -- }}}
+	if packer_bootstrap then
+		require('packer').sync()
+	end
 
-end
+end)
 -- }}}
 
-local plugins = setmetatable({}, {
-    __index = function(_, key)
-	init()
-	return packer[key]
-    end,
-})
-
-return plugins
