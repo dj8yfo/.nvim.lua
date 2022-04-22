@@ -7,5 +7,8 @@ g.mapleader = [[ ]]
 vim.o.smartcase = true
 vim.o.grepprg = 'rg --vimgrep --no-heading --smart-case'
 
+vim.o.splitright = true
+vim.o.splitbelow = false
+
 
 

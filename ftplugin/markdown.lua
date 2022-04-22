@@ -25,6 +25,9 @@ if require("zk.util").notebook_root(vim.fn.expand('%:p')) ~= nil then
 
 	-- Open the code actions for a visual selection.
 	map("v", "<leader>za", ":'<,'>lua vim.lsp.buf.range_code_action()<CR>", opts)
+
+	map('n', 'gv', ':sp<CR><CR>', {silent = true} ) 
+	map('n', 'gh', ':vs<CR><CR>', {silent = true} )
 end
 
 

@@ -27,6 +27,9 @@ local on_attach = function(client, bufnr)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>', opts)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gr', '<cmd>lua require"telescope.builtin".lsp_references()<CR>', opts)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>f', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
+
+  vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gv', ':sp<CR>gd', opts)
+  vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gh', ':vs<CR>gd', opts)
 end
 
 -- Use a loop to conveniently call 'setup' on multiple servers and
