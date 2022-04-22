@@ -27,6 +27,9 @@ return require('packer').startup(function(use)
     use('lewis6991/impatient.nvim')
     -- }}}
     -- {{{ groups
+    local syntax = require('plugins.syntax')
+    syntax.init(use)
+
     local auxiliary = require('plugins.auxiliary')
     auxiliary.init(use)
 
@@ -55,9 +58,6 @@ return require('packer').startup(function(use)
     local windows = require('plugins.windows')
     windows.init(use)
     -- }}}
-	if packer_bootstrap then
-		require('packer').sync()
-	end
 
 end)
 -- }}}

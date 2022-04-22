@@ -137,6 +137,11 @@ _G.packer_plugins = {
     path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/sqlite.lua",
     url = "https://github.com/tami5/sqlite.lua"
   },
+  tabular = {
+    loaded = true,
+    path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/tabular",
+    url = "https://github.com/godlygeek/tabular"
+  },
   ["telescope-frecency.nvim"] = {
     config = { "\27LJ\1\2M\0\0\2\0\4\0\a4\0\0\0%\1\1\0>\0\2\0027\0\2\0%\1\3\0>\0\2\1G\0\1\0\rfrecency\19load_extension\14telescope\frequire\0" },
     load_after = {
@@ -190,6 +195,12 @@ _G.packer_plugins = {
     only_cond = false,
     path = "/home/jerryminion/.local/share/nvim/site/pack/packer/opt/vim-enmasse",
     url = "https://github.com/Olical/vim-enmasse"
+  },
+  ["vim-markdown"] = {
+    config = { "\27LJ\1\2p\0\0\2\0\4\0\t4\0\0\0007\0\1\0'\1\1\0:\1\2\0004\0\0\0007\0\1\0'\1\6\0:\1\3\0G\0\1\0\31vim_markdown_folding_level(vim_markdown_folding_style_pythonic\6g\bvim\0" },
+    loaded = true,
+    path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/vim-markdown",
+    url = "https://github.com/preservim/vim-markdown"
   },
   ["vim-sayonara"] = {
     commands = { "Sayonara" },
@@ -261,10 +272,6 @@ if not vim.g.packer_custom_loader_enabled then
   vim.g.packer_custom_loader_enabled = true
 end
 
--- Setup for: telescope.nvim
-time([[Setup for telescope.nvim]], true)
-require('settings.plugins.telescope_setup')
-time([[Setup for telescope.nvim]], false)
 -- Setup for: vim-sayonara
 time([[Setup for vim-sayonara]], true)
 try_loadstring("\27LJ\1\2s\0\0\6\0\a\0\v4\0\0\0%\1\1\0>\0\2\0027\0\2\0\16\1\0\0%\2\3\0%\3\4\0%\4\5\0003\5\6\0>\1\5\1G\0\1\0\1\0\1\vsilent\2\22<cmd>Sayonara<CR>\n<c-q>\6n\bmap\19settings.utils\frequire\0", "setup", "vim-sayonara")
@@ -276,14 +283,22 @@ time([[Setup for nvim-lightbulb]], false)
 time([[packadd for nvim-lightbulb]], true)
 vim.cmd [[packadd nvim-lightbulb]]
 time([[packadd for nvim-lightbulb]], false)
--- Config for: nvim-lspconfig
-time([[Config for nvim-lspconfig]], true)
-require('settings.plugins.lspconfig')
-time([[Config for nvim-lspconfig]], false)
+-- Setup for: telescope.nvim
+time([[Setup for telescope.nvim]], true)
+require('settings.plugins.telescope_setup')
+time([[Setup for telescope.nvim]], false)
 -- Config for: trouble.nvim
 time([[Config for trouble.nvim]], true)
 try_loadstring("\27LJ\1\0025\0\0\2\0\3\0\0064\0\0\0%\1\1\0>\0\2\0027\1\2\0>\1\1\1G\0\1\0\nsetup\ftrouble\frequire\0", "config", "trouble.nvim")
 time([[Config for trouble.nvim]], false)
+-- Config for: vim-markdown
+time([[Config for vim-markdown]], true)
+try_loadstring("\27LJ\1\2p\0\0\2\0\4\0\t4\0\0\0007\0\1\0'\1\1\0:\1\2\0004\0\0\0007\0\1\0'\1\6\0:\1\3\0G\0\1\0\31vim_markdown_folding_level(vim_markdown_folding_style_pythonic\6g\bvim\0", "config", "vim-markdown")
+time([[Config for vim-markdown]], false)
+-- Config for: nvim-lspconfig
+time([[Config for nvim-lspconfig]], true)
+require('settings.plugins.lspconfig')
+time([[Config for nvim-lspconfig]], false)
 -- Config for: lsp-status.nvim
 time([[Config for lsp-status.nvim]], true)
 require('settings.plugins.lsp-status')
@@ -299,9 +314,9 @@ time([[Config for zk]], false)
 
 -- Command lazy-loads
 time([[Defining lazy-load commands]], true)
-pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file Sayonara lua require("packer.load")({'vim-sayonara'}, { cmd = "Sayonara", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
 pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file EnMasse lua require("packer.load")({'vim-enmasse'}, { cmd = "EnMasse", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
 pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file Telescope lua require("packer.load")({'telescope.nvim'}, { cmd = "Telescope", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
+pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file Sayonara lua require("packer.load")({'vim-sayonara'}, { cmd = "Sayonara", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
 time([[Defining lazy-load commands]], false)
 
 -- Keymap lazy-loads
