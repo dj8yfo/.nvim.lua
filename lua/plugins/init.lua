@@ -49,6 +49,9 @@ return require('packer').startup(function(use)
     local nifty_edit = require('plugins.nifty_edit')
     nifty_edit.init(use)
 
+    local completion = require('plugins.completion')
+    completion.init(use)
+
     local lsp = require('plugins.lsp')
     lsp.init(use)
 

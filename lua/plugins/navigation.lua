@@ -15,6 +15,7 @@ local function init(use)
 	use({'tversteeg/registers.nvim', keys = { { 'n', '"' }, { 'i', '<c-r>' } } })
 	use({'chaoren/vim-wordmotion', 'justinmk/vim-sneak' })
 	use('thinca/vim-visualstar')
+	use('tpope/vim-unimpaired')
 end
 -- }}}
 return { init = init }
