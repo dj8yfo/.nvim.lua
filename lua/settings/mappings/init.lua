@@ -17,6 +17,9 @@ map('n', 'gW', ':set wrap!<CR>', default_opts)
 
 map('n', 'gn', 'mzi<CR><Esc>`z', default_opts)
 
+map('n', 'gr', ':e!<CR>', default_opts)
+
+
 
 
 
