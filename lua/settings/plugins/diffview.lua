@@ -108,3 +108,4 @@ require('diffview').setup ({
 local map = require('settings.utils').map
 
 map('n', 'gj', [[<cmd>DiffviewOpen<CR>]], { silent = true})
+map('n', 'gJ', [[<cmd>DiffviewClose<CR>]], { silent = true})
