@@ -19,7 +19,12 @@ map('n', 'gn', 'mzi<CR><Esc>`z', default_opts)
 
 map('n', 'gr', ':e!<CR>', default_opts)
 
+-- change workdir to parent of current buffer
+map('n', 'g.', ':cd %:h<CR>', default_opts)
+map('n', 'g=', '<C-w>=', default_opts)
 
 
+map('i', '<c-b>', '<Left>', default_opts)
+map('i', '<c-f>', '<Right>', default_opts)
 
 
