@@ -5,6 +5,7 @@ local function init(use)
 
 	use({ 'Olical/vim-enmasse', cmd = 'EnMasse' })
 	use({
+		-- https://github.com/kevinhwang91/nvim-bqf#function-table
 		'kevinhwang91/nvim-bqf', 
 		ft = 'qf',
 	})
