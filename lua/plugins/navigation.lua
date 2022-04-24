@@ -20,6 +20,14 @@ local function init(use)
 			vim.g.registers_show = "abcdefghij*+\"-/_=#%.0123456789klmnopqrstuvwxyz:"
 		end
 	})
+
+	use({
+		'christoomey/vim-system-copy', 
+		config = function()
+			vim.cmd [[let g:system_copy#copy_command = 'wl-copy']]
+			vim.cmd [[let g:system_copy#paste_command = 'wl-paste']]
+		end
+	})
 	use({'chaoren/vim-wordmotion', 'justinmk/vim-sneak' })
 	use('thinca/vim-visualstar')
 	use('tpope/vim-unimpaired')
