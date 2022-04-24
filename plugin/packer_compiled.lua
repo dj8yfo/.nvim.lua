@@ -191,11 +191,9 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-lua/popup.nvim"
   },
   ["registers.nvim"] = {
-    keys = { { "n", '"' }, { "i", "<c-r>" } },
-    loaded = false,
-    needs_bufread = false,
-    only_cond = false,
-    path = "/home/jerryminion/.local/share/nvim/site/pack/packer/opt/registers.nvim",
+    config = { "\27LJ\1\2µ\1\0\0\2\0\6\0\r4\0\0\0007\0\1\0'\1\0\0:\1\2\0004\0\0\0007\0\1\0'\1\1\0:\1\3\0004\0\0\0007\0\1\0%\1\5\0:\1\4\0G\0\1\0004abcdefghij*+\"-/_=#%.0123456789klmnopqrstuvwxyz:\19registers_show#registers_paste_in_normal_mode\26registers_insert_mode\6g\bvim\0" },
+    loaded = true,
+    path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/registers.nvim",
     url = "https://github.com/tversteeg/registers.nvim"
   },
   ["sqlite.lua"] = {
@@ -261,6 +259,11 @@ _G.packer_plugins = {
     only_cond = false,
     path = "/home/jerryminion/.local/share/nvim/site/pack/packer/opt/vim-enmasse",
     url = "https://github.com/Olical/vim-enmasse"
+  },
+  ["vim-fugitive"] = {
+    loaded = true,
+    path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    url = "https://github.com/tpope/vim-fugitive"
   },
   ["vim-grep-operator"] = {
     loaded = true,
@@ -371,26 +374,14 @@ time([[Setup for vim-grep-operator]], false)
 time([[packadd for vim-grep-operator]], true)
 vim.cmd [[packadd vim-grep-operator]]
 time([[packadd for vim-grep-operator]], false)
--- Config for: nvim-lspconfig
-time([[Config for nvim-lspconfig]], true)
-require('settings.plugins.lspconfig')
-time([[Config for nvim-lspconfig]], false)
 -- Config for: nvim-treesitter
 time([[Config for nvim-treesitter]], true)
 require('settings.plugins.treesitter')
 time([[Config for nvim-treesitter]], false)
--- Config for: nvim-comment
-time([[Config for nvim-comment]], true)
-try_loadstring("\27LJ\1\2:\0\0\2\0\3\0\0064\0\0\0%\1\1\0>\0\2\0027\0\2\0>\0\1\1G\0\1\0\nsetup\17nvim_comment\frequire\0", "config", "nvim-comment")
-time([[Config for nvim-comment]], false)
--- Config for: trouble.nvim
-time([[Config for trouble.nvim]], true)
-try_loadstring("\27LJ\1\0025\0\0\2\0\3\0\0064\0\0\0%\1\1\0>\0\2\0027\1\2\0>\1\1\1G\0\1\0\nsetup\ftrouble\frequire\0", "config", "trouble.nvim")
-time([[Config for trouble.nvim]], false)
--- Config for: diffview.nvim
-time([[Config for diffview.nvim]], true)
-require('settings.plugins.diffview')
-time([[Config for diffview.nvim]], false)
+-- Config for: lsp-status.nvim
+time([[Config for lsp-status.nvim]], true)
+require('settings.plugins.lsp-status')
+time([[Config for lsp-status.nvim]], false)
 -- Config for: zk
 time([[Config for zk]], true)
 require("zk").setup(
@@ -399,10 +390,26 @@ require("zk").setup(
 		}
 		)
 time([[Config for zk]], false)
--- Config for: lsp-status.nvim
-time([[Config for lsp-status.nvim]], true)
-require('settings.plugins.lsp-status')
-time([[Config for lsp-status.nvim]], false)
+-- Config for: registers.nvim
+time([[Config for registers.nvim]], true)
+try_loadstring("\27LJ\1\2µ\1\0\0\2\0\6\0\r4\0\0\0007\0\1\0'\1\0\0:\1\2\0004\0\0\0007\0\1\0'\1\1\0:\1\3\0004\0\0\0007\0\1\0%\1\5\0:\1\4\0G\0\1\0004abcdefghij*+\"-/_=#%.0123456789klmnopqrstuvwxyz:\19registers_show#registers_paste_in_normal_mode\26registers_insert_mode\6g\bvim\0", "config", "registers.nvim")
+time([[Config for registers.nvim]], false)
+-- Config for: nvim-comment
+time([[Config for nvim-comment]], true)
+try_loadstring("\27LJ\1\2:\0\0\2\0\3\0\0064\0\0\0%\1\1\0>\0\2\0027\0\2\0>\0\1\1G\0\1\0\nsetup\17nvim_comment\frequire\0", "config", "nvim-comment")
+time([[Config for nvim-comment]], false)
+-- Config for: nvim-lspconfig
+time([[Config for nvim-lspconfig]], true)
+require('settings.plugins.lspconfig')
+time([[Config for nvim-lspconfig]], false)
+-- Config for: trouble.nvim
+time([[Config for trouble.nvim]], true)
+try_loadstring("\27LJ\1\0025\0\0\2\0\3\0\0064\0\0\0%\1\1\0>\0\2\0027\1\2\0>\1\1\1G\0\1\0\nsetup\ftrouble\frequire\0", "config", "trouble.nvim")
+time([[Config for trouble.nvim]], false)
+-- Config for: diffview.nvim
+time([[Config for diffview.nvim]], true)
+require('settings.plugins.diffview')
+time([[Config for diffview.nvim]], false)
 -- Config for: vim-markdown
 time([[Config for vim-markdown]], true)
 try_loadstring("\27LJ\1\2p\0\0\2\0\4\0\t4\0\0\0007\0\1\0'\1\1\0:\1\2\0004\0\0\0007\0\1\0'\1\6\0:\1\3\0G\0\1\0\31vim_markdown_folding_level(vim_markdown_folding_style_pythonic\6g\bvim\0", "config", "vim-markdown")
@@ -414,12 +421,6 @@ pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file Sayonara lua requi
 pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file EnMasse lua require("packer.load")({'vim-enmasse'}, { cmd = "EnMasse", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
 pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file Telescope lua require("packer.load")({'telescope.nvim'}, { cmd = "Telescope", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
 time([[Defining lazy-load commands]], false)
-
--- Keymap lazy-loads
-time([[Defining lazy-load keymaps]], true)
-vim.cmd [[inoremap <silent> <c-r> <cmd>lua require("packer.load")({'registers.nvim'}, { keys = "<lt>c-r>" }, _G.packer_plugins)<cr>]]
-vim.cmd [[nnoremap <silent> " <cmd>lua require("packer.load")({'registers.nvim'}, { keys = "\"", prefix = "" }, _G.packer_plugins)<cr>]]
-time([[Defining lazy-load keymaps]], false)
 
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
