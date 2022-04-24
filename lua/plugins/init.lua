@@ -60,6 +60,9 @@ return require('packer').startup(function(use)
 
     local windows = require('plugins.windows')
     windows.init(use)
+
+    local git = require('plugins.git')
+    git.init(use)
     -- }}}
 
 end)
