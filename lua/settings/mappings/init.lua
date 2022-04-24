@@ -27,4 +27,11 @@ map('n', 'g=', '<C-w>=', default_opts)
 map('i', '<c-b>', '<Left>', default_opts)
 map('i', '<c-f>', '<Right>', default_opts)
 
+vim.cmd [[cmap <c-p> <Up>]]
+vim.cmd [[cmap <c-n> <Down>]]
+
+vim.cmd [[cmap <m-f> <Right>]]
+vim.cmd [[cmap <m-b> <Left>]]
+
+
 
