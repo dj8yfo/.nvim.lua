@@ -6,6 +6,12 @@ local function init(use)
 		config = [[require('settings.plugins.diffview')]],
 	})
 	use 'tpope/vim-fugitive'
+	use ({
+		'lewis6991/gitsigns.nvim',
+		config = function()
+			require('settings.plugins.gitsigns')
+		end
+	})
 end
 -- }}}
 return { init = init }
