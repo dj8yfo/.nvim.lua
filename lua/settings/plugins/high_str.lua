@@ -5,16 +5,16 @@ high_str.setup({
 	saving_path = "/tmp/highstr/",
 	highlight_colors = {
 		-- color_id = {"bg_hex_code",<"fg_hex_code"/"smart">}
-		color_0 = {"#0c0d0e", "smart"},	-- Cosmic charcoal
-		color_1 = {"#e5c07b", "smart"},	-- Pastel yellow
-		color_2 = {"#7FFFD4", "smart"},	-- Aqua menthe
-		color_3 = {"#8A2BE2", "smart"},	-- Proton purple
-		color_4 = {"#FF4500", "smart"},	-- Orange red
-		color_5 = {"#008000", "smart"},	-- Office green
-		color_6 = {"#0000FF", "smart"},	-- Just blue
-		color_7 = {"#FFC0CB", "smart"},	-- Blush pink
-		color_8 = {"#FFF9E3", "smart"},	-- Cosmic latte
-		color_9 = {"#7d5c34", "smart"},	-- Fallow brown
+		color_0 = {"smart", "#0c0d0e"},	-- Cosmic charcoal
+		color_1 = {"smart", "#e5c07b"},	-- Pastel yellow
+		color_2 = {"smart", "#7FFFD4"},	-- Aqua menthe
+		color_3 = {"smart", "#8A2BE2"},	-- Proton purple
+		color_4 = {"smart", "#FF4500"},	-- Orange red
+		color_5 = {"smart", "#008000"},	-- Office green
+		color_6 = {"smart", "#0000FF"},	-- Just blue
+		color_7 = {"smart", "#FFC0CB"},	-- Blush pink
+		color_8 = {"smart", "#FFF9E3"},	-- Cosmic latte
+		color_9 = {"smart", "#7d5c34"},	-- Fallow brown
 	}
 })
 
