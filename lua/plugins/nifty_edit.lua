@@ -13,6 +13,7 @@ local function init(use)
 			require('settings.plugins.high_str')
 		end,
 	})
+	use 'tommcdo/vim-exchange'
 
 
 end
