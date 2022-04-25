@@ -25,7 +25,7 @@ local function init(use)
 		'tversteeg/registers.nvim', 
 		config = function()
 			vim.g.registers_insert_mode = 0
-			vim.g.registers_paste_in_normal_mode = 1
+			vim.g.registers_paste_in_normal_mode = 2
 			vim.g.registers_show = "abcdefghij*+\"-/_=#%.0123456789klmnopqrstuvwxyz:"
 		end
 	})

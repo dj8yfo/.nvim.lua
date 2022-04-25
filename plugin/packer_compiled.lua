@@ -203,7 +203,7 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-lua/popup.nvim"
   },
   ["registers.nvim"] = {
-    config = { "\27LJ\1\2µ\1\0\0\2\0\6\0\r4\0\0\0007\0\1\0'\1\0\0:\1\2\0004\0\0\0007\0\1\0'\1\1\0:\1\3\0004\0\0\0007\0\1\0%\1\5\0:\1\4\0G\0\1\0004abcdefghij*+\"-/_=#%.0123456789klmnopqrstuvwxyz:\19registers_show#registers_paste_in_normal_mode\26registers_insert_mode\6g\bvim\0" },
+    config = { "\27LJ\1\2µ\1\0\0\2\0\6\0\r4\0\0\0007\0\1\0'\1\0\0:\1\2\0004\0\0\0007\0\1\0'\1\2\0:\1\3\0004\0\0\0007\0\1\0%\1\5\0:\1\4\0G\0\1\0004abcdefghij*+\"-/_=#%.0123456789klmnopqrstuvwxyz:\19registers_show#registers_paste_in_normal_mode\26registers_insert_mode\6g\bvim\0" },
     loaded = true,
     path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/registers.nvim",
     url = "https://github.com/tversteeg/registers.nvim"
@@ -414,7 +414,7 @@ require("zk").setup(
 time([[Config for zk]], false)
 -- Config for: registers.nvim
 time([[Config for registers.nvim]], true)
-try_loadstring("\27LJ\1\2µ\1\0\0\2\0\6\0\r4\0\0\0007\0\1\0'\1\0\0:\1\2\0004\0\0\0007\0\1\0'\1\1\0:\1\3\0004\0\0\0007\0\1\0%\1\5\0:\1\4\0G\0\1\0004abcdefghij*+\"-/_=#%.0123456789klmnopqrstuvwxyz:\19registers_show#registers_paste_in_normal_mode\26registers_insert_mode\6g\bvim\0", "config", "registers.nvim")
+try_loadstring("\27LJ\1\2µ\1\0\0\2\0\6\0\r4\0\0\0007\0\1\0'\1\0\0:\1\2\0004\0\0\0007\0\1\0'\1\2\0:\1\3\0004\0\0\0007\0\1\0%\1\5\0:\1\4\0G\0\1\0004abcdefghij*+\"-/_=#%.0123456789klmnopqrstuvwxyz:\19registers_show#registers_paste_in_normal_mode\26registers_insert_mode\6g\bvim\0", "config", "registers.nvim")
 time([[Config for registers.nvim]], false)
 -- Config for: trouble.nvim
 time([[Config for trouble.nvim]], true)
