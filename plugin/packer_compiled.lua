@@ -69,6 +69,12 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["HighStr.nvim"] = {
+    config = { "\27LJ\1\0029\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\30settings.plugins.high_str\frequire\0" },
+    loaded = true,
+    path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/HighStr.nvim",
+    url = "https://github.com/Pocco81/HighStr.nvim"
+  },
   ["asyncrun.vim"] = {
     loaded = true,
     path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/asyncrun.vim",
@@ -370,6 +376,14 @@ if not vim.g.packer_custom_loader_enabled then
   vim.g.packer_custom_loader_enabled = true
 end
 
+-- Setup for: vim-sayonara
+time([[Setup for vim-sayonara]], true)
+try_loadstring("\27LJ\1\2s\0\0\6\0\a\0\v4\0\0\0%\1\1\0>\0\2\0027\0\2\0\16\1\0\0%\2\3\0%\3\4\0%\4\5\0003\5\6\0>\1\5\1G\0\1\0\1\0\1\vsilent\2\22<cmd>Sayonara<CR>\n<c-q>\6n\bmap\19settings.utils\frequire\0", "setup", "vim-sayonara")
+time([[Setup for vim-sayonara]], false)
+-- Setup for: telescope.nvim
+time([[Setup for telescope.nvim]], true)
+require('settings.plugins.telescope_setup')
+time([[Setup for telescope.nvim]], false)
 -- Setup for: nvim-lightbulb
 time([[Setup for nvim-lightbulb]], true)
 try_loadstring("\27LJ\1\2—\1\0\0\2\0\5\0\v4\0\0\0007\0\1\0007\0\2\0%\1\3\0>\0\2\0014\0\0\0007\0\1\0007\0\2\0%\1\4\0>\0\2\1G\0\1\0-hi link LightBulbVirtualText YellowFloat*hi link LightBulbFloatWin YellowFloat\17nvim_command\bapi\bvim\0", "setup", "nvim-lightbulb")
@@ -377,14 +391,6 @@ time([[Setup for nvim-lightbulb]], false)
 time([[packadd for nvim-lightbulb]], true)
 vim.cmd [[packadd nvim-lightbulb]]
 time([[packadd for nvim-lightbulb]], false)
--- Setup for: telescope.nvim
-time([[Setup for telescope.nvim]], true)
-require('settings.plugins.telescope_setup')
-time([[Setup for telescope.nvim]], false)
--- Setup for: vim-sayonara
-time([[Setup for vim-sayonara]], true)
-try_loadstring("\27LJ\1\2s\0\0\6\0\a\0\v4\0\0\0%\1\1\0>\0\2\0027\0\2\0\16\1\0\0%\2\3\0%\3\4\0%\4\5\0003\5\6\0>\1\5\1G\0\1\0\1\0\1\vsilent\2\22<cmd>Sayonara<CR>\n<c-q>\6n\bmap\19settings.utils\frequire\0", "setup", "vim-sayonara")
-time([[Setup for vim-sayonara]], false)
 -- Setup for: vim-grep-operator
 time([[Setup for vim-grep-operator]], true)
 try_loadstring("\27LJ\1\2›\1\0\0\2\0\4\0\t4\0\0\0007\0\1\0%\1\2\0>\0\2\0014\0\0\0007\0\1\0%\1\3\0>\0\2\1G\0\1\0008vmap <leader>g <Plug>GrepOperatorOnCurrentDirectory8nmap <leader>g <Plug>GrepOperatorOnCurrentDirectory\bcmd\bvim\0", "setup", "vim-grep-operator")
@@ -396,14 +402,18 @@ time([[packadd for vim-grep-operator]], false)
 time([[Config for nvim-treesitter]], true)
 require('settings.plugins.treesitter')
 time([[Config for nvim-treesitter]], false)
--- Config for: lsp-status.nvim
-time([[Config for lsp-status.nvim]], true)
-require('settings.plugins.lsp-status')
-time([[Config for lsp-status.nvim]], false)
 -- Config for: fern.vim
 time([[Config for fern.vim]], true)
 try_loadstring("\27LJ\1\2x\0\0\6\0\a\0\v4\0\0\0%\1\1\0>\0\2\0027\0\2\0\16\1\0\0%\2\3\0%\3\4\0%\4\5\0003\5\6\0>\1\5\1G\0\1\0\1\0\1\vsilent\2\30<cmd>Fern . -reveal=%<CR>\ag\\\6n\bmap\19settings.utils\frequire\0", "config", "fern.vim")
 time([[Config for fern.vim]], false)
+-- Config for: HighStr.nvim
+time([[Config for HighStr.nvim]], true)
+try_loadstring("\27LJ\1\0029\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\30settings.plugins.high_str\frequire\0", "config", "HighStr.nvim")
+time([[Config for HighStr.nvim]], false)
+-- Config for: lsp-status.nvim
+time([[Config for lsp-status.nvim]], true)
+require('settings.plugins.lsp-status')
+time([[Config for lsp-status.nvim]], false)
 -- Config for: zk
 time([[Config for zk]], true)
 require("zk").setup(
@@ -416,30 +426,30 @@ time([[Config for zk]], false)
 time([[Config for registers.nvim]], true)
 try_loadstring("\27LJ\1\2µ\1\0\0\2\0\6\0\r4\0\0\0007\0\1\0'\1\0\0:\1\2\0004\0\0\0007\0\1\0'\1\2\0:\1\3\0004\0\0\0007\0\1\0%\1\5\0:\1\4\0G\0\1\0004abcdefghij*+\"-/_=#%.0123456789klmnopqrstuvwxyz:\19registers_show#registers_paste_in_normal_mode\26registers_insert_mode\6g\bvim\0", "config", "registers.nvim")
 time([[Config for registers.nvim]], false)
--- Config for: trouble.nvim
-time([[Config for trouble.nvim]], true)
-try_loadstring("\27LJ\1\0025\0\0\2\0\3\0\0064\0\0\0%\1\1\0>\0\2\0027\1\2\0>\1\1\1G\0\1\0\nsetup\ftrouble\frequire\0", "config", "trouble.nvim")
-time([[Config for trouble.nvim]], false)
--- Config for: gitsigns.nvim
-time([[Config for gitsigns.nvim]], true)
-try_loadstring("\27LJ\1\0029\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\30settings.plugins.gitsigns\frequire\0", "config", "gitsigns.nvim")
-time([[Config for gitsigns.nvim]], false)
 -- Config for: nvim-comment
 time([[Config for nvim-comment]], true)
 try_loadstring("\27LJ\1\2:\0\0\2\0\3\0\0064\0\0\0%\1\1\0>\0\2\0027\0\2\0>\0\1\1G\0\1\0\nsetup\17nvim_comment\frequire\0", "config", "nvim-comment")
 time([[Config for nvim-comment]], false)
+-- Config for: gitsigns.nvim
+time([[Config for gitsigns.nvim]], true)
+try_loadstring("\27LJ\1\0029\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\30settings.plugins.gitsigns\frequire\0", "config", "gitsigns.nvim")
+time([[Config for gitsigns.nvim]], false)
+-- Config for: trouble.nvim
+time([[Config for trouble.nvim]], true)
+try_loadstring("\27LJ\1\0025\0\0\2\0\3\0\0064\0\0\0%\1\1\0>\0\2\0027\1\2\0>\1\1\1G\0\1\0\nsetup\ftrouble\frequire\0", "config", "trouble.nvim")
+time([[Config for trouble.nvim]], false)
 -- Config for: diffview.nvim
 time([[Config for diffview.nvim]], true)
 require('settings.plugins.diffview')
 time([[Config for diffview.nvim]], false)
--- Config for: vim-system-copy
-time([[Config for vim-system-copy]], true)
-try_loadstring("\27LJ\1\2‹\1\0\0\2\0\4\0\t4\0\0\0007\0\1\0%\1\2\0>\0\2\0014\0\0\0007\0\1\0%\1\3\0>\0\2\1G\0\1\0001let g:system_copy#paste_command = 'wl-paste'/let g:system_copy#copy_command = 'wl-copy'\bcmd\bvim\0", "config", "vim-system-copy")
-time([[Config for vim-system-copy]], false)
 -- Config for: nvim-lspconfig
 time([[Config for nvim-lspconfig]], true)
 require('settings.plugins.lspconfig')
 time([[Config for nvim-lspconfig]], false)
+-- Config for: vim-system-copy
+time([[Config for vim-system-copy]], true)
+try_loadstring("\27LJ\1\2‹\1\0\0\2\0\4\0\t4\0\0\0007\0\1\0%\1\2\0>\0\2\0014\0\0\0007\0\1\0%\1\3\0>\0\2\1G\0\1\0001let g:system_copy#paste_command = 'wl-paste'/let g:system_copy#copy_command = 'wl-copy'\bcmd\bvim\0", "config", "vim-system-copy")
+time([[Config for vim-system-copy]], false)
 -- Config for: vim-markdown
 time([[Config for vim-markdown]], true)
 try_loadstring("\27LJ\1\2p\0\0\2\0\4\0\t4\0\0\0007\0\1\0'\1\1\0:\1\2\0004\0\0\0007\0\1\0'\1\6\0:\1\3\0G\0\1\0\31vim_markdown_folding_level(vim_markdown_folding_style_pythonic\6g\bvim\0", "config", "vim-markdown")
