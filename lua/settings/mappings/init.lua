@@ -10,8 +10,8 @@ map('n', '<m-k>', '<c-w>k', default_opts)
 map('n', '<m-h>', '<c-w>h', default_opts)
 map('n', '<m-l>', '<c-w>l', default_opts)
 
-map('n', 'cp', ':let @" = expand("%")<cr>', default_opts)
-map('n', 'cP', ':let @" = expand("%:p")<cr>', default_opts)
+map('n', 'ga', ':let @" = expand("%")<cr>', default_opts)
+map('n', 'gA', ':let @" = expand("%:p")<cr>', default_opts)
 map('n', 'gw', ':w!<cr>', default_opts)
 map('n', 'gW', ':set wrap!<CR>', default_opts)
 
@@ -35,3 +35,8 @@ vim.cmd [[cmap <m-b> <Left>]]
 
 map('n', 'go', ':copen<CR>', default_opts)
 map('n', 'gO', ':cclo<CR>', default_opts)
+
+map('n', 'gO', ':cclo<CR>', default_opts)
+
+
+map('n', '<leader>fe', [[<cmd>lua require('settings.functions').syntax_fold_expr()<CR>]], default_opts)
