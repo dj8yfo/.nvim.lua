@@ -12,11 +12,10 @@ local function init(use)
 	use('romainl/vim-cool')
 
 	use({
-		'SidOfc/carbon.nvim', 
+		'lambdalisue/fern.vim', 
 		config = function()
-			 require('carbon').setup({})
 			local map = require('settings.utils').map
-			map('n', 'g\\', [[<cmd>Fcarbon<CR>]], { silent = true})
+			map('n', 'g\\', [[<cmd>Fern . -reveal=%<CR>]], { silent = true})
 		end
 	})
 	use('justinmk/vim-dirvish')

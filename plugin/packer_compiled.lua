@@ -74,12 +74,6 @@ _G.packer_plugins = {
     path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/asyncrun.vim",
     url = "https://github.com/skywind3000/asyncrun.vim"
   },
-  ["carbon.nvim"] = {
-    config = { "\27LJ\1\2”\1\0\0\6\0\t\0\0174\0\0\0%\1\1\0>\0\2\0027\0\2\0002\1\0\0>\0\2\0014\0\0\0%\1\3\0>\0\2\0027\0\4\0\16\1\0\0%\2\5\0%\3\6\0%\4\a\0003\5\b\0>\1\5\1G\0\1\0\1\0\1\vsilent\2\21<cmd>Fcarbon<CR>\ag\\\6n\bmap\19settings.utils\nsetup\vcarbon\frequire\0" },
-    loaded = true,
-    path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/carbon.nvim",
-    url = "https://github.com/SidOfc/carbon.nvim"
-  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -115,6 +109,12 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/elf-monokai-pro",
     url = "https://github.com/elvessousa/elf-monokai-pro"
+  },
+  ["fern.vim"] = {
+    config = { "\27LJ\1\2x\0\0\6\0\a\0\v4\0\0\0%\1\1\0>\0\2\0027\0\2\0\16\1\0\0%\2\3\0%\3\4\0%\4\5\0003\5\6\0>\1\5\1G\0\1\0\1\0\1\vsilent\2\30<cmd>Fern . -reveal=%<CR>\ag\\\6n\bmap\19settings.utils\frequire\0" },
+    loaded = true,
+    path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/fern.vim",
+    url = "https://github.com/lambdalisue/fern.vim"
   },
   ["gitsigns.nvim"] = {
     config = { "\27LJ\1\0029\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\30settings.plugins.gitsigns\frequire\0" },
@@ -239,7 +239,7 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
   },
   ["telescope.nvim"] = {
-    after = { "telescope-fzf-native.nvim", "telescope-frecency.nvim" },
+    after = { "telescope-frecency.nvim", "telescope-fzf-native.nvim" },
     commands = { "Telescope" },
     config = { "require('settings.plugins.telescope')" },
     loaded = false,
@@ -396,14 +396,14 @@ time([[packadd for vim-grep-operator]], false)
 time([[Config for nvim-treesitter]], true)
 require('settings.plugins.treesitter')
 time([[Config for nvim-treesitter]], false)
--- Config for: carbon.nvim
-time([[Config for carbon.nvim]], true)
-try_loadstring("\27LJ\1\2”\1\0\0\6\0\t\0\0174\0\0\0%\1\1\0>\0\2\0027\0\2\0002\1\0\0>\0\2\0014\0\0\0%\1\3\0>\0\2\0027\0\4\0\16\1\0\0%\2\5\0%\3\6\0%\4\a\0003\5\b\0>\1\5\1G\0\1\0\1\0\1\vsilent\2\21<cmd>Fcarbon<CR>\ag\\\6n\bmap\19settings.utils\nsetup\vcarbon\frequire\0", "config", "carbon.nvim")
-time([[Config for carbon.nvim]], false)
--- Config for: diffview.nvim
-time([[Config for diffview.nvim]], true)
-require('settings.plugins.diffview')
-time([[Config for diffview.nvim]], false)
+-- Config for: lsp-status.nvim
+time([[Config for lsp-status.nvim]], true)
+require('settings.plugins.lsp-status')
+time([[Config for lsp-status.nvim]], false)
+-- Config for: fern.vim
+time([[Config for fern.vim]], true)
+try_loadstring("\27LJ\1\2x\0\0\6\0\a\0\v4\0\0\0%\1\1\0>\0\2\0027\0\2\0\16\1\0\0%\2\3\0%\3\4\0%\4\5\0003\5\6\0>\1\5\1G\0\1\0\1\0\1\vsilent\2\30<cmd>Fern . -reveal=%<CR>\ag\\\6n\bmap\19settings.utils\frequire\0", "config", "fern.vim")
+time([[Config for fern.vim]], false)
 -- Config for: zk
 time([[Config for zk]], true)
 require("zk").setup(
@@ -424,14 +424,14 @@ time([[Config for trouble.nvim]], false)
 time([[Config for gitsigns.nvim]], true)
 try_loadstring("\27LJ\1\0029\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\30settings.plugins.gitsigns\frequire\0", "config", "gitsigns.nvim")
 time([[Config for gitsigns.nvim]], false)
--- Config for: lsp-status.nvim
-time([[Config for lsp-status.nvim]], true)
-require('settings.plugins.lsp-status')
-time([[Config for lsp-status.nvim]], false)
 -- Config for: nvim-comment
 time([[Config for nvim-comment]], true)
 try_loadstring("\27LJ\1\2:\0\0\2\0\3\0\0064\0\0\0%\1\1\0>\0\2\0027\0\2\0>\0\1\1G\0\1\0\nsetup\17nvim_comment\frequire\0", "config", "nvim-comment")
 time([[Config for nvim-comment]], false)
+-- Config for: diffview.nvim
+time([[Config for diffview.nvim]], true)
+require('settings.plugins.diffview')
+time([[Config for diffview.nvim]], false)
 -- Config for: vim-system-copy
 time([[Config for vim-system-copy]], true)
 try_loadstring("\27LJ\1\2‹\1\0\0\2\0\4\0\t4\0\0\0007\0\1\0%\1\2\0>\0\2\0014\0\0\0007\0\1\0%\1\3\0>\0\2\1G\0\1\0001let g:system_copy#paste_command = 'wl-paste'/let g:system_copy#copy_command = 'wl-copy'\bcmd\bvim\0", "config", "vim-system-copy")
