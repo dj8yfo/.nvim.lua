@@ -11,28 +11,20 @@ if require("zk.util").notebook_root(vim.fn.expand('%:p')) ~= nil then
 	map(
 		"n", 
 		"<leader>znn", 
-		[[<Cmd>ZkNew { 
-			dir = vim.fn.expand('%:p:h'), 
-			title = vim.fn.input('Title: '),
-		}<CR>]], 
+		[[<Cmd>ZkNew { dir = vim.fn.expand('%:p:h'), title = vim.fn.input('Title: ') }<CR>]], 
 		opts
 	)
 	-- Create a new note in the same directory as the current buffer, using the current selection for title.
 	map(
 		"v", 
 		"<leader>znt", 
-		[[:'<,'>ZkNewFromTitleSelection { 
-			dir = vim.fn.expand('%:p:h'),
-		}<CR>]], 
+		[[:'<,'>ZkNewFromTitleSelection { dir = vim.fn.expand('%:p:h') }<CR>]], 
 		opts
 	)
 	-- Create a new note in the same directory as the current buffer, using the current selection for note content and asking for its title.
 	map(
 		"v", "<leader>znc", 
-		[[:'<,'>ZkNewFromContentSelection { 
-			dir = vim.fn.expand('%:p:h'), 
-			title = vim.fn.input('Title: '),
-		}<CR>]], 
+		[[:'<,'>ZkNewFromContentSelection { dir = vim.fn.expand('%:p:h'), title = vim.fn.input('Title: ') }<CR>]], 
 		opts
 	)
 
