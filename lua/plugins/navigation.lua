@@ -36,7 +36,14 @@ local function init(use)
 			vim.cmd [[let g:system_copy#paste_command = 'wl-paste']]
 		end
 	})
-	use({'chaoren/vim-wordmotion', 'justinmk/vim-sneak' })
+	use 'chaoren/vim-wordmotion'
+	use({ 
+		'justinmk/vim-sneak' ,
+		config = function()
+			vim.cmd[[nmap gs <Plug>Sneak_S]]
+			vim.cmd[[xmap gs <Plug>Sneak_S]]
+		end,
+	})
 	use('thinca/vim-visualstar')
 	use('tpope/vim-unimpaired')
 end

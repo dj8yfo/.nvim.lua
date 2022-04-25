@@ -326,6 +326,7 @@ _G.packer_plugins = {
     url = "https://github.com/kshenoy/vim-signature"
   },
   ["vim-sneak"] = {
+    config = { "\27LJ\1\2_\0\0\2\0\4\0\t4\0\0\0007\0\1\0%\1\2\0>\0\2\0014\0\0\0007\0\1\0%\1\3\0>\0\2\1G\0\1\0\26xmap gs <Plug>Sneak_S\26nmap gs <Plug>Sneak_S\bcmd\bvim\0" },
     loaded = true,
     path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/vim-sneak",
     url = "https://github.com/justinmk/vim-sneak"
@@ -415,14 +416,18 @@ time([[Setup for vim-grep-operator]], false)
 time([[packadd for vim-grep-operator]], true)
 vim.cmd [[packadd vim-grep-operator]]
 time([[packadd for vim-grep-operator]], false)
--- Config for: nvim-treesitter
-time([[Config for nvim-treesitter]], true)
-require('settings.plugins.treesitter')
-time([[Config for nvim-treesitter]], false)
 -- Config for: fern.vim
 time([[Config for fern.vim]], true)
 try_loadstring("\27LJ\1\2x\0\0\6\0\a\0\v4\0\0\0%\1\1\0>\0\2\0027\0\2\0\16\1\0\0%\2\3\0%\3\4\0%\4\5\0003\5\6\0>\1\5\1G\0\1\0\1\0\1\vsilent\2\30<cmd>Fern . -reveal=%<CR>\ag\\\6n\bmap\19settings.utils\frequire\0", "config", "fern.vim")
 time([[Config for fern.vim]], false)
+-- Config for: nvim-treesitter
+time([[Config for nvim-treesitter]], true)
+require('settings.plugins.treesitter')
+time([[Config for nvim-treesitter]], false)
+-- Config for: diffview.nvim
+time([[Config for diffview.nvim]], true)
+require('settings.plugins.diffview')
+time([[Config for diffview.nvim]], false)
 -- Config for: HighStr.nvim
 time([[Config for HighStr.nvim]], true)
 try_loadstring("\27LJ\1\0029\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\30settings.plugins.high_str\frequire\0", "config", "HighStr.nvim")
@@ -463,10 +468,10 @@ time([[Config for gitsigns.nvim]], false)
 time([[Config for trouble.nvim]], true)
 try_loadstring("\27LJ\1\0025\0\0\2\0\3\0\0064\0\0\0%\1\1\0>\0\2\0027\1\2\0>\1\1\1G\0\1\0\nsetup\ftrouble\frequire\0", "config", "trouble.nvim")
 time([[Config for trouble.nvim]], false)
--- Config for: diffview.nvim
-time([[Config for diffview.nvim]], true)
-require('settings.plugins.diffview')
-time([[Config for diffview.nvim]], false)
+-- Config for: vim-sneak
+time([[Config for vim-sneak]], true)
+try_loadstring("\27LJ\1\2_\0\0\2\0\4\0\t4\0\0\0007\0\1\0%\1\2\0>\0\2\0014\0\0\0007\0\1\0%\1\3\0>\0\2\1G\0\1\0\26xmap gs <Plug>Sneak_S\26nmap gs <Plug>Sneak_S\bcmd\bvim\0", "config", "vim-sneak")
+time([[Config for vim-sneak]], false)
 -- Config for: nvim-lspconfig
 time([[Config for nvim-lspconfig]], true)
 require('settings.plugins.lspconfig')
