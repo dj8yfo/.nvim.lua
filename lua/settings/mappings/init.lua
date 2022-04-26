@@ -41,3 +41,5 @@ map('n', 'gO', ':cclo<CR>', default_opts)
 
 map('n', '<leader>fe', [[<cmd>lua require('settings.functions').syntax_fold_expr()<CR>]], default_opts)
 map('n', '<leader>te', [[<cmd>tabedit %<CR>]], default_opts)
+
+vim.cmd [[nnoremap gX *``cgn]]
