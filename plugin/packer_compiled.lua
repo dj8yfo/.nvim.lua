@@ -69,12 +69,6 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  ["HighStr.nvim"] = {
-    config = { "\27LJ\1\0029\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\30settings.plugins.high_str\frequire\0" },
-    loaded = true,
-    path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/HighStr.nvim",
-    url = "https://github.com/Pocco81/HighStr.nvim"
-  },
   ["asyncrun.vim"] = {
     loaded = true,
     needs_bufread = false,
@@ -302,6 +296,12 @@ _G.packer_plugins = {
     path = "/home/jerryminion/.local/share/nvim/site/pack/packer/opt/vim-grep-operator",
     url = "https://github.com/inside/vim-grep-operator"
   },
+  ["vim-highlighter"] = {
+    config = { "\27LJ\1\2\v\0\0\1\0\0\0\1G\0\1\0\0" },
+    loaded = true,
+    path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/vim-highlighter",
+    url = "https://github.com/azabiong/vim-highlighter"
+  },
   ["vim-markdown"] = {
     config = { "\27LJ\1\2p\0\0\2\0\4\0\t4\0\0\0007\0\1\0'\1\1\0:\1\2\0004\0\0\0007\0\1\0'\1\6\0:\1\3\0G\0\1\0\31vim_markdown_folding_level(vim_markdown_folding_style_pythonic\6g\bvim\0" },
     loaded = true,
@@ -431,18 +431,18 @@ time([[Config for nvim-treesitter]], false)
 time([[Config for vim-sneak]], true)
 try_loadstring("\27LJ\1\2_\0\0\2\0\4\0\t4\0\0\0007\0\1\0%\1\2\0>\0\2\0014\0\0\0007\0\1\0%\1\3\0>\0\2\1G\0\1\0\26xmap gs <Plug>Sneak_S\26nmap gs <Plug>Sneak_S\bcmd\bvim\0", "config", "vim-sneak")
 time([[Config for vim-sneak]], false)
--- Config for: vim-edgemotion
-time([[Config for vim-edgemotion]], true)
-try_loadstring("\27LJ\1\2«\1\0\0\4\0\b\0\0144\0\0\0%\1\1\0>\0\2\0027\0\2\0003\1\3\0004\2\4\0007\2\5\2%\3\6\0>\2\2\0014\2\4\0007\2\5\2%\3\a\0>\2\2\1G\0\1\0#map <C-k> <Plug>(edgemotion-k)#map <C-j> <Plug>(edgemotion-j)\bcmd\bvim\1\0\1\vsilent\2\bmap\19settings.utils\frequire\0", "config", "vim-edgemotion")
-time([[Config for vim-edgemotion]], false)
--- Config for: HighStr.nvim
-time([[Config for HighStr.nvim]], true)
-try_loadstring("\27LJ\1\0029\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\30settings.plugins.high_str\frequire\0", "config", "HighStr.nvim")
-time([[Config for HighStr.nvim]], false)
 -- Config for: diffview.nvim
 time([[Config for diffview.nvim]], true)
 require('settings.plugins.diffview')
 time([[Config for diffview.nvim]], false)
+-- Config for: vim-highlighter
+time([[Config for vim-highlighter]], true)
+try_loadstring("\27LJ\1\2\v\0\0\1\0\0\0\1G\0\1\0\0", "config", "vim-highlighter")
+time([[Config for vim-highlighter]], false)
+-- Config for: vim-edgemotion
+time([[Config for vim-edgemotion]], true)
+try_loadstring("\27LJ\1\2«\1\0\0\4\0\b\0\0144\0\0\0%\1\1\0>\0\2\0027\0\2\0003\1\3\0004\2\4\0007\2\5\2%\3\6\0>\2\2\0014\2\4\0007\2\5\2%\3\a\0>\2\2\1G\0\1\0#map <C-k> <Plug>(edgemotion-k)#map <C-j> <Plug>(edgemotion-j)\bcmd\bvim\1\0\1\vsilent\2\bmap\19settings.utils\frequire\0", "config", "vim-edgemotion")
+time([[Config for vim-edgemotion]], false)
 -- Config for: lsp-status.nvim
 time([[Config for lsp-status.nvim]], true)
 require('settings.plugins.lsp-status')

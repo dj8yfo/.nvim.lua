@@ -8,9 +8,8 @@ local function init(use)
 		end,
 	})
 	use ({
-		"Pocco81/HighStr.nvim",
+		'azabiong/vim-highlighter' ,
 		config = function()
-			require('settings.plugins.high_str')
 		end,
 	})
 	use 'tommcdo/vim-exchange'
