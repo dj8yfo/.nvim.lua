@@ -10,6 +10,17 @@ local function init(use)
 			vim.cmd [[map <C-k> <Plug>(edgemotion-k)]]
 		end,
 	})
+
+	use ({'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons',
+		config = function()
+			require("bufferline").setup{}
+
+			local map = require('settings.utils').map
+			local silent = { silent = true }
+			map('n', 'gb', ':BufferLineCycleNext<CR>', default_opts)
+			map('n', 'gB', ':BufferLineCyclePrev<CR>', default_opts)
+		end, 
+	})
 end
 -- }}}
 return { init = init }
