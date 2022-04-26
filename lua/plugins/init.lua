@@ -23,7 +23,12 @@ return require('packer').startup(function(use)
 	packer = require('packer')
 
     -- {{{ root
-    use('wbthomason/packer.nvim')
+    use({
+		'wbthomason/packer.nvim',
+		config = function()
+			vim.cmd[[nmap <leader>ps :PackerSync<cr>]]
+		end,
+	})
     use('lewis6991/impatient.nvim')
     -- }}}
     -- {{{ groups

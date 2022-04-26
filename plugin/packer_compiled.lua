@@ -195,7 +195,7 @@ _G.packer_plugins = {
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
   ["packer.nvim"] = {
-    config = { "\27LJ\1\2\v\0\0\1\0\0\0\1G\0\1\0\0" },
+    config = { "\27LJ\1\2C\0\0\2\0\3\0\0054\0\0\0007\0\1\0%\1\2\0>\0\2\1G\0\1\0$nmap <leader>ps :PackerSync<cr>\bcmd\bvim\0" },
     loaded = true,
     path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
@@ -473,7 +473,7 @@ try_loadstring("\27LJ\1\0025\0\0\2\0\3\0\0064\0\0\0%\1\1\0>\0\2\0027\1\2\0>\1\1\
 time([[Config for trouble.nvim]], false)
 -- Config for: packer.nvim
 time([[Config for packer.nvim]], true)
-try_loadstring("\27LJ\1\2\v\0\0\1\0\0\0\1G\0\1\0\0", "config", "packer.nvim")
+try_loadstring("\27LJ\1\2C\0\0\2\0\3\0\0054\0\0\0007\0\1\0%\1\2\0>\0\2\1G\0\1\0$nmap <leader>ps :PackerSync<cr>\bcmd\bvim\0", "config", "packer.nvim")
 time([[Config for packer.nvim]], false)
 -- Config for: vim-system-copy
 time([[Config for vim-system-copy]], true)
