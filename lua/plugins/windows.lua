@@ -1,7 +1,14 @@
 
 -- {{{ init
 local function init(use)
-    use('skywind3000/asyncrun.vim')
+    use({
+		'skywind3000/asyncrun.vim',
+		setup = function()
+			vim.cmd[[nmap <leader>mb :AsyncRun make build<cr>]]
+			vim.cmd[[nmap <leader>ml :AsyncRun make lint<cr>]]
+			vim.cmd[[nmap <leader>mt :AsyncRun make test<cr>]]
+		end,
+	})
 
 	use({ 'Olical/vim-enmasse', cmd = 'EnMasse' })
 	use({
