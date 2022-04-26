@@ -1,13 +1,5 @@
 -- {{{ init
 local function init(use)
-	use({
-		'Yggdroot/indentLine',
-		config = function()
-			vim.g.indentLine_char_list = {'|', '¦', '┆', '┊'}
-			vim.g.indentLine_showFirstIndentLevel = 1
-			
-		end,
-	})
 
 	use({
 		'haya14busa/vim-edgemotion',

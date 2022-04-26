@@ -133,12 +133,6 @@ _G.packer_plugins = {
     path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/impatient.nvim",
     url = "https://github.com/lewis6991/impatient.nvim"
   },
-  indentLine = {
-    config = { "\27LJ\1\2w\0\0\2\0\5\0\t4\0\0\0007\0\1\0003\1\3\0:\1\2\0004\0\0\0007\0\1\0'\1\1\0:\1\4\0G\0\1\0$indentLine_showFirstIndentLevel\1\5\0\0\6|\a¦\b┆\b┊\25indentLine_char_list\6g\bvim\0" },
-    loaded = true,
-    path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/indentLine",
-    url = "https://github.com/Yggdroot/indentLine"
-  },
   ["lsp-status.nvim"] = {
     config = { "require('settings.plugins.lsp-status')" },
     loaded = true,
@@ -416,30 +410,26 @@ time([[Setup for vim-grep-operator]], false)
 time([[packadd for vim-grep-operator]], true)
 vim.cmd [[packadd vim-grep-operator]]
 time([[packadd for vim-grep-operator]], false)
--- Config for: fern.vim
-time([[Config for fern.vim]], true)
-try_loadstring("\27LJ\1\2x\0\0\6\0\a\0\v4\0\0\0%\1\1\0>\0\2\0027\0\2\0\16\1\0\0%\2\3\0%\3\4\0%\4\5\0003\5\6\0>\1\5\1G\0\1\0\1\0\1\vsilent\2\30<cmd>Fern . -reveal=%<CR>\ag\\\6n\bmap\19settings.utils\frequire\0", "config", "fern.vim")
-time([[Config for fern.vim]], false)
 -- Config for: nvim-treesitter
 time([[Config for nvim-treesitter]], true)
 require('settings.plugins.treesitter')
 time([[Config for nvim-treesitter]], false)
+-- Config for: fern.vim
+time([[Config for fern.vim]], true)
+try_loadstring("\27LJ\1\2x\0\0\6\0\a\0\v4\0\0\0%\1\1\0>\0\2\0027\0\2\0\16\1\0\0%\2\3\0%\3\4\0%\4\5\0003\5\6\0>\1\5\1G\0\1\0\1\0\1\vsilent\2\30<cmd>Fern . -reveal=%<CR>\ag\\\6n\bmap\19settings.utils\frequire\0", "config", "fern.vim")
+time([[Config for fern.vim]], false)
 -- Config for: diffview.nvim
 time([[Config for diffview.nvim]], true)
 require('settings.plugins.diffview')
 time([[Config for diffview.nvim]], false)
--- Config for: HighStr.nvim
-time([[Config for HighStr.nvim]], true)
-try_loadstring("\27LJ\1\0029\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\30settings.plugins.high_str\frequire\0", "config", "HighStr.nvim")
-time([[Config for HighStr.nvim]], false)
--- Config for: indentLine
-time([[Config for indentLine]], true)
-try_loadstring("\27LJ\1\2w\0\0\2\0\5\0\t4\0\0\0007\0\1\0003\1\3\0:\1\2\0004\0\0\0007\0\1\0'\1\1\0:\1\4\0G\0\1\0$indentLine_showFirstIndentLevel\1\5\0\0\6|\a¦\b┆\b┊\25indentLine_char_list\6g\bvim\0", "config", "indentLine")
-time([[Config for indentLine]], false)
 -- Config for: vim-edgemotion
 time([[Config for vim-edgemotion]], true)
 try_loadstring("\27LJ\1\2�\1\0\0\4\0\b\0\0144\0\0\0%\1\1\0>\0\2\0027\0\2\0003\1\3\0004\2\4\0007\2\5\2%\3\6\0>\2\2\0014\2\4\0007\2\5\2%\3\a\0>\2\2\1G\0\1\0#map <C-k> <Plug>(edgemotion-k)#map <C-j> <Plug>(edgemotion-j)\bcmd\bvim\1\0\1\vsilent\2\bmap\19settings.utils\frequire\0", "config", "vim-edgemotion")
 time([[Config for vim-edgemotion]], false)
+-- Config for: HighStr.nvim
+time([[Config for HighStr.nvim]], true)
+try_loadstring("\27LJ\1\0029\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\30settings.plugins.high_str\frequire\0", "config", "HighStr.nvim")
+time([[Config for HighStr.nvim]], false)
 -- Config for: lsp-status.nvim
 time([[Config for lsp-status.nvim]], true)
 require('settings.plugins.lsp-status')
@@ -472,14 +462,14 @@ time([[Config for trouble.nvim]], false)
 time([[Config for vim-sneak]], true)
 try_loadstring("\27LJ\1\2_\0\0\2\0\4\0\t4\0\0\0007\0\1\0%\1\2\0>\0\2\0014\0\0\0007\0\1\0%\1\3\0>\0\2\1G\0\1\0\26xmap gs <Plug>Sneak_S\26nmap gs <Plug>Sneak_S\bcmd\bvim\0", "config", "vim-sneak")
 time([[Config for vim-sneak]], false)
--- Config for: nvim-lspconfig
-time([[Config for nvim-lspconfig]], true)
-require('settings.plugins.lspconfig')
-time([[Config for nvim-lspconfig]], false)
 -- Config for: vim-system-copy
 time([[Config for vim-system-copy]], true)
 try_loadstring("\27LJ\1\2�\1\0\0\2\0\4\0\t4\0\0\0007\0\1\0%\1\2\0>\0\2\0014\0\0\0007\0\1\0%\1\3\0>\0\2\1G\0\1\0001let g:system_copy#paste_command = 'wl-paste'/let g:system_copy#copy_command = 'wl-copy'\bcmd\bvim\0", "config", "vim-system-copy")
 time([[Config for vim-system-copy]], false)
+-- Config for: nvim-lspconfig
+time([[Config for nvim-lspconfig]], true)
+require('settings.plugins.lspconfig')
+time([[Config for nvim-lspconfig]], false)
 -- Config for: vim-markdown
 time([[Config for vim-markdown]], true)
 try_loadstring("\27LJ\1\2p\0\0\2\0\4\0\t4\0\0\0007\0\1\0'\1\1\0:\1\2\0004\0\0\0007\0\1\0'\1\6\0:\1\3\0G\0\1\0\31vim_markdown_folding_level(vim_markdown_folding_style_pythonic\6g\bvim\0", "config", "vim-markdown")
