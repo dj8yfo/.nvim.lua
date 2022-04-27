@@ -10,6 +10,15 @@ ts_configs.setup {
 		-- comment
 		enable = true
 	},
+	textsubjects = {
+		enable = true,
+		keymaps = {
+			['.'] = 'textsubjects-smart',
+			[","] = 'textsubjects-container-outer',
+			["i,"] = 'textsubjects-container-inner',
+		},
+	},
+
 
 	rainbow = {
 		enable = true,
