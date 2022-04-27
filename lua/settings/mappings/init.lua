@@ -43,3 +43,5 @@ map('n', '<leader>fe', [[<cmd>lua require('settings.functions').syntax_fold_expr
 map('n', '<leader>te', [[<cmd>tabedit %<CR>]], default_opts)
 
 vim.cmd [[nnoremap gX *``cgn]]
+
+vim.cmd 'nnoremap gl `[v`]'
