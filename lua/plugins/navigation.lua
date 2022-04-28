@@ -42,6 +42,7 @@ local function init(use)
 		config = function()
 			vim.cmd[[nmap gs <Plug>Sneak_S]]
 			vim.cmd[[xmap gs <Plug>Sneak_S]]
+			vim.cmd[[let g:sneak#use_ic_scs = 1]]
 		end,
 	})
 	use('thinca/vim-visualstar')
