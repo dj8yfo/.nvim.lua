@@ -33,7 +33,7 @@ vim.cmd [[cmap <c-n> <Down>]]
 vim.cmd [[cmap <m-f> <Right>]]
 vim.cmd [[cmap <m-b> <Left>]]
 
-map('n', 'go', ':copen<CR>', default_opts)
+map('n', 'go', ':copen30<CR>', default_opts)
 map('n', 'gO', ':cclo<CR>', default_opts)
 
 map('n', 'gO', ':cclo<CR>', default_opts)
