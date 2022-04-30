@@ -47,6 +47,15 @@ local function init(use)
 	})
 	use('thinca/vim-visualstar')
 	use('tpope/vim-unimpaired')
+	use('MattesGroeger/vim-bookmarks')
+	use({ 
+		'tom-anders/telescope-vim-bookmarks.nvim' ,
+		config = function()
+			local map = require('settings.utils').map
+			map('n', '<leader>ma', [[<cmd>lua require('telescope').extensions.vim_bookmarks.all()<cr>]], { silent = true})
+			map('n', '<leader>mf', [[<cmd>lua require('telescope').extensions.vim_bookmarks.current_file()<cr>]], { silent = true})
+		end,
+	})
 end
 -- }}}
 return { init = init }

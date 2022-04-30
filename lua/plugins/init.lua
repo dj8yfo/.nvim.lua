@@ -38,18 +38,17 @@ return require('packer').startup(function(use)
     local auxiliary = require('plugins.auxiliary')
     auxiliary.init(use)
 
-    local navigation = require('plugins.navigation')
-    navigation.init(use)
-
     local appearance = require('plugins.appearance')
     appearance.init(use)
-
 
     local colorschemes = require('plugins.colorschemes')
     colorschemes.init(use)
 
     local fuzzy_search = require('plugins.fuzzy_search')
     fuzzy_search.init(use)
+
+    local navigation = require('plugins.navigation')
+    navigation.init(use)
 
     local nifty_edit = require('plugins.nifty_edit')
     nifty_edit.init(use)
