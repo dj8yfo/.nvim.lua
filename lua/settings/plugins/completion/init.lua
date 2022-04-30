@@ -6,11 +6,16 @@ local function check_backspace()
 end
 
 cmp.setup ({
+
 	completion = { completeopt = 'menu,menuone,noinsert' },
 	sorting = {
 		comparators = require('settings.plugins.completion.comparators').c,
 	},
 	snippet = {
+		-- REQUIRED - you must specify a snippet engine
+		expand = function(args)
+			vim.fn["vsnip#anonymous"](args.body) -- For `vsnip` users.
+		end,
 	},
 	formatting = {
 		format = require('settings.plugins.completion.cmp_kinds').f,
@@ -21,5 +26,7 @@ cmp.setup ({
 		{ name = 'nvim_lsp_signature_help' },
 		{ name = 'path' },
 		{ name = 'buffer' },
+
+		{name = 'vsnip'} ,
 	},
 })
