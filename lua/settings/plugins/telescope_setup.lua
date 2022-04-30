@@ -6,6 +6,7 @@ map('n', '<m-a>', [[<cmd>Telescope buffers show_all_buffers=true theme=get_ivy<c
 map('n', '<m-f>', [[<cmd>Telescope frecency theme=get_ivy<cr>]], silent)
 
 map('n', '<m-s>', [[<cmd>Telescope git_files theme=get_ivy<cr>]], silent)
+map('n', '<m-m>', [[<cmd>Telescope git_status theme=get_ivy<cr>]], silent)
 map('n', '<m-,>', [[<cmd>Telescope find_files theme=get_ivy<cr>]], silent)
 map('n', '<m-g>', [[<cmd>Telescope live_grep theme=get_ivy<cr>]], silent)
 
