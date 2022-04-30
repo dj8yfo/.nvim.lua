@@ -3,7 +3,7 @@ local map = require('settings.utils').map
 
 local default_opts = {noremap = true, silent = true }
 
-map('n', '<c-x>', ':qa!<CR>', default_opts)
+map('n', '<m-x>', ':qa!<CR>', default_opts)
 
 map('n', '<m-j>', '<c-w>j', default_opts)
 map('n', '<m-k>', '<c-w>k', default_opts)
@@ -38,6 +38,7 @@ map('n', 'gO', ':cclo<CR>', default_opts)
 
 map('n', 'gO', ':cclo<CR>', default_opts)
 
+map('n', '<m-o>', '<c-w>o', default_opts)
 
 map('n', '<leader>fe', [[<cmd>lua require('settings.functions').syntax_fold_expr()<CR>]], default_opts)
 map('n', '<leader>te', [[<cmd>tabedit %<CR>]], default_opts)
