@@ -367,7 +367,7 @@ _G.packer_plugins = {
     url = "https://github.com/tpope/vim-surround"
   },
   ["vim-system-copy"] = {
-    config = { "\27LJ\1\2‹\1\0\0\2\0\4\0\t4\0\0\0007\0\1\0%\1\2\0>\0\2\0014\0\0\0007\0\1\0%\1\3\0>\0\2\1G\0\1\0001let g:system_copy#paste_command = 'wl-paste'/let g:system_copy#copy_command = 'wl-copy'\bcmd\bvim\0" },
+    config = { "\27LJ\1\2Ž\1\0\0\2\0\4\0\t4\0\0\0007\0\1\0%\1\2\0>\0\2\0014\0\0\0007\0\1\0%\1\3\0>\0\2\1G\0\1\0004let g:system_copy#paste_command = 'wl-paste -n'/let g:system_copy#copy_command = 'wl-copy'\bcmd\bvim\0" },
     loaded = true,
     path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/vim-system-copy",
     url = "https://github.com/christoomey/vim-system-copy"
@@ -532,7 +532,7 @@ try_loadstring("\27LJ\1\2å\1\0\0\a\0\f\0\0244\0\0\0%\1\1\0>\0\2\0027\0\2\0002\1\
 time([[Config for bufferline.nvim]], false)
 -- Config for: vim-system-copy
 time([[Config for vim-system-copy]], true)
-try_loadstring("\27LJ\1\2‹\1\0\0\2\0\4\0\t4\0\0\0007\0\1\0%\1\2\0>\0\2\0014\0\0\0007\0\1\0%\1\3\0>\0\2\1G\0\1\0001let g:system_copy#paste_command = 'wl-paste'/let g:system_copy#copy_command = 'wl-copy'\bcmd\bvim\0", "config", "vim-system-copy")
+try_loadstring("\27LJ\1\2Ž\1\0\0\2\0\4\0\t4\0\0\0007\0\1\0%\1\2\0>\0\2\0014\0\0\0007\0\1\0%\1\3\0>\0\2\1G\0\1\0004let g:system_copy#paste_command = 'wl-paste -n'/let g:system_copy#copy_command = 'wl-copy'\bcmd\bvim\0", "config", "vim-system-copy")
 time([[Config for vim-system-copy]], false)
 -- Config for: nvim-lspconfig
 time([[Config for nvim-lspconfig]], true)
