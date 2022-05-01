@@ -12,7 +12,9 @@ local function init(use)
 		config = function()
 		end,
 	})
-	use 'tommcdo/vim-exchange'
+	use('tommcdo/vim-exchange')
+
+	use('NLKNguyen/copy-cut-paste.vim')
 
 
 end

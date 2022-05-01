@@ -29,7 +29,6 @@ local function init(use)
 		end
 	})
 
-	use('NLKNguyen/copy-cut-paste.vim')
 
 	use 'chaoren/vim-wordmotion'
 	use({ 
