@@ -52,7 +52,7 @@ local function init(use)
 	})
 
 	use({ 
-		'christoomey/vim-tmux-navigator' ,
+		'christoomey/vim-tmux-navigator',
 	
 		config = function()
 			vim.cmd[[let g:tmux_navigator_no_mappings = 1]]
