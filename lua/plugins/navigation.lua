@@ -30,6 +30,7 @@ local function init(use)
 	})
 
 	use('NLKNguyen/copy-cut-paste.vim')
+
 	use 'chaoren/vim-wordmotion'
 	use({ 
 		'justinmk/vim-sneak' ,
@@ -48,6 +49,20 @@ local function init(use)
 			local map = require('settings.utils').map
 			map('n', '<leader>ma', [[<cmd>lua require('telescope').extensions.vim_bookmarks.all()<cr>]], { silent = true})
 			map('n', '<leader>mf', [[<cmd>lua require('telescope').extensions.vim_bookmarks.current_file()<cr>]], { silent = true})
+		end,
+	})
+
+	use({ 
+		'christoomey/vim-tmux-navigator' ,
+	
+		config = function()
+			vim.cmd[[let g:tmux_navigator_no_mappings = 1]]
+			vim.cmd[[let g:tmux_navigator_disable_when_zoomed = 1]]
+
+			vim.cmd[[nnoremap <silent> <m-h> :TmuxNavigateLeft<cr>]]
+			vim.cmd[[nnoremap <silent> <m-j> :TmuxNavigateDown<cr>]]
+			vim.cmd[[nnoremap <silent> <m-k> :TmuxNavigateUp<cr>]]
+			vim.cmd[[nnoremap <silent> <m-l> :TmuxNavigateRight<cr>]]
 		end,
 	})
 end
