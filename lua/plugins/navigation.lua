@@ -29,13 +29,7 @@ local function init(use)
 		end
 	})
 
-	use({
-		'christoomey/vim-system-copy', 
-		config = function()
-			vim.cmd [[let g:system_copy#copy_command = 'wl-copy']]
-			vim.cmd [[let g:system_copy#paste_command = 'wl-paste -n']]
-		end
-	})
+	use('NLKNguyen/copy-cut-paste.vim')
 	use 'chaoren/vim-wordmotion'
 	use({ 
 		'justinmk/vim-sneak' ,

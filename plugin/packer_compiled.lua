@@ -111,6 +111,11 @@ _G.packer_plugins = {
     path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/cmp-vsnip",
     url = "https://github.com/hrsh7th/cmp-vsnip"
   },
+  ["copy-cut-paste.vim"] = {
+    loaded = true,
+    path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/copy-cut-paste.vim",
+    url = "https://github.com/NLKNguyen/copy-cut-paste.vim"
+  },
   ["diffview.nvim"] = {
     config = { "require('settings.plugins.diffview')" },
     loaded = true,
@@ -366,12 +371,6 @@ _G.packer_plugins = {
     path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/vim-surround",
     url = "https://github.com/tpope/vim-surround"
   },
-  ["vim-system-copy"] = {
-    config = { "\27LJ\1\2Ž\1\0\0\2\0\4\0\t4\0\0\0007\0\1\0%\1\2\0>\0\2\0014\0\0\0007\0\1\0%\1\3\0>\0\2\1G\0\1\0004let g:system_copy#paste_command = 'wl-paste -n'/let g:system_copy#copy_command = 'wl-copy'\bcmd\bvim\0" },
-    loaded = true,
-    path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/vim-system-copy",
-    url = "https://github.com/christoomey/vim-system-copy"
-  },
   ["vim-unimpaired"] = {
     loaded = true,
     path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/vim-unimpaired",
@@ -462,10 +461,10 @@ time([[packadd for nvim-lightbulb]], false)
 time([[Config for nvim-treesitter]], true)
 require('settings.plugins.treesitter')
 time([[Config for nvim-treesitter]], false)
--- Config for: vim-highlighter
-time([[Config for vim-highlighter]], true)
-try_loadstring("\27LJ\1\2\v\0\0\1\0\0\0\1G\0\1\0\0", "config", "vim-highlighter")
-time([[Config for vim-highlighter]], false)
+-- Config for: diffview.nvim
+time([[Config for diffview.nvim]], true)
+require('settings.plugins.diffview')
+time([[Config for diffview.nvim]], false)
 -- Config for: zk
 time([[Config for zk]], true)
 require("zk").setup(
@@ -498,26 +497,22 @@ time([[Config for vim-sneak]], false)
 time([[Config for fern.vim]], true)
 try_loadstring("\27LJ\1\2x\0\0\6\0\a\0\v4\0\0\0%\1\1\0>\0\2\0027\0\2\0\16\1\0\0%\2\3\0%\3\4\0%\4\5\0003\5\6\0>\1\5\1G\0\1\0\1\0\1\vsilent\2\30<cmd>Fern . -reveal=%<CR>\ag\\\6n\bmap\19settings.utils\frequire\0", "config", "fern.vim")
 time([[Config for fern.vim]], false)
--- Config for: telescope-vim-bookmarks.nvim
-time([[Config for telescope-vim-bookmarks.nvim]], true)
-try_loadstring("\27LJ\1\2Ÿ\2\0\0\6\0\n\0\0174\0\0\0%\1\1\0>\0\2\0027\0\2\0\16\1\0\0%\2\3\0%\3\4\0%\4\5\0003\5\6\0>\1\5\1\16\1\0\0%\2\3\0%\3\a\0%\4\b\0003\5\t\0>\1\5\1G\0\1\0\1\0\1\vsilent\2N<cmd>lua require('telescope').extensions.vim_bookmarks.current_file()<cr>\15<leader>mf\1\0\1\vsilent\2E<cmd>lua require('telescope').extensions.vim_bookmarks.all()<cr>\15<leader>ma\6n\bmap\19settings.utils\frequire\0", "config", "telescope-vim-bookmarks.nvim")
-time([[Config for telescope-vim-bookmarks.nvim]], false)
 -- Config for: lsp-status.nvim
 time([[Config for lsp-status.nvim]], true)
 require('settings.plugins.lsp-status')
 time([[Config for lsp-status.nvim]], false)
+-- Config for: telescope-vim-bookmarks.nvim
+time([[Config for telescope-vim-bookmarks.nvim]], true)
+try_loadstring("\27LJ\1\2Ÿ\2\0\0\6\0\n\0\0174\0\0\0%\1\1\0>\0\2\0027\0\2\0\16\1\0\0%\2\3\0%\3\4\0%\4\5\0003\5\6\0>\1\5\1\16\1\0\0%\2\3\0%\3\a\0%\4\b\0003\5\t\0>\1\5\1G\0\1\0\1\0\1\vsilent\2N<cmd>lua require('telescope').extensions.vim_bookmarks.current_file()<cr>\15<leader>mf\1\0\1\vsilent\2E<cmd>lua require('telescope').extensions.vim_bookmarks.all()<cr>\15<leader>ma\6n\bmap\19settings.utils\frequire\0", "config", "telescope-vim-bookmarks.nvim")
+time([[Config for telescope-vim-bookmarks.nvim]], false)
+-- Config for: vim-highlighter
+time([[Config for vim-highlighter]], true)
+try_loadstring("\27LJ\1\2\v\0\0\1\0\0\0\1G\0\1\0\0", "config", "vim-highlighter")
+time([[Config for vim-highlighter]], false)
 -- Config for: vim-fugitive
 time([[Config for vim-fugitive]], true)
 try_loadstring("\27LJ\1\2v\0\0\a\0\a\0\f4\0\0\0%\1\1\0>\0\2\0027\0\2\0003\1\3\0\16\2\0\0%\3\4\0%\4\5\0%\5\6\0\16\6\1\0>\2\5\1G\0\1\0\24<cmd>Git commit<CR>\agC\6n\1\0\1\vsilent\2\bmap\19settings.utils\frequire\0", "config", "vim-fugitive")
 time([[Config for vim-fugitive]], false)
--- Config for: diffview.nvim
-time([[Config for diffview.nvim]], true)
-require('settings.plugins.diffview')
-time([[Config for diffview.nvim]], false)
--- Config for: nvim-comment
-time([[Config for nvim-comment]], true)
-try_loadstring("\27LJ\1\2:\0\0\2\0\3\0\0064\0\0\0%\1\1\0>\0\2\0027\0\2\0>\0\1\1G\0\1\0\nsetup\17nvim_comment\frequire\0", "config", "nvim-comment")
-time([[Config for nvim-comment]], false)
 -- Config for: gitsigns.nvim
 time([[Config for gitsigns.nvim]], true)
 try_loadstring("\27LJ\1\0029\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\30settings.plugins.gitsigns\frequire\0", "config", "gitsigns.nvim")
@@ -530,14 +525,14 @@ time([[Config for vim-edgemotion]], false)
 time([[Config for bufferline.nvim]], true)
 try_loadstring("\27LJ\1\2å\1\0\0\a\0\f\0\0244\0\0\0%\1\1\0>\0\2\0027\0\2\0002\1\0\0>\0\2\0014\0\0\0%\1\3\0>\0\2\0027\0\4\0003\1\5\0\16\2\0\0%\3\6\0%\4\a\0%\5\b\0004\6\t\0>\2\5\1\16\2\0\0%\3\6\0%\4\n\0%\5\v\0004\6\t\0>\2\5\1G\0\1\0\29:BufferLineCyclePrev<CR>\agB\17default_opts\29:BufferLineCycleNext<CR>\agb\6n\1\0\1\vsilent\2\bmap\19settings.utils\nsetup\15bufferline\frequire\0", "config", "bufferline.nvim")
 time([[Config for bufferline.nvim]], false)
--- Config for: vim-system-copy
-time([[Config for vim-system-copy]], true)
-try_loadstring("\27LJ\1\2Ž\1\0\0\2\0\4\0\t4\0\0\0007\0\1\0%\1\2\0>\0\2\0014\0\0\0007\0\1\0%\1\3\0>\0\2\1G\0\1\0004let g:system_copy#paste_command = 'wl-paste -n'/let g:system_copy#copy_command = 'wl-copy'\bcmd\bvim\0", "config", "vim-system-copy")
-time([[Config for vim-system-copy]], false)
 -- Config for: nvim-lspconfig
 time([[Config for nvim-lspconfig]], true)
 require('settings.plugins.lspconfig')
 time([[Config for nvim-lspconfig]], false)
+-- Config for: nvim-comment
+time([[Config for nvim-comment]], true)
+try_loadstring("\27LJ\1\2:\0\0\2\0\3\0\0064\0\0\0%\1\1\0>\0\2\0027\0\2\0>\0\1\1G\0\1\0\nsetup\17nvim_comment\frequire\0", "config", "nvim-comment")
+time([[Config for nvim-comment]], false)
 -- Config for: vim-markdown
 time([[Config for vim-markdown]], true)
 try_loadstring("\27LJ\1\2p\0\0\2\0\4\0\t4\0\0\0007\0\1\0'\1\1\0:\1\2\0004\0\0\0007\0\1\0'\1\6\0:\1\3\0G\0\1\0\31vim_markdown_folding_level(vim_markdown_folding_style_pythonic\6g\bvim\0", "config", "vim-markdown")
@@ -546,8 +541,8 @@ time([[Config for vim-markdown]], false)
 -- Command lazy-loads
 time([[Defining lazy-load commands]], true)
 pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file Telescope lua require("packer.load")({'telescope.nvim'}, { cmd = "Telescope", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
-pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file EnMasse lua require("packer.load")({'vim-enmasse'}, { cmd = "EnMasse", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
 pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file Sayonara lua require("packer.load")({'vim-sayonara'}, { cmd = "Sayonara", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
+pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file EnMasse lua require("packer.load")({'vim-enmasse'}, { cmd = "EnMasse", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
 time([[Defining lazy-load commands]], false)
 
 vim.cmd [[augroup packer_load_aucmds]]
