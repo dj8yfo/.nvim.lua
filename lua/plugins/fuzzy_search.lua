@@ -4,7 +4,7 @@ local function init(use)
     use({
 	{
 	    'nvim-telescope/telescope.nvim',
-		commit = '92019d5053674676576b021904935d101b059fd5',
+		-- commit = '92019d5053674676576b021904935d101b059fd5',
 	    requires = {
 		'nvim-lua/popup.nvim',
 		'nvim-lua/plenary.nvim',
