@@ -347,6 +347,11 @@ _G.packer_plugins = {
     path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/vim-markdown",
     url = "https://github.com/preservim/vim-markdown"
   },
+  ["vim-monokai-tasty"] = {
+    loaded = true,
+    path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/vim-monokai-tasty",
+    url = "https://github.com/patstockwell/vim-monokai-tasty"
+  },
   ["vim-sayonara"] = {
     commands = { "Sayonara" },
     loaded = false,
@@ -481,10 +486,10 @@ time([[Config for nvim-treesitter]], false)
 time([[Config for vim-slime]], true)
 try_loadstring('\27LJ\1\2Í\3\0\0\2\0\n\0!4\0\0\0007\0\1\0%\1\2\0>\0\2\0014\0\0\0007\0\1\0%\1\3\0>\0\2\0014\0\0\0007\0\1\0%\1\4\0>\0\2\0014\0\0\0007\0\1\0%\1\5\0>\0\2\0014\0\0\0007\0\1\0%\1\6\0>\0\2\0014\0\0\0007\0\1\0%\1\a\0>\0\2\0014\0\0\0007\0\1\0%\1\b\0>\0\2\0014\0\0\0007\0\1\0%\1\t\0>\0\2\1G\0\1\0#nmap <M-w> <Plug>SlimeLineSend%nmap <M-;> <Plug>SlimeMotionSend%xmap <M-;> <Plug>SlimeRegionSend let g:slime_no_mappings = 1#let g:slime_python_ipython = 1Xlet g:slime_default_config = {"socket_name": "default", "target_pane": "{down-of}"}2let g:slime_paste_file = "$HOME/.slime_paste" let g:slime_target = "tmux"\bcmd\bvim\0', "config", "vim-slime")
 time([[Config for vim-slime]], false)
--- Config for: diffview.nvim
-time([[Config for diffview.nvim]], true)
-require('settings.plugins.diffview')
-time([[Config for diffview.nvim]], false)
+-- Config for: vim-highlighter
+time([[Config for vim-highlighter]], true)
+try_loadstring("\27LJ\1\2\v\0\0\1\0\0\0\1G\0\1\0\0", "config", "vim-highlighter")
+time([[Config for vim-highlighter]], false)
 -- Config for: zk
 time([[Config for zk]], true)
 require("zk").setup(
@@ -513,22 +518,22 @@ time([[Config for packer.nvim]], false)
 time([[Config for vim-sneak]], true)
 try_loadstring("\27LJ\1\2Š\1\0\0\2\0\5\0\r4\0\0\0007\0\1\0%\1\2\0>\0\2\0014\0\0\0007\0\1\0%\1\3\0>\0\2\0014\0\0\0007\0\1\0%\1\4\0>\0\2\1G\0\1\0\31let g:sneak#use_ic_scs = 1\26xmap gs <Plug>Sneak_S\26nmap gs <Plug>Sneak_S\bcmd\bvim\0", "config", "vim-sneak")
 time([[Config for vim-sneak]], false)
--- Config for: telescope-vim-bookmarks.nvim
-time([[Config for telescope-vim-bookmarks.nvim]], true)
-try_loadstring("\27LJ\1\2Ÿ\2\0\0\6\0\n\0\0174\0\0\0%\1\1\0>\0\2\0027\0\2\0\16\1\0\0%\2\3\0%\3\4\0%\4\5\0003\5\6\0>\1\5\1\16\1\0\0%\2\3\0%\3\a\0%\4\b\0003\5\t\0>\1\5\1G\0\1\0\1\0\1\vsilent\2N<cmd>lua require('telescope').extensions.vim_bookmarks.current_file()<cr>\15<leader>mf\1\0\1\vsilent\2E<cmd>lua require('telescope').extensions.vim_bookmarks.all()<cr>\15<leader>ma\6n\bmap\19settings.utils\frequire\0", "config", "telescope-vim-bookmarks.nvim")
-time([[Config for telescope-vim-bookmarks.nvim]], false)
--- Config for: lsp-status.nvim
-time([[Config for lsp-status.nvim]], true)
-require('settings.plugins.lsp-status')
-time([[Config for lsp-status.nvim]], false)
--- Config for: vim-fugitive
-time([[Config for vim-fugitive]], true)
-try_loadstring("\27LJ\1\2v\0\0\a\0\a\0\f4\0\0\0%\1\1\0>\0\2\0027\0\2\0003\1\3\0\16\2\0\0%\3\4\0%\4\5\0%\5\6\0\16\6\1\0>\2\5\1G\0\1\0\24<cmd>Git commit<CR>\agC\6n\1\0\1\vsilent\2\bmap\19settings.utils\frequire\0", "config", "vim-fugitive")
-time([[Config for vim-fugitive]], false)
 -- Config for: fern.vim
 time([[Config for fern.vim]], true)
 try_loadstring("\27LJ\1\2x\0\0\6\0\a\0\v4\0\0\0%\1\1\0>\0\2\0027\0\2\0\16\1\0\0%\2\3\0%\3\4\0%\4\5\0003\5\6\0>\1\5\1G\0\1\0\1\0\1\vsilent\2\30<cmd>Fern . -reveal=%<CR>\ag\\\6n\bmap\19settings.utils\frequire\0", "config", "fern.vim")
 time([[Config for fern.vim]], false)
+-- Config for: lsp-status.nvim
+time([[Config for lsp-status.nvim]], true)
+require('settings.plugins.lsp-status')
+time([[Config for lsp-status.nvim]], false)
+-- Config for: telescope-vim-bookmarks.nvim
+time([[Config for telescope-vim-bookmarks.nvim]], true)
+try_loadstring("\27LJ\1\2Ÿ\2\0\0\6\0\n\0\0174\0\0\0%\1\1\0>\0\2\0027\0\2\0\16\1\0\0%\2\3\0%\3\4\0%\4\5\0003\5\6\0>\1\5\1\16\1\0\0%\2\3\0%\3\a\0%\4\b\0003\5\t\0>\1\5\1G\0\1\0\1\0\1\vsilent\2N<cmd>lua require('telescope').extensions.vim_bookmarks.current_file()<cr>\15<leader>mf\1\0\1\vsilent\2E<cmd>lua require('telescope').extensions.vim_bookmarks.all()<cr>\15<leader>ma\6n\bmap\19settings.utils\frequire\0", "config", "telescope-vim-bookmarks.nvim")
+time([[Config for telescope-vim-bookmarks.nvim]], false)
+-- Config for: vim-fugitive
+time([[Config for vim-fugitive]], true)
+try_loadstring("\27LJ\1\2v\0\0\a\0\a\0\f4\0\0\0%\1\1\0>\0\2\0027\0\2\0003\1\3\0\16\2\0\0%\3\4\0%\4\5\0%\5\6\0\16\6\1\0>\2\5\1G\0\1\0\24<cmd>Git commit<CR>\agC\6n\1\0\1\vsilent\2\bmap\19settings.utils\frequire\0", "config", "vim-fugitive")
+time([[Config for vim-fugitive]], false)
 -- Config for: nvim-comment
 time([[Config for nvim-comment]], true)
 try_loadstring("\27LJ\1\2:\0\0\2\0\3\0\0064\0\0\0%\1\1\0>\0\2\0027\0\2\0>\0\1\1G\0\1\0\nsetup\17nvim_comment\frequire\0", "config", "nvim-comment")
@@ -537,22 +542,22 @@ time([[Config for nvim-comment]], false)
 time([[Config for gitsigns.nvim]], true)
 try_loadstring("\27LJ\1\0029\0\0\2\0\2\0\0044\0\0\0%\1\1\0>\0\2\1G\0\1\0\30settings.plugins.gitsigns\frequire\0", "config", "gitsigns.nvim")
 time([[Config for gitsigns.nvim]], false)
--- Config for: nvim-lspconfig
-time([[Config for nvim-lspconfig]], true)
-require('settings.plugins.lspconfig')
-time([[Config for nvim-lspconfig]], false)
--- Config for: bufferline.nvim
-time([[Config for bufferline.nvim]], true)
-try_loadstring("\27LJ\1\2å\1\0\0\a\0\f\0\0244\0\0\0%\1\1\0>\0\2\0027\0\2\0002\1\0\0>\0\2\0014\0\0\0%\1\3\0>\0\2\0027\0\4\0003\1\5\0\16\2\0\0%\3\6\0%\4\a\0%\5\b\0004\6\t\0>\2\5\1\16\2\0\0%\3\6\0%\4\n\0%\5\v\0004\6\t\0>\2\5\1G\0\1\0\29:BufferLineCyclePrev<CR>\agB\17default_opts\29:BufferLineCycleNext<CR>\agb\6n\1\0\1\vsilent\2\bmap\19settings.utils\nsetup\15bufferline\frequire\0", "config", "bufferline.nvim")
-time([[Config for bufferline.nvim]], false)
 -- Config for: vim-edgemotion
 time([[Config for vim-edgemotion]], true)
 try_loadstring("\27LJ\1\2«\1\0\0\4\0\b\0\0144\0\0\0%\1\1\0>\0\2\0027\0\2\0003\1\3\0004\2\4\0007\2\5\2%\3\6\0>\2\2\0014\2\4\0007\2\5\2%\3\a\0>\2\2\1G\0\1\0#map <C-k> <Plug>(edgemotion-k)#map <C-j> <Plug>(edgemotion-j)\bcmd\bvim\1\0\1\vsilent\2\bmap\19settings.utils\frequire\0", "config", "vim-edgemotion")
 time([[Config for vim-edgemotion]], false)
--- Config for: vim-highlighter
-time([[Config for vim-highlighter]], true)
-try_loadstring("\27LJ\1\2\v\0\0\1\0\0\0\1G\0\1\0\0", "config", "vim-highlighter")
-time([[Config for vim-highlighter]], false)
+-- Config for: bufferline.nvim
+time([[Config for bufferline.nvim]], true)
+try_loadstring("\27LJ\1\2å\1\0\0\a\0\f\0\0244\0\0\0%\1\1\0>\0\2\0027\0\2\0002\1\0\0>\0\2\0014\0\0\0%\1\3\0>\0\2\0027\0\4\0003\1\5\0\16\2\0\0%\3\6\0%\4\a\0%\5\b\0004\6\t\0>\2\5\1\16\2\0\0%\3\6\0%\4\n\0%\5\v\0004\6\t\0>\2\5\1G\0\1\0\29:BufferLineCyclePrev<CR>\agB\17default_opts\29:BufferLineCycleNext<CR>\agb\6n\1\0\1\vsilent\2\bmap\19settings.utils\nsetup\15bufferline\frequire\0", "config", "bufferline.nvim")
+time([[Config for bufferline.nvim]], false)
+-- Config for: nvim-lspconfig
+time([[Config for nvim-lspconfig]], true)
+require('settings.plugins.lspconfig')
+time([[Config for nvim-lspconfig]], false)
+-- Config for: diffview.nvim
+time([[Config for diffview.nvim]], true)
+require('settings.plugins.diffview')
+time([[Config for diffview.nvim]], false)
 -- Config for: vim-markdown
 time([[Config for vim-markdown]], true)
 try_loadstring("\27LJ\1\2p\0\0\2\0\4\0\t4\0\0\0007\0\1\0'\1\1\0:\1\2\0004\0\0\0007\0\1\0'\1\6\0:\1\3\0G\0\1\0\31vim_markdown_folding_level(vim_markdown_folding_style_pythonic\6g\bvim\0", "config", "vim-markdown")
