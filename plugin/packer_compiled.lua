@@ -458,7 +458,7 @@ vim.cmd [[packadd vim-grep-operator]]
 time([[packadd for vim-grep-operator]], false)
 -- Setup for: vim-sayonara
 time([[Setup for vim-sayonara]], true)
-try_loadstring("\27LJ\1\2s\0\0\6\0\a\0\v4\0\0\0%\1\1\0>\0\2\0027\0\2\0\16\1\0\0%\2\3\0%\3\4\0%\4\5\0003\5\6\0>\1\5\1G\0\1\0\1\0\1\vsilent\2\22<cmd>Sayonara<CR>\n<c-q>\6n\bmap\19settings.utils\frequire\0", "setup", "vim-sayonara")
+try_loadstring("\27LJ\1\2s\0\0\6\0\a\0\v4\0\0\0%\1\1\0>\0\2\0027\0\2\0\16\1\0\0%\2\3\0%\3\4\0%\4\5\0003\5\6\0>\1\5\1G\0\1\0\1\0\1\vsilent\2\22<cmd>Sayonara<CR>\n<m-q>\6n\bmap\19settings.utils\frequire\0", "setup", "vim-sayonara")
 time([[Setup for vim-sayonara]], false)
 -- Setup for: asyncrun.vim
 time([[Setup for asyncrun.vim]], true)
