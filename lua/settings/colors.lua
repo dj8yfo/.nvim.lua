@@ -2,7 +2,7 @@ local opt = vim.opt
 
 opt.termguicolors = true
 
-vim.cmd [[color vim-monokai-tasty]]
+vim.cmd [[color elf_monokai_pro]]
 
 
 vim.cmd [[hi Search guibg=black guifg=chartreuse]]
