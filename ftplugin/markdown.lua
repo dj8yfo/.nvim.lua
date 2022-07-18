@@ -18,9 +18,10 @@ if require("zk.util").notebook_root(vim.fn.expand('%:p')) ~= nil then
 	map(
 		"v", 
 		"<leader>znt", 
-		[[:'<,'>ZkNewFromTitleSelection { dir = vim.fn.expand('%:p:h') }<CR>]], 
+		[[:'<,'>ZkNewFromTitleSelection { dir = '/home/jerryminion/Documents/code/tasking/zettelkasten' }<CR>]], 
 		opts
 	)
+
 	-- Create a new note in the same directory as the current buffer, using the current selection for note content and asking for its title.
 	map(
 		"v", "<leader>znc", 
