@@ -20,6 +20,10 @@ function M.on_attach_kebindings(bufnr)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>wa', '<cmd>lua vim.lsp.buf.add_workspace_folder()<CR>', opts)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>wr', '<cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>', opts)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>wl', '<cmd>lua print(vim.inspect(vim.lsp.buf.list_workspace_folders()))<CR>', opts)
+
+  vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>ws', '<cmd>lua require"telescope.builtin".lsp_workspace_symbols({ query = "p" })<CR>', opts)
+  vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>ds', '<cmd>lua require"telescope.builtin".lsp_document_symbols()<CR>', opts)
+
   vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>D', '<cmd>lua vim.lsp.buf.type_definition()<CR>', opts)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>', opts)
