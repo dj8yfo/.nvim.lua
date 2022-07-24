@@ -414,7 +414,7 @@ _G.packer_plugins = {
     url = "https://github.com/chaoren/vim-wordmotion"
   },
   ["zen-mode.nvim"] = {
-    config = { "\27LJ\1\2:\0\0\2\0\3\0\a4\0\0\0%\1\1\0>\0\2\0027\0\2\0002\1\0\0>\0\2\1G\0\1\0\nsetup\rzen-mode\frequire\0" },
+    config = { "\27LJ\1\2g\0\0\2\0\6\0\v4\0\0\0%\1\1\0>\0\2\0027\0\2\0002\1\0\0>\0\2\0014\0\3\0007\0\4\0%\1\5\0>\0\2\1G\0\1\0\25nmap gz :ZenMode<CR>\bcmd\bvim\nsetup\rzen-mode\frequire\0" },
     loaded = true,
     path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/zen-mode.nvim",
     url = "https://github.com/folke/zen-mode.nvim"
@@ -571,7 +571,7 @@ try_loadstring("\27LJ\1\2\v\0\0\1\0\0\0\1G\0\1\0\0", "config", "vim-highlighter"
 time([[Config for vim-highlighter]], false)
 -- Config for: zen-mode.nvim
 time([[Config for zen-mode.nvim]], true)
-try_loadstring("\27LJ\1\2:\0\0\2\0\3\0\a4\0\0\0%\1\1\0>\0\2\0027\0\2\0002\1\0\0>\0\2\1G\0\1\0\nsetup\rzen-mode\frequire\0", "config", "zen-mode.nvim")
+try_loadstring("\27LJ\1\2g\0\0\2\0\6\0\v4\0\0\0%\1\1\0>\0\2\0027\0\2\0002\1\0\0>\0\2\0014\0\3\0007\0\4\0%\1\5\0>\0\2\1G\0\1\0\25nmap gz :ZenMode<CR>\bcmd\bvim\nsetup\rzen-mode\frequire\0", "config", "zen-mode.nvim")
 time([[Config for zen-mode.nvim]], false)
 -- Config for: vim-markdown
 time([[Config for vim-markdown]], true)

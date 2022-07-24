@@ -36,6 +36,8 @@ local function init(use)
 				-- or leave it empty to use the default settings
 				-- refer to the configuration section below
 			}
+
+			vim.cmd[[nmap gz :ZenMode<CR>]]
 		end
 	})
 end
