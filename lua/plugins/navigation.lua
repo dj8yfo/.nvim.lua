@@ -13,6 +13,7 @@ local function init(use)
 
 	use({
 		'lambdalisue/fern.vim', 
+		branch = 'main',
 		config = function()
 			local map = require('settings.utils').map
 			map('n', 'g\\', [[<cmd>Fern . -reveal=%<CR>]], { silent = true})
