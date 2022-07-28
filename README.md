@@ -3,7 +3,8 @@
 ```
 .
 ├── ftplugin
-│   └── markdown.lua
+│   ├── markdown.lua
+│   └── rust.vim
 ├── init.lua
 ├── lua
 │   ├── plugins
@@ -12,6 +13,7 @@
 │   │   ├── colorschemes.lua
 │   │   ├── completion.lua
 │   │   ├── fuzzy_search.lua
+│   │   ├── git.lua
 │   │   ├── init.lua
 │   │   ├── lsp.lua
 │   │   ├── navigation.lua
@@ -26,9 +28,13 @@
 │       ├── commands
 │       │   └── init.lua
 │       ├── filetype
+│       │   ├── go
+│       │   │   └── init.lua
 │       │   ├── init.lua
 │       │   └── lua
 │       │       └── init.lua
+│       ├── functions
+│       │   └── init.lua
 │       ├── init.lua
 │       ├── mappings
 │       │   └── init.lua
@@ -39,17 +45,26 @@
 │       │   │   ├── comparators.lua
 │       │   │   ├── init.lua
 │       │   │   └── mapping.lua
+│       │   ├── diffview.lua
+│       │   ├── gitsigns.lua
+│       │   ├── high_str.lua
 │       │   ├── init.lua
-│       │   ├── lspconfig.lua
+│       │   ├── langs
+│       │   ├── lspconfig
+│       │   │   ├── init.lua
+│       │   │   ├── keybindings.lua
+│       │   │   ├── langs
+│       │   │   │   └── rust-tools.lua
+│       │   │   └── servers.lua
 │       │   ├── lsp-status.lua
 │       │   ├── telescope.lua
-│       │   └── telescope_setup.lua
+│       │   ├── telescope_setup.lua
+│       │   └── treesitter.lua
 │       └── utils.lua
 ├── plugin
 │   └── packer_compiled.lua
 └── README.md
 
-12 directories, 34 files
-
+17 directories, 45 files
 ```
 

@@ -10,6 +10,10 @@ local function init(use)
 			config = [[require('settings.plugins.lsp-status')]],
 		},
 		{
+			'simrat39/rust-tools.nvim',
+			config = [[require('settings.plugins.lspconfig.langs.rust-tools')]],
+		},
+		{
 			'folke/trouble.nvim',
 			config = function()
 				local trouble = require 'trouble'
