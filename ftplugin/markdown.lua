@@ -49,7 +49,7 @@ end
 
 local function map(...) vim.api.nvim_buf_set_keymap(0, ...) end
 local opts = { noremap=true, silent=false }
-map("n", "gp", ":!ghostwriter %:p<CR>", opts)
+-- map("n", "gp", ":!ghostwriter %:p<CR>", opts)
 
 vim.o.conceallevel = 2
 vim.o.shiftwidth=2
