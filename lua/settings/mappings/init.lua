@@ -43,6 +43,11 @@ map('n', '<m-o>', '<c-w>o', default_opts)
 map('n', '<leader>fe', [[<cmd>lua require('settings.functions').syntax_fold_expr()<CR>]], default_opts)
 map('n', '<leader>te', [[<cmd>tabedit %<CR>]], default_opts)
 
+map('n', '<f1>', [[<cmd>hi Comment guifg=#111111<CR>]], default_opts)
+map('n', '<f2>', [[<cmd>hi Comment guifg=#ffffff<CR>]], default_opts)
+
+
+
 vim.cmd [[nnoremap gX *``cgn]]
 
 vim.cmd 'nnoremap gl `[v`]'
