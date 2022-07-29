@@ -44,7 +44,7 @@ map('n', '<leader>fe', [[<cmd>lua require('settings.functions').syntax_fold_expr
 map('n', '<leader>te', [[<cmd>tabedit %<CR>]], default_opts)
 
 map('n', '<f1>', [[<cmd>hi Comment guifg=#111111<CR>]], default_opts)
-map('n', '<f2>', [[<cmd>hi Comment guifg=#ffffff<CR>]], default_opts)
+map('n', '<f2>', [[<cmd>hi Comment guifg=#dddddd<CR>]], default_opts)
 
 
 
