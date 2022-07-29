@@ -46,6 +46,14 @@ map('n', '<leader>te', [[<cmd>tabedit %<CR>]], default_opts)
 map('n', '<f1>', [[<cmd>hi Comment guifg=#111111<CR>]], default_opts)
 map('n', '<f2>', [[<cmd>hi Comment guifg=#dddddd<CR>]], default_opts)
 
+map('n', 'gp', '"+p', default_opts)
+map('v', 'gp', '"+p', default_opts)
+
+map('n', 'U', '"+y', default_opts)
+map('v', 'U', '"+y', default_opts)
+
+map('n', 'gV', '<esc>ggVG', default_opts)
+map('v', 'gV', '<esc>ggVG', default_opts)
 
 
 vim.cmd [[nnoremap gX *``cgn]]
