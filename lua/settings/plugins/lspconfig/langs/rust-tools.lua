@@ -9,6 +9,9 @@ local opts = {
             parameter_hints_prefix = "",
             other_hints_prefix = "",
         },
+		inlay_hints = {
+			highlight = "LineNr",
+		},
     },
 
     -- all the opts to send to nvim-lspconfig
