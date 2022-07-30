@@ -12,6 +12,7 @@ vim.o.splitright = true
 vim.o.splitbelow = false
 
 vim.o.colorcolumn="88"
+vim.o.guifont="Source Code Pro:h8.0"
 
 
 
