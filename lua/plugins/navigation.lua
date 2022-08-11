@@ -73,9 +73,13 @@ local function init(use)
 			vim.cmd[[let g:rust_use_custom_ctags_defs = 1]]
 			vim.cmd[[let g:tagbar_highlight_method = "nearest"]]
 			vim.cmd[[let g:tagbar_autopreview = 1]]
+			vim.cmd[[let g:tagbar_width = 55]]
 
-			-- local opts = { noremap=true, silent=true }
-			-- vim.api.nvim_set_keymap('n', [[g']], '<cmd>:TagbarToggle<CR>', opts)
+
+
+			local opts = { noremap=true, silent=true }
+			vim.api.nvim_set_keymap('n', [[gk]], '<cmd>:TagbarOpen fj<CR>', opts)
+
 
 			vim.cmd[[
 				let g:tagbar_type_rust = {

@@ -6,4 +6,13 @@ function M.syntax_fold_expr()
 	
 end
 
+function M.line_tab_file() 
+	local line = vim.fn.line(".")
+
+	local variable_result= "tabedit +" .. line .. " %"
+	vim.cmd(variable_result)
+	
+end
+
 return M
+
