@@ -11,3 +11,5 @@ nnoremap <silent> gr    <cmd>lua require"telescope.builtin".lsp_references()<CR>
 nnoremap <silent> <space>ds    <cmd>lua require"telescope.builtin".lsp_document_symbols()<CR>
 
 nnoremap <silent> <space>ws    <cmd>lua require"telescope.builtin".lsp_workspace_symbols({ query = vim.fn.input("query: ") })<CR>
+
+set foldmethod=indent
