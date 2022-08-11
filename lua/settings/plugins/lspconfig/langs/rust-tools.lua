@@ -3,7 +3,7 @@ local nvim_lsp = require('lspconfig')
 local opts = {
     tools = { -- rust-tools options
         autoSetHints = true,
-        hover_with_actions = true,
+		-- rust-tools: hover_with_actions is deprecated, please setup a keybind to :RustHoverActions in on_attach instead
         inlay_hints = {
             show_parameter_hints = false,
             parameter_hints_prefix = "",
