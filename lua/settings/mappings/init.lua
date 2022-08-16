@@ -17,7 +17,7 @@ map('n', 'gW', ':set wrap!<CR>', default_opts)
 
 map('n', 'gn', 'mzi<CR><Esc>`z', default_opts)
 
-map('n', 'gr', ':e!<CR>', default_opts)
+map('n', 'gR', ':e!<CR>', default_opts)
 
 -- change workdir to parent of current buffer
 map('n', 'g.', ':cd %:h<CR>', default_opts)
