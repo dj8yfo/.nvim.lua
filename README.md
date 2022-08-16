@@ -49,7 +49,6 @@
 │       │   ├── gitsigns.lua
 │       │   ├── high_str.lua
 │       │   ├── init.lua
-│       │   ├── langs
 │       │   ├── lspconfig
 │       │   │   ├── init.lua
 │       │   │   ├── keybindings.lua
@@ -65,6 +64,6 @@
 │   └── packer_compiled.lua
 └── README.md
 
-17 directories, 45 files
+16 directories, 45 files
 ```
 
