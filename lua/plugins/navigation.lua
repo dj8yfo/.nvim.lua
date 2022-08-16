@@ -72,7 +72,6 @@ local function init(use)
 		config = function()
 			vim.cmd[[let g:rust_use_custom_ctags_defs = 1]]
 			vim.cmd[[let g:tagbar_highlight_method = "nearest"]]
-			vim.cmd[[let g:tagbar_autopreview = 1]]
 			vim.cmd[[let g:tagbar_width = 55]]
 
 
