@@ -8,5 +8,5 @@ vim.cmd [[color elf_monokai_pro]]
 vim.cmd [[hi Search guibg=black guifg=chartreuse]]
 vim.cmd [[hi Search guibg=black guifg=chartreuse]]
 vim.cmd [[hi LineNr guifg=SeaGreen]]
-opt.guifont ='JetBrains Mono Light:h12'
+opt.guifont ='JetBrains Mono Light:h11'
 
