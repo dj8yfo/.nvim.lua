@@ -15,6 +15,7 @@ nnoremap <silent> <space>ws    <cmd>lua require"telescope.builtin".lsp_workspace
 
 nnoremap <silent> <space>cp :AsyncRun tmux send-keys -t 1 'cargo-play ' % ' ' Enter<CR>
 nnoremap <silent> <space>cb :AsyncRun tmux send-keys -t 1 'cargo build ' Enter<CR>
+nnoremap <silent> <space>cr :AsyncRun tmux send-keys -t 1 'cargo run ' Enter<CR>
 
 nmap <silent> gv :sp<CR><c-]>
 nmap <silent> gh :vs<CR><c-]>
