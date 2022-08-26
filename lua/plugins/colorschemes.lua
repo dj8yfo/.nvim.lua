@@ -6,6 +6,12 @@ local function init(use)
 	use 'arzg/vim-colors-xcode'
 	use 'ghifarit53/tokyonight-vim'
 	use 'humanoid-colors/vim-humanoid-colorscheme'
+	use 'artanikin/vim-synthwave84'
+	use 'itchyny/landscape.vim' 
+	use 'veloce/vim-aldmeris'
+	use 'Zabanaa/neuromancer.vim'
+	use 'Lewiky/moonokai'
+	use 'mrtazz/molokai.vim'
 
 end
 -- }}}
