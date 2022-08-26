@@ -40,14 +40,10 @@ local function init(use)
 			vim.cmd[[xmap <c-l> <Plug>(easymotion-f)]]
 			vim.cmd[[nmap <c-h> <Plug>(easymotion-F)]]
 			vim.cmd[[xmap <c-h> <Plug>(easymotion-F)]]
-		end,
-	})
-	use({ 
-		'justinmk/vim-sneak' ,
-		config = function()
-			vim.cmd[[nmap gs <Plug>Sneak_S]]
-			vim.cmd[[xmap gs <Plug>Sneak_S]]
-			vim.cmd[[let g:sneak#use_ic_scs = 1]]
+
+			vim.cmd[[nmap s <Plug>(easymotion-overwin-f2)]]
+			vim.cmd[[xmap s <Plug>(easymotion-bd-f2)]]
+			vim.cmd[[omap s <Plug>(easymotion-bd-f2)]]
 		end,
 	})
 
