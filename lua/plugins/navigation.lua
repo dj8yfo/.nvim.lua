@@ -32,6 +32,16 @@ local function init(use)
 
 
 	use 'chaoren/vim-wordmotion'
+
+	use({ 
+		'easymotion/vim-easymotion' ,
+		config = function()
+			vim.cmd[[nmap <c-l> <Plug>(easymotion-f)]]
+			vim.cmd[[xmap <c-l> <Plug>(easymotion-f)]]
+			vim.cmd[[nmap <c-h> <Plug>(easymotion-F)]]
+			vim.cmd[[xmap <c-h> <Plug>(easymotion-F)]]
+		end,
+	})
 	use({ 
 		'justinmk/vim-sneak' ,
 		config = function()
@@ -40,6 +50,8 @@ local function init(use)
 			vim.cmd[[let g:sneak#use_ic_scs = 1]]
 		end,
 	})
+
+
 	use('thinca/vim-visualstar')
 	use('tpope/vim-unimpaired')
 	use('MattesGroeger/vim-bookmarks')
