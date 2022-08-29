@@ -31,6 +31,23 @@ local function init(use)
 		end,
 	})
 
+	use ({
+		'mbbill/undotree',
+		config = function()
+			vim.cmd[[
+				if has("persistent_undo")
+				   let target_path = expand('~/.nvim_undodir')
+
+
+					let &undodir=target_path
+					set undofile
+				endif
+
+				nnoremap <F5> :UndotreeToggle<CR>
+			]]
+		end,
+	})
+
 
 end
 -- }}}
