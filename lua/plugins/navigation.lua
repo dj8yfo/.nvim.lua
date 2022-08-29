@@ -44,6 +44,7 @@ local function init(use)
 			vim.cmd[[nmap s <Plug>(easymotion-overwin-f2)]]
 			vim.cmd[[xmap s <Plug>(easymotion-bd-f2)]]
 			vim.cmd[[omap s <Plug>(easymotion-bd-f2)]]
+			vim.g.EasyMotion_smartcase = 1 
 		end,
 	})
 
