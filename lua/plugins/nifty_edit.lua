@@ -10,6 +10,14 @@ local function init(use)
 	use ({
 		'azabiong/vim-highlighter' ,
 		config = function()
+			vim.cmd[[hi HiColor1 guifg=HotPink guibg=gray22]]
+			vim.cmd[[hi HiColor2 guifg=yellow guibg=gray22]]
+			vim.cmd[[hi HiColor3 guifg=GreenYellow guibg=gray22]]
+			vim.cmd[[hi HiColor4 guifg=LightCyan guibg=gray22]]
+			vim.cmd[[hi HiColor5 guifg=turquoise guibg=gray22]]
+			vim.cmd[[hi HiColor6 guifg=gold guibg=gray22]]
+			vim.cmd[[hi HiColor7 guifg=OliveDrab guibg=gray22]]
+			vim.cmd[[hi HiColor8 guifg=MistyRose guibg=gray22]]
 		end,
 	})
 	use('tommcdo/vim-exchange')
