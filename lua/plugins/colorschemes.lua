@@ -12,6 +12,7 @@ local function init(use)
 	use 'Zabanaa/neuromancer.vim'
 	use 'Lewiky/moonokai'
 	use 'mrtazz/molokai.vim'
+	use 'thedenisnikulin/vim-cyberpunk'
 
 end
 -- }}}

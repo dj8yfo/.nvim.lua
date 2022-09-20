@@ -2,7 +2,7 @@ local opt = vim.opt
 
 opt.termguicolors = true
 
-vim.cmd [[color molokai]]
+vim.cmd [[color cyberpunk]]
 
 
 vim.cmd [[hi Search guibg=black guifg=chartreuse]]
