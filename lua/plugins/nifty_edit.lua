@@ -56,6 +56,19 @@ local function init(use)
 		end,
 	})
 
+	use ({
+		'lfilho/cosco.vim',
+		config = function()
+			vim.cmd[[
+				augroup semicolon_files
+				autocmd!
+				autocmd FileType rust nmap <silent> <Leader>; <Plug>(cosco-commaOrSemiColon)
+				autocmd FileType rust imap <silent> <c-;> <c-o><Plug>(cosco-commaOrSemiColon)
+				augroup end
+			]]
+		end,
+	})
+
 
 end
 -- }}}
