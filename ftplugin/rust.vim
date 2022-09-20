@@ -22,5 +22,11 @@ nnoremap <silent> <space>cp :AsyncRun tmux send-keys -t 1 'cargo-play ' % ' ' En
 nnoremap <silent> <space>cb :AsyncRun tmux send-keys -t 1 'cargo build ' Enter<CR>
 nnoremap <silent> <space>cr :AsyncRun tmux send-keys -t 1 'cargo run ' Enter<CR>
 
+inoremap <space>; <C-o>A;
+nnoremap <space>; A;<esc>_
+
+inoremap <space>, <C-o>A,
+nnoremap <space>, A,<esc>_
+
 nmap <silent> gv :sp<CR><c-]>
 nmap <silent> gh :vs<CR><c-]>
