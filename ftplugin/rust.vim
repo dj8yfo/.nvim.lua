@@ -3,7 +3,7 @@ nnoremap <silent> <c-]> <cmd>lua require"telescope.builtin".lsp_definitions()<CR
 
 nnoremap <silent> gi    <cmd>lua require"telescope.builtin".lsp_implementations()<CR>
 nnoremap <silent> 1gD   <cmd>lua vim.lsp.buf.type_definition()<CR>
-nnoremap <silent> <c-,> <cmd>lua vim.lsp.buf.signature_help()<CR>
+nnoremap <silent> <c-/> <cmd>lua vim.lsp.buf.signature_help()<CR>
 
 
 nnoremap <silent> gr    <cmd>lua require"telescope.builtin".lsp_references()<CR>
@@ -22,10 +22,10 @@ nnoremap <silent> <space>cp :AsyncRun tmux send-keys -t 1 'cargo-play ' % ' ' En
 nnoremap <silent> <space>cb :AsyncRun tmux send-keys -t 1 'cargo build ' Enter<CR>
 nnoremap <silent> <space>cr :AsyncRun tmux send-keys -t 1 'cargo run ' Enter<CR>
 
-inoremap <space>; <C-o>A;
+inoremap <c-;> <C-o>A;
 nnoremap <space>; A;<esc>_
 
-inoremap <space>, <C-o>A,
+inoremap <c-,> <C-o>A,
 nnoremap <space>, A,<esc>_
 
 nmap <silent> gv :sp<CR><c-]>
