@@ -9,7 +9,7 @@ exec(
 [[
 	augroup AllFiles
 	autocmd!
-	autocmd FileType * :NoMatchParen
+	"autocmd FileType * :NoMatchParen
 	augroup end
 ]], false
 )
