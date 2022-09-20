@@ -2,7 +2,7 @@ local opt = vim.opt
 
 opt.termguicolors = true
 
-vim.cmd [[color cyberpunk]]
+vim.cmd [[color neobones]]
 
 
 vim.cmd [[hi Search guibg=black guifg=chartreuse]]
