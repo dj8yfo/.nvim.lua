@@ -20,6 +20,7 @@ local function init(use)
 		-- In Vim, compat mode is turned on as Lush only works in Neovim.
 		requires = "rktjmp/lush.nvim"
 	}
+	use 'NLKNguyen/papercolor-theme'
 
 end
 -- }}}
