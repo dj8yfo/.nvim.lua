@@ -133,6 +133,18 @@ local function init(use)
 			]]
 		end,
 	})
+
+	use({ 
+		'jeetsukumaran/vim-indentwise',
+	
+		config = function()
+			vim.cmd[[map [s <Plug>(IndentWisePreviousLesserIndent)]]
+			vim.cmd[[map ]s <Plug>(IndentWiseNextLesserIndent)]]
+
+			vim.cmd[[map [w <Plug>(IndentWisePreviousGreaterIndent)]]
+			vim.cmd[[map ]w <Plug>(IndentWiseNextGreaterIndent)]]
+		end,
+	})
 end
 -- }}}
 return { init = init }
