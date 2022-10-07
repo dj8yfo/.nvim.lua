@@ -24,7 +24,7 @@ local function init(use)
 	use({
 		'tversteeg/registers.nvim', 
 		config = function()
-			vim.g.registers_insert_mode = 0
+			vim.g.registers_insert_mode = 1
 			vim.g.registers_paste_in_normal_mode = 2
 			vim.g.registers_show = "abcdefghij*+\"-/_=#%.0123456789klmnopqrstuvwxyz:"
 		end
@@ -57,13 +57,14 @@ local function init(use)
 
 	use('thinca/vim-visualstar')
 	use('tpope/vim-unimpaired')
-	use('MattesGroeger/vim-bookmarks')
+
 	use({ 
-		'tom-anders/telescope-vim-bookmarks.nvim' ,
+		'MattesGroeger/vim-bookmarks',
+	
 		config = function()
-			local map = require('settings.utils').map
-			map('n', '<leader>ma', [[<cmd>lua require('telescope').extensions.vim_bookmarks.all()<cr>]], { silent = true})
-			map('n', '<leader>mf', [[<cmd>lua require('telescope').extensions.vim_bookmarks.current_file()<cr>]], { silent = true})
+			vim.cmd[[let g:bookmark_save_per_working_dir = 1]]
+			vim.cmd[[let g:bookmark_auto_save = 1]]
+			
 		end,
 	})
 

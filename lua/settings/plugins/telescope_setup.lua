@@ -12,4 +12,5 @@ map('n', '<m-g>', [[<cmd>Telescope live_grep theme=get_ivy<cr>]], silent)
 
 map('n', 'g?', [[<cmd>Telescope command_history theme=get_ivy<cr>]], silent)
 map('n', 'g/', [[<cmd>Telescope search_history theme=get_ivy<cr>]], silent)
-map('n', 'gm', [[<cmd>Telescope marks theme=get_ivy<cr>]], silent)
+map('n', 'gm', [[<cmd>Telescope marks theme=get_ivy layout_strategy=vertical<cr>]], silent)
+map('n', '<space>l', [[<cmd>Telescope quickfix theme=get_ivy layout_strategy=vertical<cr>]], silent)
