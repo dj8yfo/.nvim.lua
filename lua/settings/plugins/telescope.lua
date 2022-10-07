@@ -15,7 +15,6 @@ telescope.setup({
 		},
 	},
 	pickers = {
-		lsp_references = { theme = 'dropdown' },
 		lsp_code_actions = { theme = 'dropdown' },
 		lsp_definitions = { theme = 'dropdown' },
 		lsp_implementations = { theme = 'dropdown' },

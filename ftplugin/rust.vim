@@ -6,7 +6,7 @@ nnoremap <silent> 1gD   <cmd>lua vim.lsp.buf.type_definition()<CR>
 nnoremap <silent> <c-.> <cmd>lua vim.lsp.buf.signature_help()<CR>
 
 
-nnoremap <silent> gr    <cmd>lua require"telescope.builtin".lsp_references()<CR>
+nnoremap <silent> gr    <cmd>lua require"telescope.builtin".lsp_references(require('telescope.themes').get_ivy({}))<CR>
 nnoremap <silent> <space>R    <cmd>lua vim.lsp.buf.references()<CR>
 
 nnoremap <silent> <space>ds    <cmd>lua require"telescope.builtin".lsp_document_symbols()<CR>
