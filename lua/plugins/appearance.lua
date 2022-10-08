@@ -28,17 +28,16 @@ local function init(use)
 			require('lualine').setup()
 		end, 
 	})
-	use ({
-		"folke/zen-mode.nvim",
-		config = function()
-			require("zen-mode").setup {
-				-- your configuration comes here
-				-- or leave it empty to use the default settings
-				-- refer to the configuration section below
-			}
 
-			vim.cmd[[nmap gz :ZenMode<CR>]]
+	use ({
+		"jmckiern/vim-venter",
+		config = function()
+
+			vim.cmd[[nmap gz :VenterToggle<CR>]]
+			vim.cmd[[let g:venter_use_textwidth = 1]]
+
 		end
+
 	})
 end
 -- }}}
