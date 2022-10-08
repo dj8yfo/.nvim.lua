@@ -21,6 +21,8 @@ local function init(use)
 		setup = function()
 			vim.cmd[[nmap <script> <silent> g; :call ToggleLocationList()<CR>]]
 			vim.cmd[[nmap <script> <silent> go :call ToggleQuickfixList()<CR>]]
+			vim.cmd[[let g:toggle_list_no_mappings = 1]]
+
 		end,
 	})
 
