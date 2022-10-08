@@ -21,6 +21,7 @@ local function init(use)
 		requires = "rktjmp/lush.nvim"
 	}
 	use 'NLKNguyen/papercolor-theme'
+	use 'sainnhe/sonokai'
 
 end
 -- }}}
