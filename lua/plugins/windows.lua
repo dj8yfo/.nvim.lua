@@ -16,6 +16,14 @@ local function init(use)
 		'kevinhwang91/nvim-bqf', 
 		ft = 'qf',
 	})
+    use({
+		'milkypostman/vim-togglelist',
+		setup = function()
+			vim.cmd[[nmap <script> <silent> g; :call ToggleLocationList()<CR>]]
+			vim.cmd[[nmap <script> <silent> go :call ToggleQuickfixList()<CR>]]
+		end,
+	})
+
 
 	use({
 		'inside/vim-grep-operator', 
