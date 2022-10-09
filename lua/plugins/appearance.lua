@@ -35,6 +35,8 @@ local function init(use)
 
 			vim.cmd[[nmap gz :VenterToggle<CR>]]
 			vim.cmd[[let g:venter_use_textwidth = 1]]
+			vim.cmd[[let g:venter_disable_vertsplit = 1]]
+
 
 		end
 

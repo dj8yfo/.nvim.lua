@@ -4,6 +4,10 @@ telescope.setup({
 	defaults = {
 		layout_strategy = 'flex',
 		scroll_strategy = 'cycle',
+		layout_config = {
+		  vertical = { height = 50 }
+		  -- other layout configuration here
+		},
 	},
 	extensions = {
 		frecency = {},
