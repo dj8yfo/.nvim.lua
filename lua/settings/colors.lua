@@ -3,12 +3,12 @@ local opt = vim.opt
 opt.termguicolors = true
 
 vim.cmd [[let g:sonokai_style = 'espresso']]
-vim.cmd [[color sonokai]]
+vim.cmd [[color noirblaze]]
 
 
 vim.cmd [[hi Search guibg=black guifg=chartreuse]]
 vim.cmd [[hi Search guibg=black guifg=chartreuse]]
-vim.cmd [[hi LineNr guifg=#777777]]
+vim.cmd [[hi LineNr guifg=#667777]]
 
 vim.cmd [[hi ColorColumn guibg=#222222]]
 

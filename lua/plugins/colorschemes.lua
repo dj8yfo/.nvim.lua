@@ -22,6 +22,7 @@ local function init(use)
 	}
 	use 'NLKNguyen/papercolor-theme'
 	use 'sainnhe/sonokai'
+	use 'n1ghtmare/noirblaze-vim'
 
 end
 -- }}}
