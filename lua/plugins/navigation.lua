@@ -24,9 +24,11 @@ local function init(use)
 	use({
 		'tversteeg/registers.nvim', 
 		config = function()
-			vim.g.registers_insert_mode = 1
-			vim.g.registers_paste_in_normal_mode = 2
-			vim.g.registers_show = "abcdefghij*+\"-/_=#%.0123456789klmnopqrstuvwxyz:"
+			require("registers").setup(
+				{
+					show = 'abcdefghij*+\"-/_=#%.0123456789klmnopqrstuvwxyz:'
+				}
+			)
 		end
 	})
 
@@ -51,6 +53,21 @@ local function init(use)
 			vim.cmd[[xmap s <Plug>(easymotion-bd-f2)]]
 			vim.cmd[[omap s <Plug>(easymotion-bd-f2)]]
 			vim.g.EasyMotion_smartcase = 1 
+		end,
+	})
+
+	use({ 
+		'haya14busa/incsearch.vim' ,
+		config = function()
+		end,
+	})
+
+	use({ 
+		'haya14busa/incsearch-easymotion.vim' ,
+		config = function()
+			vim.cmd[[map z/ <Plug>(incsearch-easymotion-/)]]
+			vim.cmd[[map z? <Plug>(incsearch-easymotion-?)]]
+			vim.cmd[[map zg/ <Plug>(incsearch-easymotion-stay)]]
 		end,
 	})
 
