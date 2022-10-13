@@ -56,20 +56,6 @@ local function init(use)
 		end,
 	})
 
-	use({ 
-		'haya14busa/incsearch.vim' ,
-		config = function()
-		end,
-	})
-
-	use({ 
-		'haya14busa/incsearch-easymotion.vim' ,
-		config = function()
-			vim.cmd[[map z/ <Plug>(incsearch-easymotion-/)]]
-			vim.cmd[[map z? <Plug>(incsearch-easymotion-?)]]
-			vim.cmd[[map zg/ <Plug>(incsearch-easymotion-stay)]]
-		end,
-	})
 
 
 	use('thinca/vim-visualstar')
