@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["aquarium-vim"] = {
+    loaded = true,
+    path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/aquarium-vim",
+    url = "https://github.com/FrenzyExists/aquarium-vim"
+  },
   ["asyncrun.vim"] = {
     loaded = true,
     needs_bufread = false,
@@ -127,11 +132,6 @@ _G.packer_plugins = {
     path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/diffview.nvim",
     url = "https://github.com/sindrets/diffview.nvim"
   },
-  ["elf-monokai-pro"] = {
-    loaded = true,
-    path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/elf-monokai-pro",
-    url = "https://github.com/elvessousa/elf-monokai-pro"
-  },
   ["fern.vim"] = {
     config = { "\27LJ\2\nx\0\0\a\0\a\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0\18\1\0\0'\3\3\0'\4\4\0'\5\5\0005\6\6\0B\1\5\1K\0\1\0\1\0\1\vsilent\2\30<cmd>Fern . -reveal=%<CR>\ag\\\6n\bmap\19settings.utils\frequire\0" },
     loaded = true,
@@ -149,10 +149,10 @@ _G.packer_plugins = {
     path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/impatient.nvim",
     url = "https://github.com/lewis6991/impatient.nvim"
   },
-  ["landscape.vim"] = {
+  ["kuroi.vim"] = {
     loaded = true,
-    path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/landscape.vim",
-    url = "https://github.com/itchyny/landscape.vim"
+    path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/kuroi.vim",
+    url = "https://github.com/aonemd/kuroi.vim"
   },
   ["lsp-status.nvim"] = {
     config = { "require('settings.plugins.lsp-status')" },
@@ -166,36 +166,16 @@ _G.packer_plugins = {
     path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
-  ["lush.nvim"] = {
+  monovibrant = {
     loaded = true,
-    path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/lush.nvim",
-    url = "https://github.com/rktjmp/lush.nvim"
-  },
-  ["molokai.vim"] = {
-    loaded = true,
-    path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/molokai.vim",
-    url = "https://github.com/mrtazz/molokai.vim"
-  },
-  moonokai = {
-    loaded = true,
-    path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/moonokai",
-    url = "https://github.com/Lewiky/moonokai"
+    path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/monovibrant",
+    url = "https://github.com/gleich/monovibrant"
   },
   ["neoscroll.nvim"] = {
     config = { "\27LJ\2\n7\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\14neoscroll\frequire\0" },
     loaded = true,
     path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/neoscroll.nvim",
     url = "https://github.com/karb94/neoscroll.nvim"
-  },
-  ["neuromancer.vim"] = {
-    loaded = true,
-    path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/neuromancer.vim",
-    url = "https://github.com/Zabanaa/neuromancer.vim"
-  },
-  ["noirblaze-vim"] = {
-    loaded = true,
-    path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/noirblaze-vim",
-    url = "https://github.com/n1ghtmare/noirblaze-vim"
   },
   ["nvim-autopairs"] = {
     config = { "\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0" },
@@ -268,11 +248,6 @@ _G.packer_plugins = {
     path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
-  ["papercolor-theme"] = {
-    loaded = true,
-    path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/papercolor-theme",
-    url = "https://github.com/NLKNguyen/papercolor-theme"
-  },
   ["plenary.nvim"] = {
     loaded = true,
     path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/plenary.nvim",
@@ -295,15 +270,15 @@ _G.packer_plugins = {
     path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/rust-tools.nvim",
     url = "https://github.com/simrat39/rust-tools.nvim"
   },
-  sonokai = {
-    loaded = true,
-    path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/sonokai",
-    url = "https://github.com/sainnhe/sonokai"
-  },
   ["sqlite.lua"] = {
     loaded = true,
     path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/sqlite.lua",
     url = "https://github.com/tami5/sqlite.lua"
+  },
+  ["stereokai.vim"] = {
+    loaded = true,
+    path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/stereokai.vim",
+    url = "https://github.com/gummesson/stereokai.vim"
   },
   tabular = {
     loaded = true,
@@ -311,7 +286,7 @@ _G.packer_plugins = {
     url = "https://github.com/godlygeek/tabular"
   },
   tagbar = {
-    config = { "\27LJ\2\nó\t\0\0\a\0\14\0\"6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\1\0'\2\3\0B\0\2\0016\0\0\0009\0\1\0'\2\4\0B\0\2\0015\0\5\0006\1\0\0009\1\6\0019\1\a\1'\3\b\0'\4\t\0'\5\n\0\18\6\0\0B\1\5\0016\1\0\0009\1\6\0019\1\a\1'\3\b\0'\4\v\0'\5\f\0\18\6\0\0B\1\5\0016\1\0\0009\1\1\1'\3\r\0B\1\2\1K\0\1\0æ\6\t\t\t\tlet g:tagbar_type_rust = {\n\t\t\t\t  \\ 'ctagsbin' : '/usr/bin/ctags',\n\t\t\t\t  \\ 'ctagstype' : 'rust',\n\t\t\t\t  \\ 'kinds' : [\n\t\t\t\t\t  \\ 'n:modules',\n\t\t\t\t\t  \\ 's:structures:1',\n\t\t\t\t\t  \\ 'i:interfaces',\n\t\t\t\t\t  \\ 'c:implementations',\n\t\t\t\t\t  \\ 'f:functions:1',\n\t\t\t\t\t  \\ 'g:enumerations:1',\n\t\t\t\t\t  \\ 't:type aliases:1:0',\n\t\t\t\t\t  \\ 'v:constants:1:0',\n\t\t\t\t\t  \\ 'M:macros:1',\n\t\t\t\t\t  \\ 'm:fields:1:0',\n\t\t\t\t\t  \\ 'e:enum variants:1:0',\n\t\t\t\t\t  \\ 'P:methods:1',\n\t\t\t\t  \\ ],\n\t\t\t\t  \\ 'sro': '::',\n\t\t\t\t  \\ 'kind2scope' : {\n\t\t\t\t\t  \\ 'n': 'module',\n\t\t\t\t\t  \\ 's': 'struct',\n\t\t\t\t\t  \\ 'i': 'interface',\n\t\t\t\t\t  \\ 'c': 'implementation',\n\t\t\t\t\t  \\ 'f': 'function',\n\t\t\t\t\t  \\ 'g': 'enum',\n\t\t\t\t\t  \\ 't': 'typedef',\n\t\t\t\t\t  \\ 'v': 'variable',\n\t\t\t\t\t  \\ 'M': 'macro',\n\t\t\t\t\t  \\ 'm': 'field',\n\t\t\t\t\t  \\ 'e': 'enumerator',\n\t\t\t\t\t  \\ 'P': 'method',\n\t\t\t\t  \\ },\n\t\t\t\t\\ }\n\t\t\t\26<cmd>:TagbarClose<CR>\agK\28<cmd>:TagbarOpen fj<CR>\agk\6n\20nvim_set_keymap\bapi\1\0\2\fnoremap\2\vsilent\2\28let g:tagbar_width = 55.let g:tagbar_highlight_method = \"nearest\")let g:rust_use_custom_ctags_defs = 1\bcmd\bvim\0" },
+    config = { "\27LJ\2\nó\t\0\0\a\0\14\0\"6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\1\0'\2\3\0B\0\2\0016\0\0\0009\0\1\0'\2\4\0B\0\2\0015\0\5\0006\1\0\0009\1\6\0019\1\a\1'\3\b\0'\4\t\0'\5\n\0\18\6\0\0B\1\5\0016\1\0\0009\1\6\0019\1\a\1'\3\b\0'\4\v\0'\5\f\0\18\6\0\0B\1\5\0016\1\0\0009\1\1\1'\3\r\0B\1\2\1K\0\1\0æ\6\t\t\t\tlet g:tagbar_type_rust = {\n\t\t\t\t  \\ 'ctagsbin' : '/usr/bin/ctags',\n\t\t\t\t  \\ 'ctagstype' : 'rust',\n\t\t\t\t  \\ 'kinds' : [\n\t\t\t\t\t  \\ 'n:modules',\n\t\t\t\t\t  \\ 's:structures:1',\n\t\t\t\t\t  \\ 'i:interfaces',\n\t\t\t\t\t  \\ 'c:implementations',\n\t\t\t\t\t  \\ 'f:functions:1',\n\t\t\t\t\t  \\ 'g:enumerations:1',\n\t\t\t\t\t  \\ 't:type aliases:1:0',\n\t\t\t\t\t  \\ 'v:constants:1:0',\n\t\t\t\t\t  \\ 'M:macros:1',\n\t\t\t\t\t  \\ 'm:fields:1:0',\n\t\t\t\t\t  \\ 'e:enum variants:1:0',\n\t\t\t\t\t  \\ 'P:methods:1',\n\t\t\t\t  \\ ],\n\t\t\t\t  \\ 'sro': '::',\n\t\t\t\t  \\ 'kind2scope' : {\n\t\t\t\t\t  \\ 'n': 'module',\n\t\t\t\t\t  \\ 's': 'struct',\n\t\t\t\t\t  \\ 'i': 'interface',\n\t\t\t\t\t  \\ 'c': 'implementation',\n\t\t\t\t\t  \\ 'f': 'function',\n\t\t\t\t\t  \\ 'g': 'enum',\n\t\t\t\t\t  \\ 't': 'typedef',\n\t\t\t\t\t  \\ 'v': 'variable',\n\t\t\t\t\t  \\ 'M': 'macro',\n\t\t\t\t\t  \\ 'm': 'field',\n\t\t\t\t\t  \\ 'e': 'enumerator',\n\t\t\t\t\t  \\ 'P': 'method',\n\t\t\t\t  \\ },\n\t\t\t\t\\ }\n\t\t\t\26<cmd>:TagbarClose<CR>\agK\28<cmd>:TagbarOpen fj<CR>\agk\6n\20nvim_set_keymap\bapi\1\0\2\vsilent\2\fnoremap\2\28let g:tagbar_width = 55.let g:tagbar_highlight_method = \"nearest\")let g:rust_use_custom_ctags_defs = 1\bcmd\bvim\0" },
     loaded = true,
     path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/tagbar",
     url = "https://github.com/preservim/tagbar"
@@ -337,7 +312,7 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
   },
   ["telescope.nvim"] = {
-    after = { "telescope-fzf-native.nvim", "telescope-frecency.nvim" },
+    after = { "telescope-frecency.nvim", "telescope-fzf-native.nvim" },
     commands = { "Telescope" },
     config = { "require('settings.plugins.telescope')" },
     loaded = false,
@@ -345,11 +320,6 @@ _G.packer_plugins = {
     only_cond = false,
     path = "/home/jerryminion/.local/share/nvim/site/pack/packer/opt/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
-  },
-  ["tokyonight-vim"] = {
-    loaded = true,
-    path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/tokyonight-vim",
-    url = "https://github.com/ghifarit53/tokyonight-vim"
   },
   ["trouble.nvim"] = {
     config = { "\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\1\2\0B\1\1\1K\0\1\0\nsetup\ftrouble\frequire\0" },
@@ -363,31 +333,16 @@ _G.packer_plugins = {
     path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
   },
-  ["vim-aldmeris"] = {
-    loaded = true,
-    path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/vim-aldmeris",
-    url = "https://github.com/veloce/vim-aldmeris"
-  },
   ["vim-bookmarks"] = {
     config = { "\27LJ\2\nx\0\0\3\0\4\0\t6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\1\0'\2\3\0B\0\2\1K\0\1\0!let g:bookmark_auto_save = 1,let g:bookmark_save_per_working_dir = 1\bcmd\bvim\0" },
     loaded = true,
     path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/vim-bookmarks",
     url = "https://github.com/MattesGroeger/vim-bookmarks"
   },
-  ["vim-colors-xcode"] = {
-    loaded = true,
-    path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/vim-colors-xcode",
-    url = "https://github.com/arzg/vim-colors-xcode"
-  },
   ["vim-cool"] = {
     loaded = true,
     path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/vim-cool",
     url = "https://github.com/romainl/vim-cool"
-  },
-  ["vim-cyberpunk"] = {
-    loaded = true,
-    path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/vim-cyberpunk",
-    url = "https://github.com/thedenisnikulin/vim-cyberpunk"
   },
   ["vim-dirvish"] = {
     loaded = true,
@@ -414,6 +369,11 @@ _G.packer_plugins = {
     path = "/home/jerryminion/.local/share/nvim/site/pack/packer/opt/vim-enmasse",
     url = "https://github.com/Olical/vim-enmasse"
   },
+  ["vim-evokai"] = {
+    loaded = true,
+    path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/vim-evokai",
+    url = "https://github.com/amadeus/vim-evokai"
+  },
   ["vim-exchange"] = {
     loaded = true,
     path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/vim-exchange",
@@ -437,10 +397,10 @@ _G.packer_plugins = {
     path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/vim-highlighter",
     url = "https://github.com/azabiong/vim-highlighter"
   },
-  ["vim-humanoid-colorscheme"] = {
+  ["vim-horizon"] = {
     loaded = true,
-    path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/vim-humanoid-colorscheme",
-    url = "https://github.com/humanoid-colors/vim-humanoid-colorscheme"
+    path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/vim-horizon",
+    url = "https://github.com/ntk148v/vim-horizon"
   },
   ["vim-indentwise"] = {
     config = { "\27LJ\2\nÖ\2\0\0\3\0\6\0\0176\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\1\0'\2\3\0B\0\2\0016\0\0\0009\0\1\0'\2\4\0B\0\2\0016\0\0\0009\0\1\0'\2\5\0B\0\2\1K\0\1\0/map ]w <Plug>(IndentWiseNextGreaterIndent)3map [w <Plug>(IndentWisePreviousGreaterIndent).map ]s <Plug>(IndentWiseNextLesserIndent)2map [s <Plug>(IndentWisePreviousLesserIndent)\bcmd\bvim\0" },
@@ -454,10 +414,10 @@ _G.packer_plugins = {
     path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/vim-markdown",
     url = "https://github.com/preservim/vim-markdown"
   },
-  ["vim-monokai-tasty"] = {
+  ["vim-monokai2"] = {
     loaded = true,
-    path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/vim-monokai-tasty",
-    url = "https://github.com/patstockwell/vim-monokai-tasty"
+    path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/vim-monokai2",
+    url = "https://github.com/kajamite/vim-monokai2"
   },
   ["vim-sayonara"] = {
     commands = { "Sayonara" },
@@ -478,15 +438,15 @@ _G.packer_plugins = {
     path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/vim-slime",
     url = "https://github.com/jpalardy/vim-slime"
   },
+  ["vim-sublime256"] = {
+    loaded = true,
+    path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/vim-sublime256",
+    url = "https://github.com/boschni/vim-sublime256"
+  },
   ["vim-surround"] = {
     loaded = true,
     path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/vim-surround",
     url = "https://github.com/tpope/vim-surround"
-  },
-  ["vim-synthwave84"] = {
-    loaded = true,
-    path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/vim-synthwave84",
-    url = "https://github.com/artanikin/vim-synthwave84"
   },
   ["vim-tmux-navigator"] = {
     config = { "\27LJ\2\n¸\2\0\0\3\0\b\0\0256\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\1\0'\2\3\0B\0\2\0016\0\0\0009\0\1\0'\2\4\0B\0\2\0016\0\0\0009\0\1\0'\2\5\0B\0\2\0016\0\0\0009\0\1\0'\2\6\0B\0\2\0016\0\0\0009\0\1\0'\2\a\0B\0\2\1K\0\1\0003nnoremap <silent> <m-l> :TmuxNavigateRight<cr>0nnoremap <silent> <m-k> :TmuxNavigateUp<cr>2nnoremap <silent> <m-j> :TmuxNavigateDown<cr>2nnoremap <silent> <m-h> :TmuxNavigateLeft<cr>1let g:tmux_navigator_disable_when_zoomed = 1)let g:tmux_navigator_no_mappings = 1\bcmd\bvim\0" },
@@ -525,11 +485,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/vim-wordmotion",
     url = "https://github.com/chaoren/vim-wordmotion"
-  },
-  ["zenbones.nvim"] = {
-    loaded = true,
-    path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/zenbones.nvim",
-    url = "https://github.com/mcchrish/zenbones.nvim"
   },
   zk = {
     config = { 'require("zk").setup(\n\t\t{\n\t\t\tpicker = "telescope",\n\t\t}\n\t\t)' },
@@ -572,13 +527,6 @@ end
 time([[Setup for telescope.nvim]], true)
 require('settings.plugins.telescope_setup')
 time([[Setup for telescope.nvim]], false)
--- Setup for: asyncrun.vim
-time([[Setup for asyncrun.vim]], true)
-try_loadstring("\27LJ\2\nº\1\0\0\3\0\5\0\r6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\1\0'\2\3\0B\0\2\0016\0\0\0009\0\1\0'\2\4\0B\0\2\1K\0\1\0,nmap <leader>mt :AsyncRun make test<cr>,nmap <leader>ml :AsyncRun make lint<cr>-nmap <leader>mb :AsyncRun make build<cr>\bcmd\bvim\0", "setup", "asyncrun.vim")
-time([[Setup for asyncrun.vim]], false)
-time([[packadd for asyncrun.vim]], true)
-vim.cmd [[packadd asyncrun.vim]]
-time([[packadd for asyncrun.vim]], false)
 -- Setup for: vim-togglelist
 time([[Setup for vim-togglelist]], true)
 try_loadstring("\27LJ\2\n◊\1\0\0\3\0\5\0\r6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\1\0'\2\3\0B\0\2\0016\0\0\0009\0\1\0'\2\4\0B\0\2\1K\0\1\0&let g:toggle_list_no_mappings = 1=nmap <script> <silent> go :call ToggleQuickfixList()<CR>=nmap <script> <silent> g; :call ToggleLocationList()<CR>\bcmd\bvim\0", "setup", "vim-togglelist")
@@ -586,13 +534,6 @@ time([[Setup for vim-togglelist]], false)
 time([[packadd for vim-togglelist]], true)
 vim.cmd [[packadd vim-togglelist]]
 time([[packadd for vim-togglelist]], false)
--- Setup for: vim-grep-operator
-time([[Setup for vim-grep-operator]], true)
-try_loadstring("\27LJ\2\nõ\1\0\0\3\0\4\0\t6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\1\0'\2\3\0B\0\2\1K\0\1\0008vmap <leader>g <Plug>GrepOperatorOnCurrentDirectory8nmap <leader>g <Plug>GrepOperatorOnCurrentDirectory\bcmd\bvim\0", "setup", "vim-grep-operator")
-time([[Setup for vim-grep-operator]], false)
-time([[packadd for vim-grep-operator]], true)
-vim.cmd [[packadd vim-grep-operator]]
-time([[packadd for vim-grep-operator]], false)
 -- Setup for: vim-sayonara
 time([[Setup for vim-sayonara]], true)
 try_loadstring("\27LJ\2\ns\0\0\a\0\a\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0\18\1\0\0'\3\3\0'\4\4\0'\5\5\0005\6\6\0B\1\5\1K\0\1\0\1\0\1\vsilent\2\22<cmd>Sayonara<CR>\n<m-q>\6n\bmap\19settings.utils\frequire\0", "setup", "vim-sayonara")
@@ -604,38 +545,20 @@ time([[Setup for nvim-lightbulb]], false)
 time([[packadd for nvim-lightbulb]], true)
 vim.cmd [[packadd nvim-lightbulb]]
 time([[packadd for nvim-lightbulb]], false)
--- Config for: nvim-lspconfig
-time([[Config for nvim-lspconfig]], true)
-require('settings.plugins.lspconfig')
-time([[Config for nvim-lspconfig]], false)
--- Config for: lualine.nvim
-time([[Config for lualine.nvim]], true)
-try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\flualine\frequire\0", "config", "lualine.nvim")
-time([[Config for lualine.nvim]], false)
--- Config for: vim-fugitive
-time([[Config for vim-fugitive]], true)
-try_loadstring("\27LJ\2\nv\0\0\b\0\a\0\f6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\1\3\0\18\2\0\0'\4\4\0'\5\5\0'\6\6\0\18\a\1\0B\2\5\1K\0\1\0\24<cmd>Git commit<CR>\agC\6n\1\0\1\vsilent\2\bmap\19settings.utils\frequire\0", "config", "vim-fugitive")
-time([[Config for vim-fugitive]], false)
--- Config for: undotree
-time([[Config for undotree]], true)
-try_loadstring("\27LJ\2\n‹\1\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0º\1\t\t\t\tif has(\"persistent_undo\")\n\t\t\t\t   let target_path = expand('~/.nvim_undodir')\n\n\n\t\t\t\t\tlet &undodir=target_path\n\t\t\t\t\tset undofile\n\t\t\t\tendif\n\n\t\t\t\tnnoremap <F5> :UndotreeToggle<CR>\n\t\t\t\bcmd\bvim\0", "config", "undotree")
-time([[Config for undotree]], false)
--- Config for: lsp-status.nvim
-time([[Config for lsp-status.nvim]], true)
-require('settings.plugins.lsp-status')
-time([[Config for lsp-status.nvim]], false)
--- Config for: rust-tools.nvim
-time([[Config for rust-tools.nvim]], true)
-require('settings.plugins.lspconfig.langs.rust-tools')
-time([[Config for rust-tools.nvim]], false)
--- Config for: vim-slime
-time([[Config for vim-slime]], true)
-try_loadstring("\27LJ\2\nÕ\3\0\0\3\0\n\0!6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\1\0'\2\3\0B\0\2\0016\0\0\0009\0\1\0'\2\4\0B\0\2\0016\0\0\0009\0\1\0'\2\5\0B\0\2\0016\0\0\0009\0\1\0'\2\6\0B\0\2\0016\0\0\0009\0\1\0'\2\a\0B\0\2\0016\0\0\0009\0\1\0'\2\b\0B\0\2\0016\0\0\0009\0\1\0'\2\t\0B\0\2\1K\0\1\0#nmap <M-w> <Plug>SlimeLineSend%nmap <M-;> <Plug>SlimeMotionSend%xmap <M-;> <Plug>SlimeRegionSend let g:slime_no_mappings = 1#let g:slime_python_ipython = 1Xlet g:slime_default_config = {\"socket_name\": \"default\", \"target_pane\": \"{down-of}\"}2let g:slime_paste_file = \"$HOME/.slime_paste\" let g:slime_target = \"tmux\"\bcmd\bvim\0", "config", "vim-slime")
-time([[Config for vim-slime]], false)
--- Config for: registers.nvim
-time([[Config for registers.nvim]], true)
-try_loadstring("\27LJ\2\ns\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\tshow4abcdefghij*+\"-/_=#%.0123456789klmnopqrstuvwxyz:\nsetup\14registers\frequire\0", "config", "registers.nvim")
-time([[Config for registers.nvim]], false)
+-- Setup for: asyncrun.vim
+time([[Setup for asyncrun.vim]], true)
+try_loadstring("\27LJ\2\nº\1\0\0\3\0\5\0\r6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\1\0'\2\3\0B\0\2\0016\0\0\0009\0\1\0'\2\4\0B\0\2\1K\0\1\0,nmap <leader>mt :AsyncRun make test<cr>,nmap <leader>ml :AsyncRun make lint<cr>-nmap <leader>mb :AsyncRun make build<cr>\bcmd\bvim\0", "setup", "asyncrun.vim")
+time([[Setup for asyncrun.vim]], false)
+time([[packadd for asyncrun.vim]], true)
+vim.cmd [[packadd asyncrun.vim]]
+time([[packadd for asyncrun.vim]], false)
+-- Setup for: vim-grep-operator
+time([[Setup for vim-grep-operator]], true)
+try_loadstring("\27LJ\2\nõ\1\0\0\3\0\4\0\t6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\1\0'\2\3\0B\0\2\1K\0\1\0008vmap <leader>g <Plug>GrepOperatorOnCurrentDirectory8nmap <leader>g <Plug>GrepOperatorOnCurrentDirectory\bcmd\bvim\0", "setup", "vim-grep-operator")
+time([[Setup for vim-grep-operator]], false)
+time([[packadd for vim-grep-operator]], true)
+vim.cmd [[packadd vim-grep-operator]]
+time([[packadd for vim-grep-operator]], false)
 -- Config for: zk
 time([[Config for zk]], true)
 require("zk").setup(
@@ -644,38 +567,6 @@ require("zk").setup(
 		}
 		)
 time([[Config for zk]], false)
--- Config for: vim-edgemotion
-time([[Config for vim-edgemotion]], true)
-try_loadstring("\27LJ\2\n´\1\0\0\5\0\b\0\0146\0\0\0'\2\1\0B\0\2\0029\0\2\0005\1\3\0006\2\4\0009\2\5\2'\4\6\0B\2\2\0016\2\4\0009\2\5\2'\4\a\0B\2\2\1K\0\1\0#map <C-k> <Plug>(edgemotion-k)#map <C-j> <Plug>(edgemotion-j)\bcmd\bvim\1\0\1\vsilent\2\bmap\19settings.utils\frequire\0", "config", "vim-edgemotion")
-time([[Config for vim-edgemotion]], false)
--- Config for: trouble.nvim
-time([[Config for trouble.nvim]], true)
-try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\1\2\0B\1\1\1K\0\1\0\nsetup\ftrouble\frequire\0", "config", "trouble.nvim")
-time([[Config for trouble.nvim]], false)
--- Config for: gitsigns.nvim
-time([[Config for gitsigns.nvim]], true)
-try_loadstring("\27LJ\2\n9\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\30settings.plugins.gitsigns\frequire\0", "config", "gitsigns.nvim")
-time([[Config for gitsigns.nvim]], false)
--- Config for: vim-easymotion
-time([[Config for vim-easymotion]], true)
-try_loadstring("\27LJ\2\nè\3\0\0\3\0\v\0!6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\1\0'\2\3\0B\0\2\0016\0\0\0009\0\1\0'\2\4\0B\0\2\0016\0\0\0009\0\1\0'\2\5\0B\0\2\0016\0\0\0009\0\1\0'\2\6\0B\0\2\0016\0\0\0009\0\1\0'\2\a\0B\0\2\0016\0\0\0009\0\1\0'\2\b\0B\0\2\0016\0\0\0009\0\t\0)\1\1\0=\1\n\0K\0\1\0\25EasyMotion_smartcase\6g$omap s <Plug>(easymotion-bd-f2)$xmap s <Plug>(easymotion-bd-f2))nmap s <Plug>(easymotion-overwin-f2)$xmap <c-h> <Plug>(easymotion-F)$nmap <c-h> <Plug>(easymotion-F)$xmap <c-l> <Plug>(easymotion-f)$nmap <c-l> <Plug>(easymotion-f)\bcmd\bvim\0", "config", "vim-easymotion")
-time([[Config for vim-easymotion]], false)
--- Config for: tagbar
-time([[Config for tagbar]], true)
-try_loadstring("\27LJ\2\nó\t\0\0\a\0\14\0\"6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\1\0'\2\3\0B\0\2\0016\0\0\0009\0\1\0'\2\4\0B\0\2\0015\0\5\0006\1\0\0009\1\6\0019\1\a\1'\3\b\0'\4\t\0'\5\n\0\18\6\0\0B\1\5\0016\1\0\0009\1\6\0019\1\a\1'\3\b\0'\4\v\0'\5\f\0\18\6\0\0B\1\5\0016\1\0\0009\1\1\1'\3\r\0B\1\2\1K\0\1\0æ\6\t\t\t\tlet g:tagbar_type_rust = {\n\t\t\t\t  \\ 'ctagsbin' : '/usr/bin/ctags',\n\t\t\t\t  \\ 'ctagstype' : 'rust',\n\t\t\t\t  \\ 'kinds' : [\n\t\t\t\t\t  \\ 'n:modules',\n\t\t\t\t\t  \\ 's:structures:1',\n\t\t\t\t\t  \\ 'i:interfaces',\n\t\t\t\t\t  \\ 'c:implementations',\n\t\t\t\t\t  \\ 'f:functions:1',\n\t\t\t\t\t  \\ 'g:enumerations:1',\n\t\t\t\t\t  \\ 't:type aliases:1:0',\n\t\t\t\t\t  \\ 'v:constants:1:0',\n\t\t\t\t\t  \\ 'M:macros:1',\n\t\t\t\t\t  \\ 'm:fields:1:0',\n\t\t\t\t\t  \\ 'e:enum variants:1:0',\n\t\t\t\t\t  \\ 'P:methods:1',\n\t\t\t\t  \\ ],\n\t\t\t\t  \\ 'sro': '::',\n\t\t\t\t  \\ 'kind2scope' : {\n\t\t\t\t\t  \\ 'n': 'module',\n\t\t\t\t\t  \\ 's': 'struct',\n\t\t\t\t\t  \\ 'i': 'interface',\n\t\t\t\t\t  \\ 'c': 'implementation',\n\t\t\t\t\t  \\ 'f': 'function',\n\t\t\t\t\t  \\ 'g': 'enum',\n\t\t\t\t\t  \\ 't': 'typedef',\n\t\t\t\t\t  \\ 'v': 'variable',\n\t\t\t\t\t  \\ 'M': 'macro',\n\t\t\t\t\t  \\ 'm': 'field',\n\t\t\t\t\t  \\ 'e': 'enumerator',\n\t\t\t\t\t  \\ 'P': 'method',\n\t\t\t\t  \\ },\n\t\t\t\t\\ }\n\t\t\t\26<cmd>:TagbarClose<CR>\agK\28<cmd>:TagbarOpen fj<CR>\agk\6n\20nvim_set_keymap\bapi\1\0\2\fnoremap\2\vsilent\2\28let g:tagbar_width = 55.let g:tagbar_highlight_method = \"nearest\")let g:rust_use_custom_ctags_defs = 1\bcmd\bvim\0", "config", "tagbar")
-time([[Config for tagbar]], false)
--- Config for: fern.vim
-time([[Config for fern.vim]], true)
-try_loadstring("\27LJ\2\nx\0\0\a\0\a\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0\18\1\0\0'\3\3\0'\4\4\0'\5\5\0005\6\6\0B\1\5\1K\0\1\0\1\0\1\vsilent\2\30<cmd>Fern . -reveal=%<CR>\ag\\\6n\bmap\19settings.utils\frequire\0", "config", "fern.vim")
-time([[Config for fern.vim]], false)
--- Config for: nvim-treesitter
-time([[Config for nvim-treesitter]], true)
-require('settings.plugins.treesitter')
-time([[Config for nvim-treesitter]], false)
--- Config for: packer.nvim
-time([[Config for packer.nvim]], true)
-try_loadstring("\27LJ\2\nC\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0$nmap <leader>ps :PackerSync<cr>\bcmd\bvim\0", "config", "packer.nvim")
-time([[Config for packer.nvim]], false)
 -- Config for: vim-markdown
 time([[Config for vim-markdown]], true)
 try_loadstring("\27LJ\2\np\0\0\2\0\4\0\t6\0\0\0009\0\1\0)\1\1\0=\1\2\0006\0\0\0009\0\1\0)\1\6\0=\1\3\0K\0\1\0\31vim_markdown_folding_level(vim_markdown_folding_style_pythonic\6g\bvim\0", "config", "vim-markdown")
@@ -692,30 +583,94 @@ time([[Config for neoscroll.nvim]], false)
 time([[Config for vim-indentwise]], true)
 try_loadstring("\27LJ\2\nÖ\2\0\0\3\0\6\0\0176\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\1\0'\2\3\0B\0\2\0016\0\0\0009\0\1\0'\2\4\0B\0\2\0016\0\0\0009\0\1\0'\2\5\0B\0\2\1K\0\1\0/map ]w <Plug>(IndentWiseNextGreaterIndent)3map [w <Plug>(IndentWisePreviousGreaterIndent).map ]s <Plug>(IndentWiseNextLesserIndent)2map [s <Plug>(IndentWisePreviousLesserIndent)\bcmd\bvim\0", "config", "vim-indentwise")
 time([[Config for vim-indentwise]], false)
--- Config for: bufferline.nvim
-time([[Config for bufferline.nvim]], true)
-try_loadstring("\27LJ\2\nÂ\1\0\0\b\0\f\0\0246\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\0016\0\0\0'\2\3\0B\0\2\0029\0\4\0005\1\5\0\18\2\0\0'\4\6\0'\5\a\0'\6\b\0006\a\t\0B\2\5\1\18\2\0\0'\4\6\0'\5\n\0'\6\v\0006\a\t\0B\2\5\1K\0\1\0\29:BufferLineCyclePrev<CR>\agB\17default_opts\29:BufferLineCycleNext<CR>\agb\6n\1\0\1\vsilent\2\bmap\19settings.utils\nsetup\15bufferline\frequire\0", "config", "bufferline.nvim")
-time([[Config for bufferline.nvim]], false)
--- Config for: nvim-autopairs
-time([[Config for nvim-autopairs]], true)
-try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
-time([[Config for nvim-autopairs]], false)
 -- Config for: vim-bookmarks
 time([[Config for vim-bookmarks]], true)
 try_loadstring("\27LJ\2\nx\0\0\3\0\4\0\t6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\1\0'\2\3\0B\0\2\1K\0\1\0!let g:bookmark_auto_save = 1,let g:bookmark_save_per_working_dir = 1\bcmd\bvim\0", "config", "vim-bookmarks")
 time([[Config for vim-bookmarks]], false)
--- Config for: diffview.nvim
-time([[Config for diffview.nvim]], true)
-require('settings.plugins.diffview')
-time([[Config for diffview.nvim]], false)
--- Config for: nvim-comment
-time([[Config for nvim-comment]], true)
-try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\17nvim_comment\frequire\0", "config", "nvim-comment")
-time([[Config for nvim-comment]], false)
 -- Config for: vim-highlighter
 time([[Config for vim-highlighter]], true)
 try_loadstring("\27LJ\2\n”\3\0\0\3\0\n\0!6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\1\0'\2\3\0B\0\2\0016\0\0\0009\0\1\0'\2\4\0B\0\2\0016\0\0\0009\0\1\0'\2\5\0B\0\2\0016\0\0\0009\0\1\0'\2\6\0B\0\2\0016\0\0\0009\0\1\0'\2\a\0B\0\2\0016\0\0\0009\0\1\0'\2\b\0B\0\2\0016\0\0\0009\0\1\0'\2\t\0B\0\2\1K\0\1\0-hi HiColor8 guifg=MistyRose guibg=gray22-hi HiColor7 guifg=OliveDrab guibg=gray22(hi HiColor6 guifg=gold guibg=gray22-hi HiColor5 guifg=turquoise guibg=gray22-hi HiColor4 guifg=LightCyan guibg=gray22/hi HiColor3 guifg=GreenYellow guibg=gray22*hi HiColor2 guifg=yellow guibg=gray22+hi HiColor1 guifg=HotPink guibg=gray22\bcmd\bvim\0", "config", "vim-highlighter")
 time([[Config for vim-highlighter]], false)
+-- Config for: nvim-treesitter
+time([[Config for nvim-treesitter]], true)
+require('settings.plugins.treesitter')
+time([[Config for nvim-treesitter]], false)
+-- Config for: lualine.nvim
+time([[Config for lualine.nvim]], true)
+try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\flualine\frequire\0", "config", "lualine.nvim")
+time([[Config for lualine.nvim]], false)
+-- Config for: trouble.nvim
+time([[Config for trouble.nvim]], true)
+try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\1\2\0B\1\1\1K\0\1\0\nsetup\ftrouble\frequire\0", "config", "trouble.nvim")
+time([[Config for trouble.nvim]], false)
+-- Config for: lsp-status.nvim
+time([[Config for lsp-status.nvim]], true)
+require('settings.plugins.lsp-status')
+time([[Config for lsp-status.nvim]], false)
+-- Config for: vim-fugitive
+time([[Config for vim-fugitive]], true)
+try_loadstring("\27LJ\2\nv\0\0\b\0\a\0\f6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\1\3\0\18\2\0\0'\4\4\0'\5\5\0'\6\6\0\18\a\1\0B\2\5\1K\0\1\0\24<cmd>Git commit<CR>\agC\6n\1\0\1\vsilent\2\bmap\19settings.utils\frequire\0", "config", "vim-fugitive")
+time([[Config for vim-fugitive]], false)
+-- Config for: diffview.nvim
+time([[Config for diffview.nvim]], true)
+require('settings.plugins.diffview')
+time([[Config for diffview.nvim]], false)
+-- Config for: bufferline.nvim
+time([[Config for bufferline.nvim]], true)
+try_loadstring("\27LJ\2\nÂ\1\0\0\b\0\f\0\0246\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\0016\0\0\0'\2\3\0B\0\2\0029\0\4\0005\1\5\0\18\2\0\0'\4\6\0'\5\a\0'\6\b\0006\a\t\0B\2\5\1\18\2\0\0'\4\6\0'\5\n\0'\6\v\0006\a\t\0B\2\5\1K\0\1\0\29:BufferLineCyclePrev<CR>\agB\17default_opts\29:BufferLineCycleNext<CR>\agb\6n\1\0\1\vsilent\2\bmap\19settings.utils\nsetup\15bufferline\frequire\0", "config", "bufferline.nvim")
+time([[Config for bufferline.nvim]], false)
+-- Config for: nvim-comment
+time([[Config for nvim-comment]], true)
+try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\17nvim_comment\frequire\0", "config", "nvim-comment")
+time([[Config for nvim-comment]], false)
+-- Config for: undotree
+time([[Config for undotree]], true)
+try_loadstring("\27LJ\2\n‹\1\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0º\1\t\t\t\tif has(\"persistent_undo\")\n\t\t\t\t   let target_path = expand('~/.nvim_undodir')\n\n\n\t\t\t\t\tlet &undodir=target_path\n\t\t\t\t\tset undofile\n\t\t\t\tendif\n\n\t\t\t\tnnoremap <F5> :UndotreeToggle<CR>\n\t\t\t\bcmd\bvim\0", "config", "undotree")
+time([[Config for undotree]], false)
+-- Config for: gitsigns.nvim
+time([[Config for gitsigns.nvim]], true)
+try_loadstring("\27LJ\2\n9\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\30settings.plugins.gitsigns\frequire\0", "config", "gitsigns.nvim")
+time([[Config for gitsigns.nvim]], false)
+-- Config for: nvim-lspconfig
+time([[Config for nvim-lspconfig]], true)
+require('settings.plugins.lspconfig')
+time([[Config for nvim-lspconfig]], false)
+-- Config for: vim-slime
+time([[Config for vim-slime]], true)
+try_loadstring("\27LJ\2\nÕ\3\0\0\3\0\n\0!6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\1\0'\2\3\0B\0\2\0016\0\0\0009\0\1\0'\2\4\0B\0\2\0016\0\0\0009\0\1\0'\2\5\0B\0\2\0016\0\0\0009\0\1\0'\2\6\0B\0\2\0016\0\0\0009\0\1\0'\2\a\0B\0\2\0016\0\0\0009\0\1\0'\2\b\0B\0\2\0016\0\0\0009\0\1\0'\2\t\0B\0\2\1K\0\1\0#nmap <M-w> <Plug>SlimeLineSend%nmap <M-;> <Plug>SlimeMotionSend%xmap <M-;> <Plug>SlimeRegionSend let g:slime_no_mappings = 1#let g:slime_python_ipython = 1Xlet g:slime_default_config = {\"socket_name\": \"default\", \"target_pane\": \"{down-of}\"}2let g:slime_paste_file = \"$HOME/.slime_paste\" let g:slime_target = \"tmux\"\bcmd\bvim\0", "config", "vim-slime")
+time([[Config for vim-slime]], false)
+-- Config for: nvim-autopairs
+time([[Config for nvim-autopairs]], true)
+try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
+time([[Config for nvim-autopairs]], false)
+-- Config for: registers.nvim
+time([[Config for registers.nvim]], true)
+try_loadstring("\27LJ\2\ns\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\tshow4abcdefghij*+\"-/_=#%.0123456789klmnopqrstuvwxyz:\nsetup\14registers\frequire\0", "config", "registers.nvim")
+time([[Config for registers.nvim]], false)
+-- Config for: rust-tools.nvim
+time([[Config for rust-tools.nvim]], true)
+require('settings.plugins.lspconfig.langs.rust-tools')
+time([[Config for rust-tools.nvim]], false)
+-- Config for: tagbar
+time([[Config for tagbar]], true)
+try_loadstring("\27LJ\2\nó\t\0\0\a\0\14\0\"6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\1\0'\2\3\0B\0\2\0016\0\0\0009\0\1\0'\2\4\0B\0\2\0015\0\5\0006\1\0\0009\1\6\0019\1\a\1'\3\b\0'\4\t\0'\5\n\0\18\6\0\0B\1\5\0016\1\0\0009\1\6\0019\1\a\1'\3\b\0'\4\v\0'\5\f\0\18\6\0\0B\1\5\0016\1\0\0009\1\1\1'\3\r\0B\1\2\1K\0\1\0æ\6\t\t\t\tlet g:tagbar_type_rust = {\n\t\t\t\t  \\ 'ctagsbin' : '/usr/bin/ctags',\n\t\t\t\t  \\ 'ctagstype' : 'rust',\n\t\t\t\t  \\ 'kinds' : [\n\t\t\t\t\t  \\ 'n:modules',\n\t\t\t\t\t  \\ 's:structures:1',\n\t\t\t\t\t  \\ 'i:interfaces',\n\t\t\t\t\t  \\ 'c:implementations',\n\t\t\t\t\t  \\ 'f:functions:1',\n\t\t\t\t\t  \\ 'g:enumerations:1',\n\t\t\t\t\t  \\ 't:type aliases:1:0',\n\t\t\t\t\t  \\ 'v:constants:1:0',\n\t\t\t\t\t  \\ 'M:macros:1',\n\t\t\t\t\t  \\ 'm:fields:1:0',\n\t\t\t\t\t  \\ 'e:enum variants:1:0',\n\t\t\t\t\t  \\ 'P:methods:1',\n\t\t\t\t  \\ ],\n\t\t\t\t  \\ 'sro': '::',\n\t\t\t\t  \\ 'kind2scope' : {\n\t\t\t\t\t  \\ 'n': 'module',\n\t\t\t\t\t  \\ 's': 'struct',\n\t\t\t\t\t  \\ 'i': 'interface',\n\t\t\t\t\t  \\ 'c': 'implementation',\n\t\t\t\t\t  \\ 'f': 'function',\n\t\t\t\t\t  \\ 'g': 'enum',\n\t\t\t\t\t  \\ 't': 'typedef',\n\t\t\t\t\t  \\ 'v': 'variable',\n\t\t\t\t\t  \\ 'M': 'macro',\n\t\t\t\t\t  \\ 'm': 'field',\n\t\t\t\t\t  \\ 'e': 'enumerator',\n\t\t\t\t\t  \\ 'P': 'method',\n\t\t\t\t  \\ },\n\t\t\t\t\\ }\n\t\t\t\26<cmd>:TagbarClose<CR>\agK\28<cmd>:TagbarOpen fj<CR>\agk\6n\20nvim_set_keymap\bapi\1\0\2\vsilent\2\fnoremap\2\28let g:tagbar_width = 55.let g:tagbar_highlight_method = \"nearest\")let g:rust_use_custom_ctags_defs = 1\bcmd\bvim\0", "config", "tagbar")
+time([[Config for tagbar]], false)
+-- Config for: vim-edgemotion
+time([[Config for vim-edgemotion]], true)
+try_loadstring("\27LJ\2\n´\1\0\0\5\0\b\0\0146\0\0\0'\2\1\0B\0\2\0029\0\2\0005\1\3\0006\2\4\0009\2\5\2'\4\6\0B\2\2\0016\2\4\0009\2\5\2'\4\a\0B\2\2\1K\0\1\0#map <C-k> <Plug>(edgemotion-k)#map <C-j> <Plug>(edgemotion-j)\bcmd\bvim\1\0\1\vsilent\2\bmap\19settings.utils\frequire\0", "config", "vim-edgemotion")
+time([[Config for vim-edgemotion]], false)
+-- Config for: packer.nvim
+time([[Config for packer.nvim]], true)
+try_loadstring("\27LJ\2\nC\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0$nmap <leader>ps :PackerSync<cr>\bcmd\bvim\0", "config", "packer.nvim")
+time([[Config for packer.nvim]], false)
+-- Config for: fern.vim
+time([[Config for fern.vim]], true)
+try_loadstring("\27LJ\2\nx\0\0\a\0\a\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0\18\1\0\0'\3\3\0'\4\4\0'\5\5\0005\6\6\0B\1\5\1K\0\1\0\1\0\1\vsilent\2\30<cmd>Fern . -reveal=%<CR>\ag\\\6n\bmap\19settings.utils\frequire\0", "config", "fern.vim")
+time([[Config for fern.vim]], false)
+-- Config for: vim-easymotion
+time([[Config for vim-easymotion]], true)
+try_loadstring("\27LJ\2\nè\3\0\0\3\0\v\0!6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\1\0'\2\3\0B\0\2\0016\0\0\0009\0\1\0'\2\4\0B\0\2\0016\0\0\0009\0\1\0'\2\5\0B\0\2\0016\0\0\0009\0\1\0'\2\6\0B\0\2\0016\0\0\0009\0\1\0'\2\a\0B\0\2\0016\0\0\0009\0\1\0'\2\b\0B\0\2\0016\0\0\0009\0\t\0)\1\1\0=\1\n\0K\0\1\0\25EasyMotion_smartcase\6g$omap s <Plug>(easymotion-bd-f2)$xmap s <Plug>(easymotion-bd-f2))nmap s <Plug>(easymotion-overwin-f2)$xmap <c-h> <Plug>(easymotion-F)$nmap <c-h> <Plug>(easymotion-F)$xmap <c-l> <Plug>(easymotion-f)$nmap <c-l> <Plug>(easymotion-f)\bcmd\bvim\0", "config", "vim-easymotion")
+time([[Config for vim-easymotion]], false)
 -- Config for: vim-tmux-navigator
 time([[Config for vim-tmux-navigator]], true)
 try_loadstring("\27LJ\2\n¸\2\0\0\3\0\b\0\0256\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\1\0'\2\3\0B\0\2\0016\0\0\0009\0\1\0'\2\4\0B\0\2\0016\0\0\0009\0\1\0'\2\5\0B\0\2\0016\0\0\0009\0\1\0'\2\6\0B\0\2\0016\0\0\0009\0\1\0'\2\a\0B\0\2\1K\0\1\0003nnoremap <silent> <m-l> :TmuxNavigateRight<cr>0nnoremap <silent> <m-k> :TmuxNavigateUp<cr>2nnoremap <silent> <m-j> :TmuxNavigateDown<cr>2nnoremap <silent> <m-h> :TmuxNavigateLeft<cr>1let g:tmux_navigator_disable_when_zoomed = 1)let g:tmux_navigator_no_mappings = 1\bcmd\bvim\0", "config", "vim-tmux-navigator")
