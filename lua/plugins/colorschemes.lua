@@ -9,8 +9,8 @@ local function init(use)
 	use 'aonemd/kuroi.vim'
 	use 'FrenzyExists/aquarium-vim'
 	use 'ntk148v/vim-horizon'
-
-
+	use 'sainnhe/sonokai'
+	use 'humanoid-colors/vim-humanoid-colorscheme'
 
 
 end
