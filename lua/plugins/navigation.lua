@@ -21,16 +21,6 @@ local function init(use)
 	})
 	use('justinmk/vim-dirvish')
 	use('kshenoy/vim-signature')
-	use({
-		'tversteeg/registers.nvim', 
-		config = function()
-			require("registers").setup(
-				{
-					show = 'abcdefghij*+\"-/_=#%.0123456789klmnopqrstuvwxyz:'
-				}
-			)
-		end
-	})
 
 	use({
 		'karb94/neoscroll.nvim', 
@@ -85,56 +75,16 @@ local function init(use)
 		end,
 	})
 
+
 	use({ 
-		'preservim/tagbar',
+		'simrat39/symbols-outline.nvim',
 	
 		config = function()
-			vim.cmd[[let g:rust_use_custom_ctags_defs = 1]]
-			vim.cmd[[let g:tagbar_highlight_method = "nearest"]]
-			vim.cmd[[let g:tagbar_width = 55]]
-
-
-
+			require("symbols-outline").setup({position = 'left'})
 			local opts = { noremap=true, silent=true }
-			vim.api.nvim_set_keymap('n', [[gk]], '<cmd>:TagbarOpen fj<CR>', opts)
-			vim.api.nvim_set_keymap('n', [[gK]], '<cmd>:TagbarClose<CR>', opts)
 
+			vim.cmd[[nnoremap <silent> gk :SymbolsOutline<cr>]]
 
-			vim.cmd[[
-				let g:tagbar_type_rust = {
-				  \ 'ctagsbin' : '/usr/bin/ctags',
-				  \ 'ctagstype' : 'rust',
-				  \ 'kinds' : [
-					  \ 'n:modules',
-					  \ 's:structures:1',
-					  \ 'i:interfaces',
-					  \ 'c:implementations',
-					  \ 'f:functions:1',
-					  \ 'g:enumerations:1',
-					  \ 't:type aliases:1:0',
-					  \ 'v:constants:1:0',
-					  \ 'M:macros:1',
-					  \ 'm:fields:1:0',
-					  \ 'e:enum variants:1:0',
-					  \ 'P:methods:1',
-				  \ ],
-				  \ 'sro': '::',
-				  \ 'kind2scope' : {
-					  \ 'n': 'module',
-					  \ 's': 'struct',
-					  \ 'i': 'interface',
-					  \ 'c': 'implementation',
-					  \ 'f': 'function',
-					  \ 'g': 'enum',
-					  \ 't': 'typedef',
-					  \ 'v': 'variable',
-					  \ 'M': 'macro',
-					  \ 'm': 'field',
-					  \ 'e': 'enumerator',
-					  \ 'P': 'method',
-				  \ },
-				\ }
-			]]
 		end,
 	})
 
