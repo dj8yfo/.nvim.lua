@@ -34,15 +34,16 @@ local function init(use)
 	use({ 
 		'easymotion/vim-easymotion' ,
 		config = function()
-			vim.cmd[[nmap <c-l> <Plug>(easymotion-f)]]
-			vim.cmd[[xmap <c-l> <Plug>(easymotion-f)]]
-			vim.cmd[[nmap <c-h> <Plug>(easymotion-F)]]
-			vim.cmd[[xmap <c-h> <Plug>(easymotion-F)]]
-
-			vim.cmd[[nmap s <Plug>(easymotion-overwin-f2)]]
-			vim.cmd[[xmap s <Plug>(easymotion-bd-f2)]]
-			vim.cmd[[omap s <Plug>(easymotion-bd-f2)]]
+			vim.cmd[[nmap gs <Plug>(easymotion-overwin-f2)]]
+			vim.cmd[[xmap gs <Plug>(easymotion-bd-f2)]]
+			vim.cmd[[omap gs <Plug>(easymotion-bd-f2)]]
 			vim.g.EasyMotion_smartcase = 1 
+		end,
+	})
+
+	use({ 
+		'justinmk/vim-sneak' ,
+		config = function()
 		end,
 	})
 
@@ -83,7 +84,8 @@ local function init(use)
 			require("symbols-outline").setup({position = 'left'})
 			local opts = { noremap=true, silent=true }
 
-			vim.cmd[[nnoremap <silent> gk :SymbolsOutline<cr>]]
+			vim.cmd[[nnoremap <silent> gk :SymbolsOutlineClose<cr>:SymbolsOutlineOpen<cr>]]
+			vim.cmd[[nnoremap <silent> gK :SymbolsOutline<cr>]]
 
 		end,
 	})
