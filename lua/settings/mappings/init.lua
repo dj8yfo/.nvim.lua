@@ -42,11 +42,7 @@ map('n', '<leader>te', [[<cmd>lua require('settings.functions').line_tab_file()<
 map('n', '<f1>', [[<cmd>hi Comment guifg=#111111<CR>]], default_opts)
 map('n', '<f2>', [[<cmd>hi Comment guifg=lightgreen<CR>]], default_opts)
 
-map('n', 'gp', '"+p', default_opts)
-map('v', 'gp', '"+p', default_opts)
 
-map('n', 'U', '"+y', default_opts)
-map('v', 'U', '"+y', default_opts)
 
 map('n', 'gV', '<esc>ggVG', default_opts)
 map('v', 'gV', '<esc>ggVG', default_opts)

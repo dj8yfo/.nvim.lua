@@ -11,8 +11,14 @@ local function init(use)
 	use 'ntk148v/vim-horizon'
 	use 'sainnhe/sonokai'
 	use 'humanoid-colors/vim-humanoid-colorscheme'
+	use 'elvessousa/sobrio'
+	use '29decibel/codeschool-vim-theme'
+	use 'mhinz/vim-janah'
+
+
 
 
 end
 -- }}}
 return { init = init }
+

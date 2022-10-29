@@ -43,7 +43,9 @@ local function init(use)
 
 	use({ 
 		'justinmk/vim-sneak' ,
+
 		config = function()
+			vim.cmd[[let g:sneak#use_ic_scs = 1]]
 		end,
 	})
 
