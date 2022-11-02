@@ -28,13 +28,21 @@ local function init(use)
 
 
 	use({
-		'inside/vim-grep-operator', 
+		'inside/vim-grep-operator',
 		setup = function()
 			vim.cmd[[nmap <leader>g <Plug>GrepOperatorOnCurrentDirectory]]
 			vim.cmd[[vmap <leader>g <Plug>GrepOperatorOnCurrentDirectory]]
 
 		end,
 	})
+
+	use({
+		'mtth/scratch.vim',
+		setup = function()
+			vim.cmd[[let g:scratch_insert_autohide = 0]]
+		end,
+	})
+
 
 end
 -- }}}

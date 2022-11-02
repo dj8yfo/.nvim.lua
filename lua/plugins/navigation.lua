@@ -34,9 +34,9 @@ local function init(use)
 	use({ 
 		'easymotion/vim-easymotion' ,
 		config = function()
-			vim.cmd[[nmap gs <Plug>(easymotion-overwin-f2)]]
-			vim.cmd[[xmap gs <Plug>(easymotion-bd-f2)]]
-			vim.cmd[[omap gs <Plug>(easymotion-bd-f2)]]
+			vim.cmd[[nmap gy <Plug>(easymotion-overwin-f2)]]
+			vim.cmd[[xmap gy <Plug>(easymotion-bd-f2)]]
+			vim.cmd[[omap gy <Plug>(easymotion-bd-f2)]]
 			vim.g.EasyMotion_smartcase = 1 
 		end,
 	})
