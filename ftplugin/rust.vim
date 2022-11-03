@@ -31,5 +31,3 @@ nnoremap <space>, A,<esc>_
 nmap <silent> gv :sp<CR><c-]>
 nmap <silent> gh :vs<CR><c-]>
 
-nnoremap <silent> <space>ls    <cmd>LspStop<CR>
-nnoremap <silent> <space>lS    <cmd>LspStart<CR>

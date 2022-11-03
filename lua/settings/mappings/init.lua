@@ -51,3 +51,6 @@ map('v', 'gV', '<esc>ggVG', default_opts)
 vim.cmd [[nnoremap gX *``cgn]]
 
 vim.cmd 'nnoremap gl `[v`]'
+
+vim.cmd[[nnoremap <silent> <space>ls    <cmd>LspStop<CR>]]
+vim.cmd[[nnoremap <silent> <space>lS    <cmd>LspStart<CR>]]

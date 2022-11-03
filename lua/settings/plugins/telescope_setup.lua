@@ -14,4 +14,4 @@ map('n', 'g?', [[<cmd>Telescope command_history theme=get_ivy<cr>]], silent)
 map('n', 'g/', [[<cmd>Telescope search_history theme=get_ivy<cr>]], silent)
 map('n', 'gm', [[<cmd>lua require('telescope.builtin').marks({layout_strategy='vertical',layout_config={height=50}})<cr>]], silent)
 
-map('n', '<space>l', [[<cmd>lua require('telescope.builtin').quickfix({fname_width=70,layout_strategy='vertical',layout_config={height=50}})<cr>]], silent)
+map('n', '<space>y', [[<cmd>lua require('telescope.builtin').quickfix({fname_width=70,layout_strategy='vertical',layout_config={height=50}})<cr>]], silent)
