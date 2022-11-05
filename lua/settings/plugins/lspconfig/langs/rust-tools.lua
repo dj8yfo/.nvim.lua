@@ -31,6 +31,12 @@ local opts = {
 				cargo = {
 					features = "all",
 				},
+				procMacro = {
+					enable = true,
+					attributes = {
+						enable = true,
+					},
+				},
 			}
 		}
 	},

@@ -1,21 +1,15 @@
 -- {{{ init
 local function init(use)
 
-	use 'gummesson/stereokai.vim'
-	use 'amadeus/vim-evokai'
-	use 'kajamite/vim-monokai2'
-	use 'boschni/vim-sublime256'
-	use 'gleich/monovibrant'
-	use 'aonemd/kuroi.vim'
-	use 'FrenzyExists/aquarium-vim'
-	use 'ntk148v/vim-horizon'
 	use 'sainnhe/sonokai'
-	use 'humanoid-colors/vim-humanoid-colorscheme'
-	use 'elvessousa/sobrio'
-	use '29decibel/codeschool-vim-theme'
-	use 'mhinz/vim-janah'
+	use 'ghifarit53/tokyonight-vim'
 
-
+	use({
+		'wuelnerdotexe/vim-enfocado', 
+		config = function()
+			vim.cmd[[let g:enfocado_style = 'neon']]
+		end
+	})
 
 
 end
