@@ -14,6 +14,7 @@ local function init(use)
 	use 'patstockwell/vim-monokai-tasty'
 	use 'kjssad/quantum.vim'
 	use 'evturn/cosmic-barf'
+	use 'AlanWarren/rocket'
 
 
 end
