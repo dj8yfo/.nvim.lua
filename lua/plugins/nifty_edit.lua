@@ -60,6 +60,13 @@ local function init(use)
 		config = function() require("nvim-autopairs").setup {} end
 	}
 
+	use ({
+		'mileszs/ack.vim',
+		config = function()
+			vim.cmd[[let g:ackprg = 'rg --smart-case --ignore --vimgrep']]
+		end,
+	})
+
 end
 -- }}}
 return { init = init }

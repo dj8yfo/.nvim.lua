@@ -15,6 +15,8 @@ local function init(use)
 	use 'kjssad/quantum.vim'
 	use 'evturn/cosmic-barf'
 	use 'AlanWarren/rocket'
+	use 'kjohnsen/heman'
+
 
 
 end
