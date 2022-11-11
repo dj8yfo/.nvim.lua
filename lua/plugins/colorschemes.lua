@@ -16,6 +16,7 @@ local function init(use)
 	use 'evturn/cosmic-barf'
 	use 'AlanWarren/rocket'
 	use 'kjohnsen/heman'
+	use 'lourenci/github-colors'
 
 
 

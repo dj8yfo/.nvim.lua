@@ -1,12 +1,14 @@
 local telescope = require('telescope')
 
+local actions = require "telescope.actions"
+
 telescope.setup({
 	defaults = {
 		layout_strategy = 'flex',
 		scroll_strategy = 'cycle',
 		layout_config = {
-		  vertical = { height = 50 }
-		  -- other layout configuration here
+			vertical = { height = 50 }
+			-- other layout configuration here
 		},
 	},
 	extensions = {
@@ -25,6 +27,11 @@ telescope.setup({
 		buffers = {
 			sort_lastused = true,
 			previewer = false,
+			mappings = {
+				i = {
+					["<c-d>"] = actions.delete_buffer + actions.move_to_top,
+				}
+			}
 		},
 	},
 })
