@@ -11,15 +11,13 @@ local function init(use)
 
 	use('romainl/vim-cool')
 
+
 	use({
-		'lambdalisue/fern.vim', 
-		branch = 'main',
+		'justinmk/vim-dirvish', 
 		config = function()
-			local map = require('settings.utils').map
-			map('n', 'g\\', [[<cmd>Fern . -reveal=%<CR>]], { silent = true})
+			-- vim.cmd[[nmap <leader>to <Plug>(dirvish_up)]]
 		end
 	})
-	use('justinmk/vim-dirvish')
 	use('kshenoy/vim-signature')
 
 	use({

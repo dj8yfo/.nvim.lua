@@ -60,7 +60,10 @@ local function init(use)
 		},
 
 		config = function()
-			require'nvim-tree'.setup {}
+			require'nvim-tree'.setup {
+				 disable_netrw = false,
+				hijack_netrw = false,
+			}
 			vim.cmd[[nmap gb :NvimTreeFindFile<CR>]]
 			vim.cmd[[nmap gB :NvimTreeToggle<CR>]]
 		end
