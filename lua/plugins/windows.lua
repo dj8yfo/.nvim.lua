@@ -1,7 +1,7 @@
 
 -- {{{ init
 local function init(use)
-    use({
+	use({
 		'skywind3000/asyncrun.vim',
 		setup = function()
 			vim.cmd[[nmap <leader>mb :AsyncRun make build<cr>]]
@@ -16,7 +16,7 @@ local function init(use)
 		'kevinhwang91/nvim-bqf', 
 		ft = 'qf',
 	})
-    use({
+	use({
 		'milkypostman/vim-togglelist',
 		setup = function()
 			vim.cmd[[nmap <script> <silent> g; :call ToggleLocationList()<CR>]]
@@ -42,6 +42,29 @@ local function init(use)
 			vim.cmd[[let g:scratch_insert_autohide = 0]]
 		end,
 	})
+	use ({
+		'rmagatti/auto-session',
+		config = function()
+			require("auto-session").setup {
+				log_level = "error",
+				-- auto_session_root_dir = vim.fn.stdpath('data').."/sessions/",
+				-- auto_session_suppress_dirs = { "~/", "~/Projects", "~/Downloads", "/"},
+			}
+		end
+	})
+
+	use {
+		'nvim-tree/nvim-tree.lua',
+		requires = {
+			'nvim-tree/nvim-web-devicons', -- optional, for file icons
+		},
+
+		config = function()
+			require'nvim-tree'.setup {}
+			vim.cmd[[nmap gb :NvimTreeFindFile<CR>]]
+			vim.cmd[[nmap gB :NvimTreeToggle<CR>]]
+		end
+	}
 
 
 end
