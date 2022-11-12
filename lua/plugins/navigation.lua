@@ -15,7 +15,7 @@ local function init(use)
 	use({
 		'justinmk/vim-dirvish', 
 		config = function()
-			-- vim.cmd[[nmap <leader>to <Plug>(dirvish_up)]]
+			vim.cmd[[nmap <leader>tc :tcd %<CR>]]
 		end
 	})
 	use('kshenoy/vim-signature')

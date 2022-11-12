@@ -17,6 +17,7 @@ local function init(use)
 	use 'AlanWarren/rocket'
 	use 'kjohnsen/heman'
 	use 'lourenci/github-colors'
+	use 'widatama/vim-phoenix'
 
 
 
