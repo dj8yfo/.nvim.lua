@@ -54,3 +54,5 @@ vim.cmd 'nnoremap gl `[v`]'
 
 vim.cmd[[nnoremap <silent> <space>ls    <cmd>LspStop<CR>]]
 vim.cmd[[nnoremap <silent> <space>lS    <cmd>LspStart<CR>]]
+
+vim.cmd[[nnoremap <silent> <space>vg    <cmd>vimgrep //g %<CR>]]
