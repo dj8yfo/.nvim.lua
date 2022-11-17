@@ -25,12 +25,22 @@ local opts = {
 			-- https://github.com/rust-analyzer/rust-analyzer/blob/master/docs/user/generated_config.adoc
 			["rust-analyzer"] = {
 				-- enable clippy on save
+				imports = {
+					granularity = {
+						group = "module",
+					},
+					prefix = "self",
+				},
 				checkOnSave = {
 					command = "clippy"
 				},
 				cargo = {
 					features = "all",
+					buildScripts = {
+						enable = true,
+					},
 				},
+
 				procMacro = {
 					enable = true,
 					attributes = {
