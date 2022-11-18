@@ -35,7 +35,7 @@ local opts = {
 					command = "clippy"
 				},
 				cargo = {
-					features = "all",
+					-- features = "all",
 					buildScripts = {
 						enable = true,
 					},

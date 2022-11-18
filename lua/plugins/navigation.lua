@@ -81,7 +81,7 @@ local function init(use)
 		'simrat39/symbols-outline.nvim',
 	
 		config = function()
-			require("symbols-outline").setup({position = 'left'})
+			require("symbols-outline").setup({position = 'right'})
 			local opts = { noremap=true, silent=true }
 
 			vim.cmd[[nnoremap <silent> gk :SymbolsOutlineClose<cr>:SymbolsOutlineOpen<cr>]]
