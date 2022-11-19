@@ -18,10 +18,6 @@ nnoremap <silent> <space>rn    <cmd>lua vim.lsp.buf.rename()<CR>
 inoremap <silent> <C-.>    <cmd>lua vim.lsp.buf.signature_help()<CR>
 
 
-nnoremap <silent> <space>cp :AsyncRun tmux send-keys -t 1 'cargo-play ' % ' ' Enter<CR>
-nnoremap <silent> <space>cb :AsyncRun tmux send-keys -t 1 'cargo build ' Enter<CR>
-nnoremap <silent> <space>cr :AsyncRun tmux send-keys -t 1 'cargo run ' Enter<CR>
-
 inoremap <c-;> <C-o>A;
 nnoremap <space>; A;<esc>_
 

@@ -4,9 +4,6 @@ local function init(use)
 	use({
 		'skywind3000/asyncrun.vim',
 		setup = function()
-			vim.cmd[[nmap <leader>mb :AsyncRun make build<cr>]]
-			vim.cmd[[nmap <leader>ml :AsyncRun make lint<cr>]]
-			vim.cmd[[nmap <leader>mt :AsyncRun make test<cr>]]
 		end,
 	})
 
@@ -41,16 +38,6 @@ local function init(use)
 		setup = function()
 			vim.cmd[[let g:scratch_insert_autohide = 0]]
 		end,
-	})
-	use ({
-		'rmagatti/auto-session',
-		config = function()
-			require("auto-session").setup {
-				log_level = "error",
-				-- auto_session_root_dir = vim.fn.stdpath('data').."/sessions/",
-				-- auto_session_suppress_dirs = { "~/", "~/Projects", "~/Downloads", "/"},
-			}
-		end
 	})
 
 	use {

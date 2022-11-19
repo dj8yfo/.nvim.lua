@@ -18,8 +18,9 @@ local function init(use)
 	use 'kjohnsen/heman'
 	use 'lourenci/github-colors'
 	use 'widatama/vim-phoenix'
-
-
+	use 'henrybw/vim-colors-aurora'
+	use 'jnurmine/Zenburn'
+	use 'sjl/badwolf'
 
 end
 -- }}}

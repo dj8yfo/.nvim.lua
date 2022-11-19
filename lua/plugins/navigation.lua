@@ -18,8 +18,19 @@ local function init(use)
 			vim.cmd[[nmap <leader>tc :tcd %<CR>]]
 		end
 	})
-	use('kshenoy/vim-signature')
+	use({
+		'chentoast/marks.nvim',
+		config = function()
+			require'marks'.setup {
+				force_write_shada = true,
+			}
 
+			vim.cmd[[nmap <leader>ma :MarksQFListGlobal<CR>]]
+			vim.cmd[[nmap <leader>mb :MarksQFListBuf<CR>]]
+
+
+		end
+	})
 	use({
 		'karb94/neoscroll.nvim', 
 		config = function()
@@ -52,19 +63,41 @@ local function init(use)
 	use('thinca/vim-visualstar')
 	use('tpope/vim-unimpaired')
 
+
 	use({ 
-		'MattesGroeger/vim-bookmarks',
-	
+		'ThePrimeagen/harpoon',
+
 		config = function()
-			vim.cmd[[let g:bookmark_save_per_working_dir = 1]]
-			vim.cmd[[let g:bookmark_auto_save = 1]]
-			
+
+			local opts = { noremap=true, silent=true }
+			vim.api.nvim_set_keymap('n', '<leader>hm', '<cmd>lua require("harpoon.mark").add_file()<CR>', opts)
+			vim.api.nvim_set_keymap('n', '<leader>ho', '<cmd>lua require("harpoon.ui").toggle_quick_menu()<CR>', opts)
+			vim.api.nvim_set_keymap('n', '<leader>ht1', '<cmd>lua require("harpoon.term").gotoTerminal(1)<CR>', opts)
+			vim.api.nvim_set_keymap('n', '<leader>ht2', '<cmd>lua require("harpoon.term").gotoTerminal(2)<CR>', opts)
+
+		end,
+	})
+	use({ 
+		'ldelossa/litee.nvim',
+
+		config = function()
+			require('litee.lib').setup({})
+		end,
+	})
+	use({ 
+		'ldelossa/litee-bookmarks.nvim',
+
+		config = function()
+			require('litee.bookmarks').setup({})
+			local opts = { noremap=true, silent=true }
+			vim.api.nvim_set_keymap('n', '<leader>lo', '<cmd>LTOpenNotebook<CR>', opts)
+			vim.api.nvim_set_keymap('n', '<leader>lc', '<cmd>LTCreateBookmark<CR>', opts)
 		end,
 	})
 
 	use({ 
 		'christoomey/vim-tmux-navigator',
-	
+
 		config = function()
 			vim.cmd[[let g:tmux_navigator_no_mappings = 1]]
 			vim.cmd[[let g:tmux_navigator_disable_when_zoomed = 1]]
@@ -79,7 +112,7 @@ local function init(use)
 
 	use({ 
 		'simrat39/symbols-outline.nvim',
-	
+
 		config = function()
 			require("symbols-outline").setup({position = 'right'})
 			local opts = { noremap=true, silent=true }
@@ -92,7 +125,7 @@ local function init(use)
 
 	use({ 
 		'jeetsukumaran/vim-indentwise',
-	
+
 		config = function()
 			vim.cmd[[map [s <Plug>(IndentWisePreviousLesserIndent)]]
 			vim.cmd[[map ]s <Plug>(IndentWiseNextLesserIndent)]]
