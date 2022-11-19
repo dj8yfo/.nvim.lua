@@ -22,7 +22,28 @@ local function init(use)
 	})
 	use('tommcdo/vim-exchange')
 
-	use('NLKNguyen/copy-cut-paste.vim')
+    use('kkharji/sqlite.lua')
+	use {
+	  "AckslD/nvim-neoclip.lua",
+	  requires = {
+		{'kkharji/sqlite.lua', module = 'sqlite'},
+		-- you'll need at least one of these
+		-- {'nvim-telescope/telescope.nvim'},
+		-- {'ibhagwan/fzf-lua'},
+	  },
+	  config = function()
+		require('neoclip').setup({
+			history = 10000,
+			enable_persistent_history = true,
+			continuous_sync = true,
+		})
+
+		local opts = { noremap=true, silent=true }
+		vim.api.nvim_set_keymap('n', '<leader>np', '<cmd>lua require("telescope").extensions.neoclip["plus"]()<CR>', opts)
+		vim.api.nvim_set_keymap('n', '<leader>na', '<cmd>lua require("telescope").extensions.neoclip["a"]()<CR>', opts)
+
+	  end,
+	}
 	use ({
 		'jpalardy/vim-slime',
 		config = function()
