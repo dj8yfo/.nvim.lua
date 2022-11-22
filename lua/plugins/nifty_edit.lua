@@ -44,6 +44,7 @@ local function init(use)
 
 	  end,
 	}
+	use 'AndrewRadev/bufferize.vim'
 	use ({
 		'jpalardy/vim-slime',
 		config = function()
