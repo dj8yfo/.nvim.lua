@@ -18,19 +18,7 @@ local function init(use)
 			vim.cmd[[nmap <leader>tc :tcd %<CR>]]
 		end
 	})
-	use({
-		'chentoast/marks.nvim',
-		config = function()
-			require'marks'.setup {
-				force_write_shada = true,
-			}
-
-			vim.cmd[[nmap <leader>ma :MarksQFListGlobal<CR>]]
-			vim.cmd[[nmap <leader>mb :MarksQFListBuf<CR>]]
-
-
-		end
-	})
+	use('kshenoy/vim-signature')
 	use({
 		'karb94/neoscroll.nvim', 
 		config = function()
@@ -68,7 +56,14 @@ local function init(use)
 		'ThePrimeagen/harpoon',
 
 		config = function()
-
+			require("harpoon").setup({
+				-- sets the marks upon calling `toggle` on the ui, instead of require `:w`.
+				save_on_toggle = true,
+				-- saves the harpoon file upon every change. disabling is unrecommended.
+				save_on_change = true,
+				-- set marks specific to each git branch inside git repository
+				mark_branch = true,
+			})
 			local opts = { noremap=true, silent=true }
 			vim.api.nvim_set_keymap('n', '<leader>hm', '<cmd>lua require("harpoon.mark").add_file()<CR>', opts)
 			vim.api.nvim_set_keymap('n', '<leader>ho', '<cmd>lua require("harpoon.ui").toggle_quick_menu()<CR>', opts)

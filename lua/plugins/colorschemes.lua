@@ -21,7 +21,7 @@ local function init(use)
 	use 'henrybw/vim-colors-aurora'
 	use 'jnurmine/Zenburn'
 	use 'sjl/badwolf'
-
+	use 'josuegaleas/jay'
 end
 -- }}}
 return { init = init }
