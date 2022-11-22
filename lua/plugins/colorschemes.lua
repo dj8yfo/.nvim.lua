@@ -22,7 +22,8 @@ local function init(use)
 	use 'jnurmine/Zenburn'
 	use 'sjl/badwolf'
 	use 'josuegaleas/jay'
+	use "protesilaos/tempus-themes-vim"
+	use 'mrtazz/molokai.vim'
 end
 -- }}}
 return { init = init }
-

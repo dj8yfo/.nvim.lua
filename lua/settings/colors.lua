@@ -3,7 +3,7 @@ local opt = vim.opt
 opt.termguicolors = true
 
 vim.cmd [[let g:sonokai_style = 'shusia']]
-vim.cmd [[color jay]]
+vim.cmd [[color molokai]]
 
 
 vim.cmd [[hi Search guibg=black guifg=chartreuse]]

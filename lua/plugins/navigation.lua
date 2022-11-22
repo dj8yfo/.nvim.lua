@@ -54,11 +54,10 @@ local function init(use)
 
 	use({ 
 		'ThePrimeagen/harpoon',
-
 		config = function()
 			require("harpoon").setup({
 				-- sets the marks upon calling `toggle` on the ui, instead of require `:w`.
-				save_on_toggle = true,
+				save_on_toggle = false,
 				-- saves the harpoon file upon every change. disabling is unrecommended.
 				save_on_change = true,
 				-- set marks specific to each git branch inside git repository
@@ -69,6 +68,8 @@ local function init(use)
 			vim.api.nvim_set_keymap('n', '<leader>ho', '<cmd>lua require("harpoon.ui").toggle_quick_menu()<CR>', opts)
 			vim.api.nvim_set_keymap('n', '<leader>ht1', '<cmd>lua require("harpoon.term").gotoTerminal(1)<CR>', opts)
 			vim.api.nvim_set_keymap('n', '<leader>ht2', '<cmd>lua require("harpoon.term").gotoTerminal(2)<CR>', opts)
+			vim.api.nvim_set_keymap('n', '<leader>hq', '<cmd>Telescope harpoon marks<CR>', opts)
+
 
 		end,
 	})
