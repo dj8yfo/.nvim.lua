@@ -10,12 +10,14 @@ ts_configs.setup {
 		-- comment
 		enable = true
 	},
-	textsubjects = {
+	incremental_selection = {
 		enable = true,
 		keymaps = {
-			['.'] = 'textsubjects-smart',
-			["i,"] = 'textsubjects-container-inner',
-		},
+			init_selection = '.',
+			node_incremental = '.',
+			node_decremental = ',',
+			scope_incremental = '<TAB>',
+		}
 	},
 
 
