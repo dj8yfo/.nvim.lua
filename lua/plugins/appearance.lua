@@ -82,6 +82,19 @@ local function init(use)
 		end
 
 	})
+
+	use ({
+		'sunjon/shade.nvim',
+		config = function()
+			require'shade'.setup({
+			  overlay_opacity = 85,
+			  opacity_step = 1,
+			})
+
+
+		end
+
+	})
 end
 -- }}}
 return { init = init }
