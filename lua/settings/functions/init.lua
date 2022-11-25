@@ -14,5 +14,16 @@ function M.line_tab_file()
 	
 end
 
+function M.file_line_string() 
+	local line = vim.fn.line(".")
+	local file = vim.fn.expand('%:p')
+
+	local result = file ..":" ..line
+	print(result)
+	vim.fn.setreg("+", result)
+	return result
+	
+end
+
 return M
 

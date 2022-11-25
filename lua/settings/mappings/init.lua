@@ -38,6 +38,7 @@ map('n', '<m-o>', '<c-w>o', default_opts)
 
 map('n', '<leader>fe', [[<cmd>lua require('settings.functions').syntax_fold_expr()<CR>]], default_opts)
 map('n', '<leader>te', [[<cmd>lua require('settings.functions').line_tab_file()<CR>]], default_opts)
+map('n', 'gL', [[<cmd>lua require('settings.functions').file_line_string()<CR>]], default_opts)
 
 map('n', '<f1>', [[<cmd>hi Comment guifg=#111111<CR>]], default_opts)
 map('n', '<f2>', [[<cmd>hi Comment guifg=lightgreen<CR>]], default_opts)
