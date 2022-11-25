@@ -133,6 +133,7 @@ local function init(use)
 			vim.cmd[[map ]w <Plug>(IndentWiseNextGreaterIndent)]]
 		end,
 	})
+	use 'nanotee/zoxide.vim'
 end
 -- }}}
 return { init = init }
