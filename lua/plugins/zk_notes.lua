@@ -22,7 +22,7 @@ local function init(use)
 			map(
 				"v", 
 				"<leader>znt", 
-				[[:'<,'>zknewfromtitleselection { dir = '/home/jerryminion/documents/code/tasking/zettelkasten' }<cr>]], 
+				[[:'<,'>ZkNewFromTitleSelection { dir = '/home/jerryminion/Documents/code/tasking/zettelkasten' }<cr>]], 
 				opts
 			)
 
