@@ -94,19 +94,6 @@ local function init(use)
 		end,
 	})
 
-	use({ 
-		'christoomey/vim-tmux-navigator',
-
-		config = function()
-			vim.cmd[[let g:tmux_navigator_no_mappings = 1]]
-			vim.cmd[[let g:tmux_navigator_disable_when_zoomed = 1]]
-
-			vim.cmd[[nnoremap <silent> <m-h> :TmuxNavigateLeft<cr>]]
-			vim.cmd[[nnoremap <silent> <m-j> :TmuxNavigateDown<cr>]]
-			vim.cmd[[nnoremap <silent> <m-k> :TmuxNavigateUp<cr>]]
-			vim.cmd[[nnoremap <silent> <m-l> :TmuxNavigateRight<cr>]]
-		end,
-	})
 
 
 	use({ 
