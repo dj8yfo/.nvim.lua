@@ -8,6 +8,7 @@ local function init(use)
 		config = [[require('settings.plugins.treesitter')]],
 		run = ':TSUpdate',
 	})
+	use 'imsnif/kdl.vim'
 
 	require('plugins.syntax.markdown').init(use)
 end
