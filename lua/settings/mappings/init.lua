@@ -3,7 +3,7 @@ local map = require('settings.utils').map
 
 local default_opts = {noremap = true, silent = true }
 
-map('n', '<m-x>', ':qa!<CR>', default_opts)
+map('n', '<f8>', ':qa!<CR>', default_opts)
 
 map('n', '<m-j>', '<c-w>j', default_opts)
 map('n', '<m-k>', '<c-w>k', default_opts)
