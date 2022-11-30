@@ -4,7 +4,7 @@ opt.termguicolors = true
 
 vim.g.material_style = "darker"
 vim.cmd [[let g:sonokai_style = 'shusia']]
-vim.cmd [[color molokai2]]
+vim.cmd [[color zephyr]]
 
 
 vim.cmd [[hi Search guibg=black guifg=chartreuse]]
