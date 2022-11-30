@@ -11,7 +11,7 @@ vim.o.grepprg = 'rg -F --vimgrep --no-heading --smart-case'
 vim.o.splitright = true
 vim.o.splitbelow = false
 
-vim.o.colorcolumn="88"
+vim.o.colorcolumn="100"
 vim.o.guifont="Source Code Pro:h8.0"
 vim.o.clipboard='unnamedplus'
 
