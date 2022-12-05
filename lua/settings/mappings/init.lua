@@ -37,6 +37,7 @@ vim.cmd [[cmap <m-b> <Left>]]
 map('n', '<m-o>', '<c-w>o', default_opts)
 
 map('n', '<leader>fe', [[<cmd>lua require('settings.functions').syntax_fold_expr()<CR>]], default_opts)
+map('n', '<leader>fi', [[<cmd>lua vim.o.foldmethod='indent'<CR>]], default_opts)
 map('n', '<leader>te', [[<cmd>lua require('settings.functions').line_tab_file()<CR>]], default_opts)
 map('n', 'gL', [[<cmd>lua require('settings.functions').file_line_string()<CR>]], default_opts)
 

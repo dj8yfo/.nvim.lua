@@ -6,6 +6,7 @@ function M.syntax_fold_expr()
 	
 end
 
+
 function M.line_tab_file() 
 	local line = vim.fn.line(".")
 
