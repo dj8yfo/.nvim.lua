@@ -18,10 +18,10 @@ nnoremap <silent> <space>rn    <cmd>lua vim.lsp.buf.rename()<CR>
 inoremap <silent> <C-.>    <cmd>lua vim.lsp.buf.signature_help()<CR>
 
 
-inoremap <c-;> <C-o>A;
+inoremap <m-;> <C-o>A;
 nnoremap <space>; A;<esc>_
 
-inoremap <c-,> <C-o>A,
+inoremap <m-,> <C-o>A,
 nnoremap <space>, A,<esc>_
 
 nmap <silent> gv :sp<CR><c-]>

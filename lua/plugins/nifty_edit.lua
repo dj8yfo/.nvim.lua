@@ -39,7 +39,7 @@ local function init(use)
 		})
 
 		local opts = { noremap=true, silent=true }
-		vim.api.nvim_set_keymap('n', '<leader>np', '<cmd>lua require("telescope").extensions.neoclip["plus"]()<CR>', opts)
+		vim.api.nvim_set_keymap('n', 'gu', '<cmd>lua require("telescope").extensions.neoclip["plus"]()<CR>', opts)
 		vim.api.nvim_set_keymap('n', '<leader>na', '<cmd>lua require("telescope").extensions.neoclip["a"]()<CR>', opts)
 
 	  end,
