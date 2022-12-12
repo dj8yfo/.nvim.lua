@@ -33,7 +33,7 @@ local function init(use)
 	  },
 	  config = function()
 		require('neoclip').setup({
-			history = 10000,
+			history = 100,
 			enable_persistent_history = true,
 			continuous_sync = true,
 		})
