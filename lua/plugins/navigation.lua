@@ -75,25 +75,6 @@ local function init(use)
 
 		end,
 	})
-	use({ 
-		'ldelossa/litee.nvim',
-
-		config = function()
-			require('litee.lib').setup({})
-		end,
-	})
-	use({ 
-		'ldelossa/litee-bookmarks.nvim',
-
-		config = function()
-			require('litee.bookmarks').setup({})
-			local opts = { noremap=true, silent=true }
-			vim.api.nvim_set_keymap('n', '<leader>lo', '<cmd>LTOpenNotebook<CR>', opts)
-			vim.api.nvim_set_keymap('n', '<leader>lp', '<cmd>LTPanel<CR>', opts)
-			vim.api.nvim_set_keymap('n', '<leader>lc', '<cmd>LTCreateBookmark<CR>', opts)
-		end,
-	})
-
 
 
 	use({ 
