@@ -48,8 +48,8 @@ local function init(use)
 
 
 
-	use('thinca/vim-visualstar')
 	use('tpope/vim-unimpaired')
+	use('thinca/vim-visualstar')
 
 
 	use({ 
@@ -76,6 +76,21 @@ local function init(use)
 		end,
 	})
 
+	use({ 
+		'MattesGroeger/vim-bookmarks',
+		config = function()
+			vim.cmd[[let g:bookmark_no_default_key_mappings = 1]]
+			vim.cmd[[let g:bookmark_save_per_working_dir = 1]]
+			vim.cmd[[let g:bookmark_auto_save = 1]]
+ 			vim.cmd[[nmap <leader>mm <Plug>BookmarkToggle]]
+			vim.cmd[[nmap <leader>mi <Plug>BookmarkAnnotate]]
+			vim.cmd[[nmap <leader>ma <Plug>BookmarkShowAll]]
+			vim.cmd[[nmap <leader>mn <Plug>BookmarkNext]]
+			vim.cmd[[nmap <leader>mp <Plug>BookmarkPrev]]
+			vim.cmd[[nmap <leader>mc <Plug>BookmarkClear]]
+			vim.cmd[[nmap <leader>mg <Plug>BookmarkMoveToLine]]
+		end,
+	})
 
 	use({ 
 		'simrat39/symbols-outline.nvim',
