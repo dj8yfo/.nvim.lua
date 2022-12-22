@@ -185,7 +185,7 @@ _G.packer_plugins = {
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
   harpoon = {
-    config = { "\27LJ\2\n®\6\0\0\a\0\23\0@6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\0015\0\4\0006\1\5\0009\1\6\0019\1\a\1'\3\b\0'\4\t\0'\5\n\0\18\6\0\0B\1\5\0016\1\5\0009\1\6\0019\1\a\1'\3\b\0'\4\v\0'\5\f\0\18\6\0\0B\1\5\0016\1\5\0009\1\6\0019\1\a\1'\3\b\0'\4\r\0'\5\14\0\18\6\0\0B\1\5\0016\1\5\0009\1\6\0019\1\a\1'\3\b\0'\4\15\0'\5\16\0\18\6\0\0B\1\5\0016\1\5\0009\1\6\0019\1\a\1'\3\b\0'\4\17\0'\5\18\0\18\6\0\0B\1\5\0016\1\5\0009\1\6\0019\1\a\1'\3\b\0'\4\19\0'\5\20\0\18\6\0\0B\1\5\0016\1\5\0009\1\6\0019\1\a\1'\3\b\0'\4\21\0'\5\22\0\18\6\0\0B\1\5\1K\0\1\0%<cmd>Telescope harpoon marks<CR>\15<leader>hq9<cmd>lua require(\"harpoon.term\").gotoTerminal(4)<CR>\16<leader>ht49<cmd>lua require(\"harpoon.term\").gotoTerminal(3)<CR>\16<leader>ht39<cmd>lua require(\"harpoon.term\").gotoTerminal(2)<CR>\16<leader>ht29<cmd>lua require(\"harpoon.term\").gotoTerminal(1)<CR>\16<leader>ht1;<cmd>lua require(\"harpoon.ui\").toggle_quick_menu()<CR>\15<leader>ho4<cmd>lua require(\"harpoon.mark\").add_file()<CR>\15<leader>hm\6n\20nvim_set_keymap\bapi\bvim\1\0\2\vsilent\2\fnoremap\2\1\0\3\19save_on_toggle\1\16mark_branch\2\19save_on_change\2\nsetup\fharpoon\frequire\0" },
+    config = { "\27LJ\2\n®\6\0\0\a\0\23\0@6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\0015\0\4\0006\1\5\0009\1\6\0019\1\a\1'\3\b\0'\4\t\0'\5\n\0\18\6\0\0B\1\5\0016\1\5\0009\1\6\0019\1\a\1'\3\b\0'\4\v\0'\5\f\0\18\6\0\0B\1\5\0016\1\5\0009\1\6\0019\1\a\1'\3\b\0'\4\r\0'\5\14\0\18\6\0\0B\1\5\0016\1\5\0009\1\6\0019\1\a\1'\3\b\0'\4\15\0'\5\16\0\18\6\0\0B\1\5\0016\1\5\0009\1\6\0019\1\a\1'\3\b\0'\4\17\0'\5\18\0\18\6\0\0B\1\5\0016\1\5\0009\1\6\0019\1\a\1'\3\b\0'\4\19\0'\5\20\0\18\6\0\0B\1\5\0016\1\5\0009\1\6\0019\1\a\1'\3\b\0'\4\21\0'\5\22\0\18\6\0\0B\1\5\1K\0\1\0%<cmd>Telescope harpoon marks<CR>\15<leader>hq9<cmd>lua require(\"harpoon.term\").gotoTerminal(4)<CR>\16<leader>ht49<cmd>lua require(\"harpoon.term\").gotoTerminal(3)<CR>\16<leader>ht39<cmd>lua require(\"harpoon.term\").gotoTerminal(2)<CR>\16<leader>ht29<cmd>lua require(\"harpoon.term\").gotoTerminal(1)<CR>\16<leader>ht1;<cmd>lua require(\"harpoon.ui\").toggle_quick_menu()<CR>\15<leader>ho4<cmd>lua require(\"harpoon.mark\").add_file()<CR>\15<leader>hm\6n\20nvim_set_keymap\bapi\bvim\1\0\2\fnoremap\2\vsilent\2\1\0\3\19save_on_toggle\1\19save_on_change\2\16mark_branch\2\nsetup\fharpoon\frequire\0" },
     loaded = true,
     path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/ThePrimeagen/harpoon"
@@ -284,13 +284,13 @@ _G.packer_plugins = {
     url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-neoclip.lua"] = {
-    config = { "\27LJ\2\nÌ\2\0\0\a\0\r\0\0246\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\0015\0\4\0006\1\5\0009\1\6\0019\1\a\1'\3\b\0'\4\t\0'\5\n\0\18\6\0\0B\1\5\0016\1\5\0009\1\6\0019\1\a\1'\3\b\0'\4\v\0'\5\f\0\18\6\0\0B\1\5\1K\0\1\0@<cmd>lua require(\"telescope\").extensions.neoclip[\"a\"]()<CR>\15<leader>naC<cmd>lua require(\"telescope\").extensions.neoclip[\"plus\"]()<CR>\agu\6n\20nvim_set_keymap\bapi\bvim\1\0\2\vsilent\2\fnoremap\2\1\0\3\30enable_persistent_history\2\20continuous_sync\2\fhistory\3d\nsetup\fneoclip\frequire\0" },
+    config = { "\27LJ\2\nÌ\2\0\0\a\0\r\0\0246\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\0015\0\4\0006\1\5\0009\1\6\0019\1\a\1'\3\b\0'\4\t\0'\5\n\0\18\6\0\0B\1\5\0016\1\5\0009\1\6\0019\1\a\1'\3\b\0'\4\v\0'\5\f\0\18\6\0\0B\1\5\1K\0\1\0@<cmd>lua require(\"telescope\").extensions.neoclip[\"a\"]()<CR>\15<leader>naC<cmd>lua require(\"telescope\").extensions.neoclip[\"plus\"]()<CR>\agu\6n\20nvim_set_keymap\bapi\bvim\1\0\2\fnoremap\2\vsilent\2\1\0\3\fhistory\3d\30enable_persistent_history\2\20continuous_sync\2\nsetup\fneoclip\frequire\0" },
     loaded = true,
     path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/nvim-neoclip.lua",
     url = "https://github.com/AckslD/nvim-neoclip.lua"
   },
   ["nvim-tree.lua"] = {
-    config = { "\27LJ\2\n—\1\0\0\3\0\b\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\0016\0\4\0009\0\5\0'\2\6\0B\0\2\0016\0\4\0009\0\5\0'\2\a\0B\0\2\1K\0\1\0 nmap gB :NvimTreeToggle<CR>\"nmap gb :NvimTreeFindFile<CR>\bcmd\bvim\1\0\3\17hijack_netrw\1\23sync_root_with_cwd\2\18disable_netrw\1\nsetup\14nvim-tree\frequire\0" },
+    config = { "\27LJ\2\n—\1\0\0\3\0\b\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\0016\0\4\0009\0\5\0'\2\6\0B\0\2\0016\0\4\0009\0\5\0'\2\a\0B\0\2\1K\0\1\0 nmap gB :NvimTreeToggle<CR>\"nmap gb :NvimTreeFindFile<CR>\bcmd\bvim\1\0\3\23sync_root_with_cwd\2\18disable_netrw\1\17hijack_netrw\1\nsetup\14nvim-tree\frequire\0" },
     loaded = true,
     path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
     url = "https://github.com/nvim-tree/nvim-tree.lua"
@@ -365,13 +365,13 @@ _G.packer_plugins = {
     url = "https://github.com/kkharji/sqlite.lua"
   },
   ["symbols-outline.nvim"] = {
-    config = { "\27LJ\2\nÅ\2\0\0\4\0\t\0\0166\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\0015\0\4\0006\1\5\0009\1\6\1'\3\a\0B\1\2\0016\1\5\0009\1\6\1'\3\b\0B\1\2\1K\0\1\0-nnoremap <silent> gK :SymbolsOutline<cr>Innoremap <silent> gk :SymbolsOutlineClose<cr>:SymbolsOutlineOpen<cr>\bcmd\bvim\1\0\2\vsilent\2\fnoremap\2\1\0\1\rposition\nright\nsetup\20symbols-outline\frequire\0" },
+    config = { "\27LJ\2\nÅ\2\0\0\4\0\t\0\0166\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\0015\0\4\0006\1\5\0009\1\6\1'\3\a\0B\1\2\0016\1\5\0009\1\6\1'\3\b\0B\1\2\1K\0\1\0-nnoremap <silent> gK :SymbolsOutline<cr>Innoremap <silent> gk :SymbolsOutlineClose<cr>:SymbolsOutlineOpen<cr>\bcmd\bvim\1\0\2\fnoremap\2\vsilent\2\1\0\1\rposition\nright\nsetup\20symbols-outline\frequire\0" },
     loaded = true,
     path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/symbols-outline.nvim",
     url = "https://github.com/simrat39/symbols-outline.nvim"
   },
   ["tabby.nvim"] = {
-    config = { "\27LJ\2\n§\2\0\1\b\2\15\0/9\1\0\0B\1\1\2\15\0\1\0X\2\4Ä-\1\0\0009\1\1\1\14\0\1\0X\2\2Ä-\1\0\0009\1\2\0015\2\r\0-\3\1\0009\3\3\3'\5\4\0\18\6\1\0-\a\0\0009\a\5\aB\3\4\2>\3\1\0029\3\0\0B\3\1\2\15\0\3\0X\4\2Ä'\3\6\0X\4\1Ä'\3\a\0>\3\2\0029\3\b\0B\3\1\2>\3\3\0029\3\t\0B\3\1\2>\3\4\0029\3\n\0'\5\v\0B\3\2\2>\3\5\2-\3\1\0009\3\3\3'\5\f\0\18\6\1\0-\a\0\0009\a\5\aB\3\4\2>\3\6\2=\1\14\2L\2\2\0\0\0\0¿\ahl\1\0\1\vmargin\6 \bÓÇº\bÔÄç\14close_btn\tname\vnumber\bÔö¢\bÔÜí\tfill\bÓÇ∫\bsep\btab\16current_tab\15is_current”\1\0\1\a\2\v\0\"5\1\t\0-\2\0\0009\2\0\2'\4\1\0-\5\1\0009\5\2\5-\6\1\0009\6\3\6B\2\4\2>\2\1\0019\2\4\0B\2\1\2\15\0\2\0X\3\2Ä'\2\5\0X\3\1Ä'\2\6\0>\2\2\0019\2\a\0B\2\1\2>\2\3\1-\2\0\0009\2\0\2'\4\b\0-\5\1\0009\5\2\5-\6\1\0009\6\3\6B\2\4\2>\2\4\1-\2\1\0009\2\2\2=\2\n\1L\1\2\0\0¿\0\0\ahl\1\0\1\vmargin\6 \bÓÇº\rbuf_name\bÔÑå\bÔÜí\15is_current\tfill\bwin\bÓÇ∫\bsep“\2\1\1\b\1\18\00165\1\17\0004\2\3\0005\3\0\0-\4\0\0009\4\1\4=\4\2\3>\3\1\0029\3\3\0'\5\4\0-\6\0\0009\6\1\6-\a\0\0009\a\5\aB\3\4\0?\3\0\0>\2\1\0019\2\6\0B\2\1\0029\2\a\0023\4\b\0B\2\2\2>\2\2\0019\2\t\0B\2\1\2>\2\3\0019\2\n\0009\4\v\0009\4\f\4B\4\1\0A\2\0\0029\2\a\0023\4\r\0B\2\2\2>\2\4\0014\2\3\0009\3\3\0'\5\14\0-\6\0\0009\6\15\6-\a\0\0009\a\5\aB\3\4\2>\3\1\0025\3\16\0-\4\0\0009\4\15\4=\4\2\3>\3\2\2>\2\5\1-\2\0\0009\2\5\2=\2\2\0012\0\0ÄL\1\2\0\0¿\1\0\0\1\2\0\0\n ÔÉ∂ \ttail\bÓÇ∫\0\20get_current_tab\bapi\16wins_in_tab\vspacer\0\fforeach\ttabs\tfill\bÓÇº\bsep\ahl\thead\1\2\0\0\n ÓüÖ \5ÄÄ¿ô\4£\1\1\0\4\0\5\0\t5\0\0\0006\1\1\0'\3\2\0B\1\2\0029\1\3\0013\3\4\0B\1\2\0012\0\0ÄK\0\1\0\0\bset\18tabby.tabline\frequire\1\0\6\thead\fTabLine\bwin\fTabLine\16current_tab\15TabLineSel\btab\fTabLine\tfill\16TabLineFill\ttail\fTabLine\0" },
+    config = { "\27LJ\2\n§\2\0\1\b\2\15\0/9\1\0\0B\1\1\2\15\0\1\0X\2\4Ä-\1\0\0009\1\1\1\14\0\1\0X\2\2Ä-\1\0\0009\1\2\0015\2\r\0-\3\1\0009\3\3\3'\5\4\0\18\6\1\0-\a\0\0009\a\5\aB\3\4\2>\3\1\0029\3\0\0B\3\1\2\15\0\3\0X\4\2Ä'\3\6\0X\4\1Ä'\3\a\0>\3\2\0029\3\b\0B\3\1\2>\3\3\0029\3\t\0B\3\1\2>\3\4\0029\3\n\0'\5\v\0B\3\2\2>\3\5\2-\3\1\0009\3\3\3'\5\f\0\18\6\1\0-\a\0\0009\a\5\aB\3\4\2>\3\6\2=\1\14\2L\2\2\0\0\0\0¿\ahl\1\0\1\vmargin\6 \bÓÇº\bÔÄç\14close_btn\tname\vnumber\bÔö¢\bÔÜí\tfill\bÓÇ∫\bsep\btab\16current_tab\15is_current”\1\0\1\a\2\v\0\"5\1\t\0-\2\0\0009\2\0\2'\4\1\0-\5\1\0009\5\2\5-\6\1\0009\6\3\6B\2\4\2>\2\1\0019\2\4\0B\2\1\2\15\0\2\0X\3\2Ä'\2\5\0X\3\1Ä'\2\6\0>\2\2\0019\2\a\0B\2\1\2>\2\3\1-\2\0\0009\2\0\2'\4\b\0-\5\1\0009\5\2\5-\6\1\0009\6\3\6B\2\4\2>\2\4\1-\2\1\0009\2\2\2=\2\n\1L\1\2\0\0¿\0\0\ahl\1\0\1\vmargin\6 \bÓÇº\rbuf_name\bÔÑå\bÔÜí\15is_current\tfill\bwin\bÓÇ∫\bsep“\2\1\1\b\1\18\00165\1\17\0004\2\3\0005\3\0\0-\4\0\0009\4\1\4=\4\2\3>\3\1\0029\3\3\0'\5\4\0-\6\0\0009\6\1\6-\a\0\0009\a\5\aB\3\4\0?\3\0\0>\2\1\0019\2\6\0B\2\1\0029\2\a\0023\4\b\0B\2\2\2>\2\2\0019\2\t\0B\2\1\2>\2\3\0019\2\n\0009\4\v\0009\4\f\4B\4\1\0A\2\0\0029\2\a\0023\4\r\0B\2\2\2>\2\4\0014\2\3\0009\3\3\0'\5\14\0-\6\0\0009\6\15\6-\a\0\0009\a\5\aB\3\4\2>\3\1\0025\3\16\0-\4\0\0009\4\15\4=\4\2\3>\3\2\2>\2\5\1-\2\0\0009\2\5\2=\2\2\0012\0\0ÄL\1\2\0\0¿\1\0\0\1\2\0\0\n ÔÉ∂ \ttail\bÓÇ∫\0\20get_current_tab\bapi\16wins_in_tab\vspacer\0\fforeach\ttabs\tfill\bÓÇº\bsep\ahl\thead\1\2\0\0\n ÓüÖ \5ÄÄ¿ô\4£\1\1\0\4\0\5\0\t5\0\0\0006\1\1\0'\3\2\0B\1\2\0029\1\3\0013\3\4\0B\1\2\0012\0\0ÄK\0\1\0\0\bset\18tabby.tabline\frequire\1\0\6\tfill\16TabLineFill\ttail\fTabLine\bwin\fTabLine\btab\fTabLine\thead\fTabLine\16current_tab\15TabLineSel\0" },
     loaded = true,
     path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/tabby.nvim",
     url = "https://github.com/nanozuki/tabby.nvim"
@@ -568,10 +568,10 @@ _G.packer_plugins = {
     path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/vim-venter",
     url = "https://github.com/jmckiern/vim-venter"
   },
-  ["vim-visualstar"] = {
+  ["vim-visual-star-search"] = {
     loaded = true,
-    path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/vim-visualstar",
-    url = "https://github.com/thinca/vim-visualstar"
+    path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/vim-visual-star-search",
+    url = "https://github.com/nelstrom/vim-visual-star-search"
   },
   ["vim-wordmotion"] = {
     loaded = true,
@@ -584,7 +584,7 @@ _G.packer_plugins = {
     url = "https://github.com/glepnir/zephyr-nvim"
   },
   zk = {
-    config = { "\27LJ\2\nÆ\b\0\0\b\0\23\00066\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\0015\0\4\0006\1\0\0'\3\5\0B\1\2\0029\1\6\1\18\2\1\0'\4\a\0'\5\b\0'\6\t\0\18\a\0\0B\2\5\1\18\2\1\0'\4\n\0'\5\v\0'\6\f\0\18\a\0\0B\2\5\1\18\2\1\0'\4\n\0'\5\r\0'\6\14\0\18\a\0\0B\2\5\1\18\2\1\0'\4\a\0'\5\15\0'\6\16\0\18\a\0\0B\2\5\1\18\2\1\0'\4\a\0'\5\17\0'\6\18\0\18\a\0\0B\2\5\1\18\2\1\0'\4\a\0'\5\19\0'\6\20\0\18\a\0\0B\2\5\1\18\2\1\0'\4\a\0'\5\21\0'\6\22\0\18\a\0\0B\2\5\1K\0\1\0W<Cmd>ZkLinks { dir = '/home/jerryminion/Documents/code/tasking/zettelkasten' }<CR>\15<leader>zl[<Cmd>ZkBacklinks { dir = '/home/jerryminion/Documents/code/tasking/zettelkasten' }<CR>\15<leader>zbV<Cmd>ZkTags { dir = '/home/jerryminion/Documents/code/tasking/zettelkasten' }<CR>\15<leader>ztW<Cmd>ZkNotes { dir = '/home/jerryminion/Documents/code/tasking/zettelkasten' }<CR>\16<leader>znoå\1:'<,'>ZkNewFromContentSelection { dir = '/home/jerryminion/Documents/code/tasking/zettelkasten' , title = vim.fn.input('Title: ') }<CR>\16<leader>znch:'<,'>ZkNewFromTitleSelection { dir = '/home/jerryminion/Documents/code/tasking/zettelkasten' }<cr>\16<leader>znt\6vv<Cmd>ZkNew { dir = '/home/jerryminion/Documents/code/tasking/zettelkasten', title = vim.fn.input('Title: ') }<CR>\16<leader>znn\6n\bmap\19settings.utils\1\0\2\vsilent\2\fnoremap\2\1\0\1\vpicker\14telescope\nsetup\azk\frequire\0" },
+    config = { "\27LJ\2\nÆ\b\0\0\b\0\23\00066\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\0015\0\4\0006\1\0\0'\3\5\0B\1\2\0029\1\6\1\18\2\1\0'\4\a\0'\5\b\0'\6\t\0\18\a\0\0B\2\5\1\18\2\1\0'\4\n\0'\5\v\0'\6\f\0\18\a\0\0B\2\5\1\18\2\1\0'\4\n\0'\5\r\0'\6\14\0\18\a\0\0B\2\5\1\18\2\1\0'\4\a\0'\5\15\0'\6\16\0\18\a\0\0B\2\5\1\18\2\1\0'\4\a\0'\5\17\0'\6\18\0\18\a\0\0B\2\5\1\18\2\1\0'\4\a\0'\5\19\0'\6\20\0\18\a\0\0B\2\5\1\18\2\1\0'\4\a\0'\5\21\0'\6\22\0\18\a\0\0B\2\5\1K\0\1\0W<Cmd>ZkLinks { dir = '/home/jerryminion/Documents/code/tasking/zettelkasten' }<CR>\15<leader>zl[<Cmd>ZkBacklinks { dir = '/home/jerryminion/Documents/code/tasking/zettelkasten' }<CR>\15<leader>zbV<Cmd>ZkTags { dir = '/home/jerryminion/Documents/code/tasking/zettelkasten' }<CR>\15<leader>ztW<Cmd>ZkNotes { dir = '/home/jerryminion/Documents/code/tasking/zettelkasten' }<CR>\16<leader>znoå\1:'<,'>ZkNewFromContentSelection { dir = '/home/jerryminion/Documents/code/tasking/zettelkasten' , title = vim.fn.input('Title: ') }<CR>\16<leader>znch:'<,'>ZkNewFromTitleSelection { dir = '/home/jerryminion/Documents/code/tasking/zettelkasten' }<cr>\16<leader>znt\6vv<Cmd>ZkNew { dir = '/home/jerryminion/Documents/code/tasking/zettelkasten', title = vim.fn.input('Title: ') }<CR>\16<leader>znn\6n\bmap\19settings.utils\1\0\2\fnoremap\2\vsilent\2\1\0\1\vpicker\14telescope\nsetup\azk\frequire\0" },
     loaded = true,
     path = "/home/jerryminion/.local/share/nvim/site/pack/packer/start/zk",
     url = "https://github.com/mickael-menu/zk-nvim"
@@ -625,17 +625,6 @@ if not vim.g.packer_custom_loader_enabled then
   vim.g.packer_custom_loader_enabled = true
 end
 
--- Setup for: nvim-lightbulb
-time([[Setup for nvim-lightbulb]], true)
-try_loadstring("\27LJ\2\nó\1\0\0\3\0\5\0\v6\0\0\0009\0\1\0009\0\2\0'\2\3\0B\0\2\0016\0\0\0009\0\1\0009\0\2\0'\2\4\0B\0\2\1K\0\1\0-hi link LightBulbVirtualText YellowFloat*hi link LightBulbFloatWin YellowFloat\17nvim_command\bapi\bvim\0", "setup", "nvim-lightbulb")
-time([[Setup for nvim-lightbulb]], false)
-time([[packadd for nvim-lightbulb]], true)
-vim.cmd [[packadd nvim-lightbulb]]
-time([[packadd for nvim-lightbulb]], false)
--- Setup for: vim-sayonara
-time([[Setup for vim-sayonara]], true)
-try_loadstring("\27LJ\2\ns\0\0\a\0\a\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0\18\1\0\0'\3\3\0'\4\4\0'\5\5\0005\6\6\0B\1\5\1K\0\1\0\1\0\1\vsilent\2\22<cmd>Sayonara<CR>\n<m-q>\6n\bmap\19settings.utils\frequire\0", "setup", "vim-sayonara")
-time([[Setup for vim-sayonara]], false)
 -- Setup for: asyncrun.vim
 time([[Setup for asyncrun.vim]], true)
 try_loadstring("\27LJ\2\n\v\0\0\1\0\0\0\1K\0\1\0\0", "setup", "asyncrun.vim")
@@ -643,13 +632,6 @@ time([[Setup for asyncrun.vim]], false)
 time([[packadd for asyncrun.vim]], true)
 vim.cmd [[packadd asyncrun.vim]]
 time([[packadd for asyncrun.vim]], false)
--- Setup for: scratch.vim
-time([[Setup for scratch.vim]], true)
-try_loadstring("\27LJ\2\nE\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0&let g:scratch_insert_autohide = 0\bcmd\bvim\0", "setup", "scratch.vim")
-time([[Setup for scratch.vim]], false)
-time([[packadd for scratch.vim]], true)
-vim.cmd [[packadd scratch.vim]]
-time([[packadd for scratch.vim]], false)
 -- Setup for: telescope.nvim
 time([[Setup for telescope.nvim]], true)
 require('settings.plugins.telescope_setup')
@@ -661,6 +643,17 @@ time([[Setup for vim-grep-operator]], false)
 time([[packadd for vim-grep-operator]], true)
 vim.cmd [[packadd vim-grep-operator]]
 time([[packadd for vim-grep-operator]], false)
+-- Setup for: vim-sayonara
+time([[Setup for vim-sayonara]], true)
+try_loadstring("\27LJ\2\ns\0\0\a\0\a\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0\18\1\0\0'\3\3\0'\4\4\0'\5\5\0005\6\6\0B\1\5\1K\0\1\0\1\0\1\vsilent\2\22<cmd>Sayonara<CR>\n<m-q>\6n\bmap\19settings.utils\frequire\0", "setup", "vim-sayonara")
+time([[Setup for vim-sayonara]], false)
+-- Setup for: scratch.vim
+time([[Setup for scratch.vim]], true)
+try_loadstring("\27LJ\2\nE\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0&let g:scratch_insert_autohide = 0\bcmd\bvim\0", "setup", "scratch.vim")
+time([[Setup for scratch.vim]], false)
+time([[packadd for scratch.vim]], true)
+vim.cmd [[packadd scratch.vim]]
+time([[packadd for scratch.vim]], false)
 -- Setup for: vim-togglelist
 time([[Setup for vim-togglelist]], true)
 try_loadstring("\27LJ\2\n◊\1\0\0\3\0\5\0\r6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\1\0'\2\3\0B\0\2\0016\0\0\0009\0\1\0'\2\4\0B\0\2\1K\0\1\0&let g:toggle_list_no_mappings = 1=nmap <script> <silent> go :call ToggleQuickfixList()<CR>=nmap <script> <silent> g; :call ToggleLocationList()<CR>\bcmd\bvim\0", "setup", "vim-togglelist")
@@ -668,109 +661,16 @@ time([[Setup for vim-togglelist]], false)
 time([[packadd for vim-togglelist]], true)
 vim.cmd [[packadd vim-togglelist]]
 time([[packadd for vim-togglelist]], false)
--- Config for: vim-venter
-time([[Config for vim-venter]], true)
-try_loadstring("\27LJ\2\nü\1\0\0\3\0\5\0\r6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\1\0'\2\3\0B\0\2\0016\0\0\0009\0\1\0'\2\4\0B\0\2\1K\0\1\0'let g:venter_disable_vertsplit = 1#let g:venter_use_textwidth = 1\30nmap gz :VenterToggle<CR>\bcmd\bvim\0", "config", "vim-venter")
-time([[Config for vim-venter]], false)
--- Config for: lualine.nvim
-time([[Config for lualine.nvim]], true)
-try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\flualine\frequire\0", "config", "lualine.nvim")
-time([[Config for lualine.nvim]], false)
--- Config for: undotree
-time([[Config for undotree]], true)
-try_loadstring("\27LJ\2\n‹\1\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0º\1\t\t\t\tif has(\"persistent_undo\")\n\t\t\t\t   let target_path = expand('~/.nvim_undodir')\n\n\n\t\t\t\t\tlet &undodir=target_path\n\t\t\t\t\tset undofile\n\t\t\t\tendif\n\n\t\t\t\tnnoremap <F5> :UndotreeToggle<CR>\n\t\t\t\bcmd\bvim\0", "config", "undotree")
-time([[Config for undotree]], false)
--- Config for: rust-tools.nvim
-time([[Config for rust-tools.nvim]], true)
-require('settings.plugins.lspconfig.langs.rust-tools')
-time([[Config for rust-tools.nvim]], false)
--- Config for: trouble.nvim
-time([[Config for trouble.nvim]], true)
-try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\1\2\0B\1\1\1K\0\1\0\nsetup\ftrouble\frequire\0", "config", "trouble.nvim")
-time([[Config for trouble.nvim]], false)
--- Config for: vim-sneak
-time([[Config for vim-sneak]], true)
-try_loadstring("\27LJ\2\n>\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\31let g:sneak#use_ic_scs = 1\bcmd\bvim\0", "config", "vim-sneak")
-time([[Config for vim-sneak]], false)
--- Config for: vim-slime
-time([[Config for vim-slime]], true)
-try_loadstring("\27LJ\2\nÕ\3\0\0\3\0\n\0!6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\1\0'\2\3\0B\0\2\0016\0\0\0009\0\1\0'\2\4\0B\0\2\0016\0\0\0009\0\1\0'\2\5\0B\0\2\0016\0\0\0009\0\1\0'\2\6\0B\0\2\0016\0\0\0009\0\1\0'\2\a\0B\0\2\0016\0\0\0009\0\1\0'\2\b\0B\0\2\0016\0\0\0009\0\1\0'\2\t\0B\0\2\1K\0\1\0#nmap <M-w> <Plug>SlimeLineSend%nmap <M-;> <Plug>SlimeMotionSend%xmap <M-;> <Plug>SlimeRegionSend let g:slime_no_mappings = 1#let g:slime_python_ipython = 1Xlet g:slime_default_config = {\"socket_name\": \"default\", \"target_pane\": \"{down-of}\"}2let g:slime_paste_file = \"$HOME/.slime_paste\" let g:slime_target = \"tmux\"\bcmd\bvim\0", "config", "vim-slime")
-time([[Config for vim-slime]], false)
--- Config for: LuaSnip
-time([[Config for LuaSnip]], true)
-try_loadstring("\27LJ\2\nO\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\14lazy_load\"luasnip.loaders.from_snipmate\frequire\0", "config", "LuaSnip")
-time([[Config for LuaSnip]], false)
--- Config for: vim-markdown
-time([[Config for vim-markdown]], true)
-try_loadstring("\27LJ\2\np\0\0\2\0\4\0\t6\0\0\0009\0\1\0)\1\1\0=\1\2\0006\0\0\0009\0\1\0)\1\6\0=\1\3\0K\0\1\0\31vim_markdown_folding_level(vim_markdown_folding_style_pythonic\6g\bvim\0", "config", "vim-markdown")
-time([[Config for vim-markdown]], false)
--- Config for: gitsigns.nvim
-time([[Config for gitsigns.nvim]], true)
-try_loadstring("\27LJ\2\n9\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\30settings.plugins.gitsigns\frequire\0", "config", "gitsigns.nvim")
-time([[Config for gitsigns.nvim]], false)
--- Config for: nvim-neoclip.lua
-time([[Config for nvim-neoclip.lua]], true)
-try_loadstring("\27LJ\2\nÌ\2\0\0\a\0\r\0\0246\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\0015\0\4\0006\1\5\0009\1\6\0019\1\a\1'\3\b\0'\4\t\0'\5\n\0\18\6\0\0B\1\5\0016\1\5\0009\1\6\0019\1\a\1'\3\b\0'\4\v\0'\5\f\0\18\6\0\0B\1\5\1K\0\1\0@<cmd>lua require(\"telescope\").extensions.neoclip[\"a\"]()<CR>\15<leader>naC<cmd>lua require(\"telescope\").extensions.neoclip[\"plus\"]()<CR>\agu\6n\20nvim_set_keymap\bapi\bvim\1\0\2\vsilent\2\fnoremap\2\1\0\3\30enable_persistent_history\2\20continuous_sync\2\fhistory\3d\nsetup\fneoclip\frequire\0", "config", "nvim-neoclip.lua")
-time([[Config for nvim-neoclip.lua]], false)
--- Config for: nvim-lspconfig
-time([[Config for nvim-lspconfig]], true)
-require('settings.plugins.lspconfig')
-time([[Config for nvim-lspconfig]], false)
--- Config for: diffview.nvim
-time([[Config for diffview.nvim]], true)
-require('settings.plugins.diffview')
-time([[Config for diffview.nvim]], false)
--- Config for: vim-fugitive
-time([[Config for vim-fugitive]], true)
-try_loadstring("\27LJ\2\nv\0\0\b\0\a\0\f6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\1\3\0\18\2\0\0'\4\4\0'\5\5\0'\6\6\0\18\a\1\0B\2\5\1K\0\1\0\24<cmd>Git commit<CR>\agC\6n\1\0\1\vsilent\2\bmap\19settings.utils\frequire\0", "config", "vim-fugitive")
-time([[Config for vim-fugitive]], false)
--- Config for: nvim-tree.lua
-time([[Config for nvim-tree.lua]], true)
-try_loadstring("\27LJ\2\n—\1\0\0\3\0\b\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\0016\0\4\0009\0\5\0'\2\6\0B\0\2\0016\0\4\0009\0\5\0'\2\a\0B\0\2\1K\0\1\0 nmap gB :NvimTreeToggle<CR>\"nmap gb :NvimTreeFindFile<CR>\bcmd\bvim\1\0\3\17hijack_netrw\1\23sync_root_with_cwd\2\18disable_netrw\1\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")
-time([[Config for nvim-tree.lua]], false)
--- Config for: nvim-comment
-time([[Config for nvim-comment]], true)
-try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\17nvim_comment\frequire\0", "config", "nvim-comment")
-time([[Config for nvim-comment]], false)
--- Config for: zk
-time([[Config for zk]], true)
-try_loadstring("\27LJ\2\nÆ\b\0\0\b\0\23\00066\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\0015\0\4\0006\1\0\0'\3\5\0B\1\2\0029\1\6\1\18\2\1\0'\4\a\0'\5\b\0'\6\t\0\18\a\0\0B\2\5\1\18\2\1\0'\4\n\0'\5\v\0'\6\f\0\18\a\0\0B\2\5\1\18\2\1\0'\4\n\0'\5\r\0'\6\14\0\18\a\0\0B\2\5\1\18\2\1\0'\4\a\0'\5\15\0'\6\16\0\18\a\0\0B\2\5\1\18\2\1\0'\4\a\0'\5\17\0'\6\18\0\18\a\0\0B\2\5\1\18\2\1\0'\4\a\0'\5\19\0'\6\20\0\18\a\0\0B\2\5\1\18\2\1\0'\4\a\0'\5\21\0'\6\22\0\18\a\0\0B\2\5\1K\0\1\0W<Cmd>ZkLinks { dir = '/home/jerryminion/Documents/code/tasking/zettelkasten' }<CR>\15<leader>zl[<Cmd>ZkBacklinks { dir = '/home/jerryminion/Documents/code/tasking/zettelkasten' }<CR>\15<leader>zbV<Cmd>ZkTags { dir = '/home/jerryminion/Documents/code/tasking/zettelkasten' }<CR>\15<leader>ztW<Cmd>ZkNotes { dir = '/home/jerryminion/Documents/code/tasking/zettelkasten' }<CR>\16<leader>znoå\1:'<,'>ZkNewFromContentSelection { dir = '/home/jerryminion/Documents/code/tasking/zettelkasten' , title = vim.fn.input('Title: ') }<CR>\16<leader>znch:'<,'>ZkNewFromTitleSelection { dir = '/home/jerryminion/Documents/code/tasking/zettelkasten' }<cr>\16<leader>znt\6vv<Cmd>ZkNew { dir = '/home/jerryminion/Documents/code/tasking/zettelkasten', title = vim.fn.input('Title: ') }<CR>\16<leader>znn\6n\bmap\19settings.utils\1\0\2\vsilent\2\fnoremap\2\1\0\1\vpicker\14telescope\nsetup\azk\frequire\0", "config", "zk")
-time([[Config for zk]], false)
--- Config for: packer.nvim
-time([[Config for packer.nvim]], true)
-try_loadstring("\27LJ\2\nC\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0$nmap <leader>ps :PackerSync<cr>\bcmd\bvim\0", "config", "packer.nvim")
-time([[Config for packer.nvim]], false)
--- Config for: nvim-autopairs
-time([[Config for nvim-autopairs]], true)
-try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
-time([[Config for nvim-autopairs]], false)
--- Config for: vim-indentwise
-time([[Config for vim-indentwise]], true)
-try_loadstring("\27LJ\2\nÖ\2\0\0\3\0\6\0\0176\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\1\0'\2\3\0B\0\2\0016\0\0\0009\0\1\0'\2\4\0B\0\2\0016\0\0\0009\0\1\0'\2\5\0B\0\2\1K\0\1\0/map ]w <Plug>(IndentWiseNextGreaterIndent)3map [w <Plug>(IndentWisePreviousGreaterIndent).map ]s <Plug>(IndentWiseNextLesserIndent)2map [s <Plug>(IndentWisePreviousLesserIndent)\bcmd\bvim\0", "config", "vim-indentwise")
-time([[Config for vim-indentwise]], false)
--- Config for: vim-enfocado
-time([[Config for vim-enfocado]], true)
-try_loadstring("\27LJ\2\nA\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\"let g:enfocado_style = 'neon'\bcmd\bvim\0", "config", "vim-enfocado")
-time([[Config for vim-enfocado]], false)
--- Config for: ack.vim
-time([[Config for ack.vim]], true)
-try_loadstring("\27LJ\2\nW\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0008let g:ackprg = 'rg --smart-case --ignore --vimgrep'\bcmd\bvim\0", "config", "ack.vim")
-time([[Config for ack.vim]], false)
--- Config for: vim-easymotion
-time([[Config for vim-easymotion]], true)
-try_loadstring("\27LJ\2\n“\1\0\0\3\0\a\0\0176\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\1\0'\2\3\0B\0\2\0016\0\0\0009\0\1\0'\2\4\0B\0\2\0016\0\0\0009\0\5\0)\1\1\0=\1\6\0K\0\1\0\25EasyMotion_smartcase\6g%omap gy <Plug>(easymotion-bd-f2)%xmap gy <Plug>(easymotion-bd-f2)*nmap gy <Plug>(easymotion-overwin-f2)\bcmd\bvim\0", "config", "vim-easymotion")
-time([[Config for vim-easymotion]], false)
--- Config for: vim-edgemotion
-time([[Config for vim-edgemotion]], true)
-try_loadstring("\27LJ\2\n´\1\0\0\5\0\b\0\0146\0\0\0'\2\1\0B\0\2\0029\0\2\0005\1\3\0006\2\4\0009\2\5\2'\4\6\0B\2\2\0016\2\4\0009\2\5\2'\4\a\0B\2\2\1K\0\1\0#map <C-k> <Plug>(edgemotion-k)#map <C-j> <Plug>(edgemotion-j)\bcmd\bvim\1\0\1\vsilent\2\bmap\19settings.utils\frequire\0", "config", "vim-edgemotion")
-time([[Config for vim-edgemotion]], false)
--- Config for: tabby.nvim
-time([[Config for tabby.nvim]], true)
-try_loadstring("\27LJ\2\n§\2\0\1\b\2\15\0/9\1\0\0B\1\1\2\15\0\1\0X\2\4Ä-\1\0\0009\1\1\1\14\0\1\0X\2\2Ä-\1\0\0009\1\2\0015\2\r\0-\3\1\0009\3\3\3'\5\4\0\18\6\1\0-\a\0\0009\a\5\aB\3\4\2>\3\1\0029\3\0\0B\3\1\2\15\0\3\0X\4\2Ä'\3\6\0X\4\1Ä'\3\a\0>\3\2\0029\3\b\0B\3\1\2>\3\3\0029\3\t\0B\3\1\2>\3\4\0029\3\n\0'\5\v\0B\3\2\2>\3\5\2-\3\1\0009\3\3\3'\5\f\0\18\6\1\0-\a\0\0009\a\5\aB\3\4\2>\3\6\2=\1\14\2L\2\2\0\0\0\0¿\ahl\1\0\1\vmargin\6 \bÓÇº\bÔÄç\14close_btn\tname\vnumber\bÔö¢\bÔÜí\tfill\bÓÇ∫\bsep\btab\16current_tab\15is_current”\1\0\1\a\2\v\0\"5\1\t\0-\2\0\0009\2\0\2'\4\1\0-\5\1\0009\5\2\5-\6\1\0009\6\3\6B\2\4\2>\2\1\0019\2\4\0B\2\1\2\15\0\2\0X\3\2Ä'\2\5\0X\3\1Ä'\2\6\0>\2\2\0019\2\a\0B\2\1\2>\2\3\1-\2\0\0009\2\0\2'\4\b\0-\5\1\0009\5\2\5-\6\1\0009\6\3\6B\2\4\2>\2\4\1-\2\1\0009\2\2\2=\2\n\1L\1\2\0\0¿\0\0\ahl\1\0\1\vmargin\6 \bÓÇº\rbuf_name\bÔÑå\bÔÜí\15is_current\tfill\bwin\bÓÇ∫\bsep“\2\1\1\b\1\18\00165\1\17\0004\2\3\0005\3\0\0-\4\0\0009\4\1\4=\4\2\3>\3\1\0029\3\3\0'\5\4\0-\6\0\0009\6\1\6-\a\0\0009\a\5\aB\3\4\0?\3\0\0>\2\1\0019\2\6\0B\2\1\0029\2\a\0023\4\b\0B\2\2\2>\2\2\0019\2\t\0B\2\1\2>\2\3\0019\2\n\0009\4\v\0009\4\f\4B\4\1\0A\2\0\0029\2\a\0023\4\r\0B\2\2\2>\2\4\0014\2\3\0009\3\3\0'\5\14\0-\6\0\0009\6\15\6-\a\0\0009\a\5\aB\3\4\2>\3\1\0025\3\16\0-\4\0\0009\4\15\4=\4\2\3>\3\2\2>\2\5\1-\2\0\0009\2\5\2=\2\2\0012\0\0ÄL\1\2\0\0¿\1\0\0\1\2\0\0\n ÔÉ∂ \ttail\bÓÇ∫\0\20get_current_tab\bapi\16wins_in_tab\vspacer\0\fforeach\ttabs\tfill\bÓÇº\bsep\ahl\thead\1\2\0\0\n ÓüÖ \5ÄÄ¿ô\4£\1\1\0\4\0\5\0\t5\0\0\0006\1\1\0'\3\2\0B\1\2\0029\1\3\0013\3\4\0B\1\2\0012\0\0ÄK\0\1\0\0\bset\18tabby.tabline\frequire\1\0\6\thead\fTabLine\bwin\fTabLine\16current_tab\15TabLineSel\btab\fTabLine\tfill\16TabLineFill\ttail\fTabLine\0", "config", "tabby.nvim")
-time([[Config for tabby.nvim]], false)
+-- Setup for: nvim-lightbulb
+time([[Setup for nvim-lightbulb]], true)
+try_loadstring("\27LJ\2\nó\1\0\0\3\0\5\0\v6\0\0\0009\0\1\0009\0\2\0'\2\3\0B\0\2\0016\0\0\0009\0\1\0009\0\2\0'\2\4\0B\0\2\1K\0\1\0-hi link LightBulbVirtualText YellowFloat*hi link LightBulbFloatWin YellowFloat\17nvim_command\bapi\bvim\0", "setup", "nvim-lightbulb")
+time([[Setup for nvim-lightbulb]], false)
+time([[packadd for nvim-lightbulb]], true)
+vim.cmd [[packadd nvim-lightbulb]]
+time([[packadd for nvim-lightbulb]], false)
 -- Config for: harpoon
 time([[Config for harpoon]], true)
-try_loadstring("\27LJ\2\n®\6\0\0\a\0\23\0@6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\0015\0\4\0006\1\5\0009\1\6\0019\1\a\1'\3\b\0'\4\t\0'\5\n\0\18\6\0\0B\1\5\0016\1\5\0009\1\6\0019\1\a\1'\3\b\0'\4\v\0'\5\f\0\18\6\0\0B\1\5\0016\1\5\0009\1\6\0019\1\a\1'\3\b\0'\4\r\0'\5\14\0\18\6\0\0B\1\5\0016\1\5\0009\1\6\0019\1\a\1'\3\b\0'\4\15\0'\5\16\0\18\6\0\0B\1\5\0016\1\5\0009\1\6\0019\1\a\1'\3\b\0'\4\17\0'\5\18\0\18\6\0\0B\1\5\0016\1\5\0009\1\6\0019\1\a\1'\3\b\0'\4\19\0'\5\20\0\18\6\0\0B\1\5\0016\1\5\0009\1\6\0019\1\a\1'\3\b\0'\4\21\0'\5\22\0\18\6\0\0B\1\5\1K\0\1\0%<cmd>Telescope harpoon marks<CR>\15<leader>hq9<cmd>lua require(\"harpoon.term\").gotoTerminal(4)<CR>\16<leader>ht49<cmd>lua require(\"harpoon.term\").gotoTerminal(3)<CR>\16<leader>ht39<cmd>lua require(\"harpoon.term\").gotoTerminal(2)<CR>\16<leader>ht29<cmd>lua require(\"harpoon.term\").gotoTerminal(1)<CR>\16<leader>ht1;<cmd>lua require(\"harpoon.ui\").toggle_quick_menu()<CR>\15<leader>ho4<cmd>lua require(\"harpoon.mark\").add_file()<CR>\15<leader>hm\6n\20nvim_set_keymap\bapi\bvim\1\0\2\vsilent\2\fnoremap\2\1\0\3\19save_on_toggle\1\16mark_branch\2\19save_on_change\2\nsetup\fharpoon\frequire\0", "config", "harpoon")
+try_loadstring("\27LJ\2\n®\6\0\0\a\0\23\0@6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\0015\0\4\0006\1\5\0009\1\6\0019\1\a\1'\3\b\0'\4\t\0'\5\n\0\18\6\0\0B\1\5\0016\1\5\0009\1\6\0019\1\a\1'\3\b\0'\4\v\0'\5\f\0\18\6\0\0B\1\5\0016\1\5\0009\1\6\0019\1\a\1'\3\b\0'\4\r\0'\5\14\0\18\6\0\0B\1\5\0016\1\5\0009\1\6\0019\1\a\1'\3\b\0'\4\15\0'\5\16\0\18\6\0\0B\1\5\0016\1\5\0009\1\6\0019\1\a\1'\3\b\0'\4\17\0'\5\18\0\18\6\0\0B\1\5\0016\1\5\0009\1\6\0019\1\a\1'\3\b\0'\4\19\0'\5\20\0\18\6\0\0B\1\5\0016\1\5\0009\1\6\0019\1\a\1'\3\b\0'\4\21\0'\5\22\0\18\6\0\0B\1\5\1K\0\1\0%<cmd>Telescope harpoon marks<CR>\15<leader>hq9<cmd>lua require(\"harpoon.term\").gotoTerminal(4)<CR>\16<leader>ht49<cmd>lua require(\"harpoon.term\").gotoTerminal(3)<CR>\16<leader>ht39<cmd>lua require(\"harpoon.term\").gotoTerminal(2)<CR>\16<leader>ht29<cmd>lua require(\"harpoon.term\").gotoTerminal(1)<CR>\16<leader>ht1;<cmd>lua require(\"harpoon.ui\").toggle_quick_menu()<CR>\15<leader>ho4<cmd>lua require(\"harpoon.mark\").add_file()<CR>\15<leader>hm\6n\20nvim_set_keymap\bapi\bvim\1\0\2\fnoremap\2\vsilent\2\1\0\3\19save_on_toggle\1\19save_on_change\2\16mark_branch\2\nsetup\fharpoon\frequire\0", "config", "harpoon")
 time([[Config for harpoon]], false)
 -- Config for: neoscroll.nvim
 time([[Config for neoscroll.nvim]], true)
@@ -778,44 +678,144 @@ try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K
 time([[Config for neoscroll.nvim]], false)
 -- Config for: symbols-outline.nvim
 time([[Config for symbols-outline.nvim]], true)
-try_loadstring("\27LJ\2\nÅ\2\0\0\4\0\t\0\0166\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\0015\0\4\0006\1\5\0009\1\6\1'\3\a\0B\1\2\0016\1\5\0009\1\6\1'\3\b\0B\1\2\1K\0\1\0-nnoremap <silent> gK :SymbolsOutline<cr>Innoremap <silent> gk :SymbolsOutlineClose<cr>:SymbolsOutlineOpen<cr>\bcmd\bvim\1\0\2\vsilent\2\fnoremap\2\1\0\1\rposition\nright\nsetup\20symbols-outline\frequire\0", "config", "symbols-outline.nvim")
+try_loadstring("\27LJ\2\nÅ\2\0\0\4\0\t\0\0166\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\0015\0\4\0006\1\5\0009\1\6\1'\3\a\0B\1\2\0016\1\5\0009\1\6\1'\3\b\0B\1\2\1K\0\1\0-nnoremap <silent> gK :SymbolsOutline<cr>Innoremap <silent> gk :SymbolsOutlineClose<cr>:SymbolsOutlineOpen<cr>\bcmd\bvim\1\0\2\fnoremap\2\vsilent\2\1\0\1\rposition\nright\nsetup\20symbols-outline\frequire\0", "config", "symbols-outline.nvim")
 time([[Config for symbols-outline.nvim]], false)
--- Config for: nvim-treesitter
-time([[Config for nvim-treesitter]], true)
-require('settings.plugins.treesitter')
-time([[Config for nvim-treesitter]], false)
--- Config for: vim-dirvish
-time([[Config for vim-dirvish]], true)
-try_loadstring("\27LJ\2\n>\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\31nmap <leader>tc :tcd %<CR>\bcmd\bvim\0", "config", "vim-dirvish")
-time([[Config for vim-dirvish]], false)
+-- Config for: zk
+time([[Config for zk]], true)
+try_loadstring("\27LJ\2\nÆ\b\0\0\b\0\23\00066\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\0015\0\4\0006\1\0\0'\3\5\0B\1\2\0029\1\6\1\18\2\1\0'\4\a\0'\5\b\0'\6\t\0\18\a\0\0B\2\5\1\18\2\1\0'\4\n\0'\5\v\0'\6\f\0\18\a\0\0B\2\5\1\18\2\1\0'\4\n\0'\5\r\0'\6\14\0\18\a\0\0B\2\5\1\18\2\1\0'\4\a\0'\5\15\0'\6\16\0\18\a\0\0B\2\5\1\18\2\1\0'\4\a\0'\5\17\0'\6\18\0\18\a\0\0B\2\5\1\18\2\1\0'\4\a\0'\5\19\0'\6\20\0\18\a\0\0B\2\5\1\18\2\1\0'\4\a\0'\5\21\0'\6\22\0\18\a\0\0B\2\5\1K\0\1\0W<Cmd>ZkLinks { dir = '/home/jerryminion/Documents/code/tasking/zettelkasten' }<CR>\15<leader>zl[<Cmd>ZkBacklinks { dir = '/home/jerryminion/Documents/code/tasking/zettelkasten' }<CR>\15<leader>zbV<Cmd>ZkTags { dir = '/home/jerryminion/Documents/code/tasking/zettelkasten' }<CR>\15<leader>ztW<Cmd>ZkNotes { dir = '/home/jerryminion/Documents/code/tasking/zettelkasten' }<CR>\16<leader>znoå\1:'<,'>ZkNewFromContentSelection { dir = '/home/jerryminion/Documents/code/tasking/zettelkasten' , title = vim.fn.input('Title: ') }<CR>\16<leader>znch:'<,'>ZkNewFromTitleSelection { dir = '/home/jerryminion/Documents/code/tasking/zettelkasten' }<cr>\16<leader>znt\6vv<Cmd>ZkNew { dir = '/home/jerryminion/Documents/code/tasking/zettelkasten', title = vim.fn.input('Title: ') }<CR>\16<leader>znn\6n\bmap\19settings.utils\1\0\2\fnoremap\2\vsilent\2\1\0\1\vpicker\14telescope\nsetup\azk\frequire\0", "config", "zk")
+time([[Config for zk]], false)
+-- Config for: vim-indentwise
+time([[Config for vim-indentwise]], true)
+try_loadstring("\27LJ\2\nÖ\2\0\0\3\0\6\0\0176\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\1\0'\2\3\0B\0\2\0016\0\0\0009\0\1\0'\2\4\0B\0\2\0016\0\0\0009\0\1\0'\2\5\0B\0\2\1K\0\1\0/map ]w <Plug>(IndentWiseNextGreaterIndent)3map [w <Plug>(IndentWisePreviousGreaterIndent).map ]s <Plug>(IndentWiseNextLesserIndent)2map [s <Plug>(IndentWisePreviousLesserIndent)\bcmd\bvim\0", "config", "vim-indentwise")
+time([[Config for vim-indentwise]], false)
 -- Config for: vim-highlighter
 time([[Config for vim-highlighter]], true)
 try_loadstring("\27LJ\2\n”\3\0\0\3\0\n\0!6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\1\0'\2\3\0B\0\2\0016\0\0\0009\0\1\0'\2\4\0B\0\2\0016\0\0\0009\0\1\0'\2\5\0B\0\2\0016\0\0\0009\0\1\0'\2\6\0B\0\2\0016\0\0\0009\0\1\0'\2\a\0B\0\2\0016\0\0\0009\0\1\0'\2\b\0B\0\2\0016\0\0\0009\0\1\0'\2\t\0B\0\2\1K\0\1\0-hi HiColor8 guifg=MistyRose guibg=gray22-hi HiColor7 guifg=OliveDrab guibg=gray22(hi HiColor6 guifg=gold guibg=gray22-hi HiColor5 guifg=turquoise guibg=gray22-hi HiColor4 guifg=LightCyan guibg=gray22/hi HiColor3 guifg=GreenYellow guibg=gray22*hi HiColor2 guifg=yellow guibg=gray22+hi HiColor1 guifg=HotPink guibg=gray22\bcmd\bvim\0", "config", "vim-highlighter")
 time([[Config for vim-highlighter]], false)
--- Config for: lsp-status.nvim
-time([[Config for lsp-status.nvim]], true)
-require('settings.plugins.lsp-status')
-time([[Config for lsp-status.nvim]], false)
+-- Config for: lualine.nvim
+time([[Config for lualine.nvim]], true)
+try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\flualine\frequire\0", "config", "lualine.nvim")
+time([[Config for lualine.nvim]], false)
+-- Config for: vim-fugitive
+time([[Config for vim-fugitive]], true)
+try_loadstring("\27LJ\2\nv\0\0\b\0\a\0\f6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\1\3\0\18\2\0\0'\4\4\0'\5\5\0'\6\6\0\18\a\1\0B\2\5\1K\0\1\0\24<cmd>Git commit<CR>\agC\6n\1\0\1\vsilent\2\bmap\19settings.utils\frequire\0", "config", "vim-fugitive")
+time([[Config for vim-fugitive]], false)
+-- Config for: vim-markdown
+time([[Config for vim-markdown]], true)
+try_loadstring("\27LJ\2\np\0\0\2\0\4\0\t6\0\0\0009\0\1\0)\1\1\0=\1\2\0006\0\0\0009\0\1\0)\1\6\0=\1\3\0K\0\1\0\31vim_markdown_folding_level(vim_markdown_folding_style_pythonic\6g\bvim\0", "config", "vim-markdown")
+time([[Config for vim-markdown]], false)
+-- Config for: ack.vim
+time([[Config for ack.vim]], true)
+try_loadstring("\27LJ\2\nW\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0008let g:ackprg = 'rg --smart-case --ignore --vimgrep'\bcmd\bvim\0", "config", "ack.vim")
+time([[Config for ack.vim]], false)
+-- Config for: vim-enfocado
+time([[Config for vim-enfocado]], true)
+try_loadstring("\27LJ\2\nA\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\"let g:enfocado_style = 'neon'\bcmd\bvim\0", "config", "vim-enfocado")
+time([[Config for vim-enfocado]], false)
+-- Config for: vim-edgemotion
+time([[Config for vim-edgemotion]], true)
+try_loadstring("\27LJ\2\n´\1\0\0\5\0\b\0\0146\0\0\0'\2\1\0B\0\2\0029\0\2\0005\1\3\0006\2\4\0009\2\5\2'\4\6\0B\2\2\0016\2\4\0009\2\5\2'\4\a\0B\2\2\1K\0\1\0#map <C-k> <Plug>(edgemotion-k)#map <C-j> <Plug>(edgemotion-j)\bcmd\bvim\1\0\1\vsilent\2\bmap\19settings.utils\frequire\0", "config", "vim-edgemotion")
+time([[Config for vim-edgemotion]], false)
+-- Config for: vim-easymotion
+time([[Config for vim-easymotion]], true)
+try_loadstring("\27LJ\2\n“\1\0\0\3\0\a\0\0176\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\1\0'\2\3\0B\0\2\0016\0\0\0009\0\1\0'\2\4\0B\0\2\0016\0\0\0009\0\5\0)\1\1\0=\1\6\0K\0\1\0\25EasyMotion_smartcase\6g%omap gy <Plug>(easymotion-bd-f2)%xmap gy <Plug>(easymotion-bd-f2)*nmap gy <Plug>(easymotion-overwin-f2)\bcmd\bvim\0", "config", "vim-easymotion")
+time([[Config for vim-easymotion]], false)
+-- Config for: LuaSnip
+time([[Config for LuaSnip]], true)
+try_loadstring("\27LJ\2\nO\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\14lazy_load\"luasnip.loaders.from_snipmate\frequire\0", "config", "LuaSnip")
+time([[Config for LuaSnip]], false)
+-- Config for: vim-dirvish
+time([[Config for vim-dirvish]], true)
+try_loadstring("\27LJ\2\n>\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\31nmap <leader>tc :tcd %<CR>\bcmd\bvim\0", "config", "vim-dirvish")
+time([[Config for vim-dirvish]], false)
+-- Config for: packer.nvim
+time([[Config for packer.nvim]], true)
+try_loadstring("\27LJ\2\nC\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0$nmap <leader>ps :PackerSync<cr>\bcmd\bvim\0", "config", "packer.nvim")
+time([[Config for packer.nvim]], false)
 -- Config for: vim-bookmarks
 time([[Config for vim-bookmarks]], true)
 try_loadstring("\27LJ\2\n®\4\0\0\3\0\f\0)6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\1\0'\2\3\0B\0\2\0016\0\0\0009\0\1\0'\2\4\0B\0\2\0016\0\0\0009\0\1\0'\2\5\0B\0\2\0016\0\0\0009\0\1\0'\2\6\0B\0\2\0016\0\0\0009\0\1\0'\2\a\0B\0\2\0016\0\0\0009\0\1\0'\2\b\0B\0\2\0016\0\0\0009\0\1\0'\2\t\0B\0\2\0016\0\0\0009\0\1\0'\2\n\0B\0\2\0016\0\0\0009\0\1\0'\2\v\0B\0\2\1K\0\1\0-nmap <leader>mg <Plug>BookmarkMoveToLine(nmap <leader>mc <Plug>BookmarkClear'nmap <leader>mp <Plug>BookmarkPrev'nmap <leader>mn <Plug>BookmarkNext*nmap <leader>ma <Plug>BookmarkShowAll+nmap <leader>mi <Plug>BookmarkAnnotate)nmap <leader>mm <Plug>BookmarkToggle!let g:bookmark_auto_save = 1,let g:bookmark_save_per_working_dir = 1/let g:bookmark_no_default_key_mappings = 1\bcmd\bvim\0", "config", "vim-bookmarks")
 time([[Config for vim-bookmarks]], false)
+-- Config for: gitsigns.nvim
+time([[Config for gitsigns.nvim]], true)
+try_loadstring("\27LJ\2\n9\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\30settings.plugins.gitsigns\frequire\0", "config", "gitsigns.nvim")
+time([[Config for gitsigns.nvim]], false)
+-- Config for: nvim-tree.lua
+time([[Config for nvim-tree.lua]], true)
+try_loadstring("\27LJ\2\n—\1\0\0\3\0\b\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\0016\0\4\0009\0\5\0'\2\6\0B\0\2\0016\0\4\0009\0\5\0'\2\a\0B\0\2\1K\0\1\0 nmap gB :NvimTreeToggle<CR>\"nmap gb :NvimTreeFindFile<CR>\bcmd\bvim\1\0\3\23sync_root_with_cwd\2\18disable_netrw\1\17hijack_netrw\1\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")
+time([[Config for nvim-tree.lua]], false)
+-- Config for: nvim-neoclip.lua
+time([[Config for nvim-neoclip.lua]], true)
+try_loadstring("\27LJ\2\nÌ\2\0\0\a\0\r\0\0246\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\0015\0\4\0006\1\5\0009\1\6\0019\1\a\1'\3\b\0'\4\t\0'\5\n\0\18\6\0\0B\1\5\0016\1\5\0009\1\6\0019\1\a\1'\3\b\0'\4\v\0'\5\f\0\18\6\0\0B\1\5\1K\0\1\0@<cmd>lua require(\"telescope\").extensions.neoclip[\"a\"]()<CR>\15<leader>naC<cmd>lua require(\"telescope\").extensions.neoclip[\"plus\"]()<CR>\agu\6n\20nvim_set_keymap\bapi\bvim\1\0\2\fnoremap\2\vsilent\2\1\0\3\fhistory\3d\30enable_persistent_history\2\20continuous_sync\2\nsetup\fneoclip\frequire\0", "config", "nvim-neoclip.lua")
+time([[Config for nvim-neoclip.lua]], false)
+-- Config for: diffview.nvim
+time([[Config for diffview.nvim]], true)
+require('settings.plugins.diffview')
+time([[Config for diffview.nvim]], false)
+-- Config for: nvim-lspconfig
+time([[Config for nvim-lspconfig]], true)
+require('settings.plugins.lspconfig')
+time([[Config for nvim-lspconfig]], false)
+-- Config for: vim-venter
+time([[Config for vim-venter]], true)
+try_loadstring("\27LJ\2\nü\1\0\0\3\0\5\0\r6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\1\0'\2\3\0B\0\2\0016\0\0\0009\0\1\0'\2\4\0B\0\2\1K\0\1\0'let g:venter_disable_vertsplit = 1#let g:venter_use_textwidth = 1\30nmap gz :VenterToggle<CR>\bcmd\bvim\0", "config", "vim-venter")
+time([[Config for vim-venter]], false)
+-- Config for: nvim-comment
+time([[Config for nvim-comment]], true)
+try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\17nvim_comment\frequire\0", "config", "nvim-comment")
+time([[Config for nvim-comment]], false)
+-- Config for: rust-tools.nvim
+time([[Config for rust-tools.nvim]], true)
+require('settings.plugins.lspconfig.langs.rust-tools')
+time([[Config for rust-tools.nvim]], false)
+-- Config for: tabby.nvim
+time([[Config for tabby.nvim]], true)
+try_loadstring("\27LJ\2\n§\2\0\1\b\2\15\0/9\1\0\0B\1\1\2\15\0\1\0X\2\4Ä-\1\0\0009\1\1\1\14\0\1\0X\2\2Ä-\1\0\0009\1\2\0015\2\r\0-\3\1\0009\3\3\3'\5\4\0\18\6\1\0-\a\0\0009\a\5\aB\3\4\2>\3\1\0029\3\0\0B\3\1\2\15\0\3\0X\4\2Ä'\3\6\0X\4\1Ä'\3\a\0>\3\2\0029\3\b\0B\3\1\2>\3\3\0029\3\t\0B\3\1\2>\3\4\0029\3\n\0'\5\v\0B\3\2\2>\3\5\2-\3\1\0009\3\3\3'\5\f\0\18\6\1\0-\a\0\0009\a\5\aB\3\4\2>\3\6\2=\1\14\2L\2\2\0\0\0\0¿\ahl\1\0\1\vmargin\6 \bÓÇº\bÔÄç\14close_btn\tname\vnumber\bÔö¢\bÔÜí\tfill\bÓÇ∫\bsep\btab\16current_tab\15is_current”\1\0\1\a\2\v\0\"5\1\t\0-\2\0\0009\2\0\2'\4\1\0-\5\1\0009\5\2\5-\6\1\0009\6\3\6B\2\4\2>\2\1\0019\2\4\0B\2\1\2\15\0\2\0X\3\2Ä'\2\5\0X\3\1Ä'\2\6\0>\2\2\0019\2\a\0B\2\1\2>\2\3\1-\2\0\0009\2\0\2'\4\b\0-\5\1\0009\5\2\5-\6\1\0009\6\3\6B\2\4\2>\2\4\1-\2\1\0009\2\2\2=\2\n\1L\1\2\0\0¿\0\0\ahl\1\0\1\vmargin\6 \bÓÇº\rbuf_name\bÔÑå\bÔÜí\15is_current\tfill\bwin\bÓÇ∫\bsep“\2\1\1\b\1\18\00165\1\17\0004\2\3\0005\3\0\0-\4\0\0009\4\1\4=\4\2\3>\3\1\0029\3\3\0'\5\4\0-\6\0\0009\6\1\6-\a\0\0009\a\5\aB\3\4\0?\3\0\0>\2\1\0019\2\6\0B\2\1\0029\2\a\0023\4\b\0B\2\2\2>\2\2\0019\2\t\0B\2\1\2>\2\3\0019\2\n\0009\4\v\0009\4\f\4B\4\1\0A\2\0\0029\2\a\0023\4\r\0B\2\2\2>\2\4\0014\2\3\0009\3\3\0'\5\14\0-\6\0\0009\6\15\6-\a\0\0009\a\5\aB\3\4\2>\3\1\0025\3\16\0-\4\0\0009\4\15\4=\4\2\3>\3\2\2>\2\5\1-\2\0\0009\2\5\2=\2\2\0012\0\0ÄL\1\2\0\0¿\1\0\0\1\2\0\0\n ÔÉ∂ \ttail\bÓÇ∫\0\20get_current_tab\bapi\16wins_in_tab\vspacer\0\fforeach\ttabs\tfill\bÓÇº\bsep\ahl\thead\1\2\0\0\n ÓüÖ \5ÄÄ¿ô\4£\1\1\0\4\0\5\0\t5\0\0\0006\1\1\0'\3\2\0B\1\2\0029\1\3\0013\3\4\0B\1\2\0012\0\0ÄK\0\1\0\0\bset\18tabby.tabline\frequire\1\0\6\tfill\16TabLineFill\ttail\fTabLine\bwin\fTabLine\btab\fTabLine\thead\fTabLine\16current_tab\15TabLineSel\0", "config", "tabby.nvim")
+time([[Config for tabby.nvim]], false)
+-- Config for: nvim-treesitter
+time([[Config for nvim-treesitter]], true)
+require('settings.plugins.treesitter')
+time([[Config for nvim-treesitter]], false)
+-- Config for: lsp-status.nvim
+time([[Config for lsp-status.nvim]], true)
+require('settings.plugins.lsp-status')
+time([[Config for lsp-status.nvim]], false)
+-- Config for: nvim-autopairs
+time([[Config for nvim-autopairs]], true)
+try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
+time([[Config for nvim-autopairs]], false)
+-- Config for: vim-sneak
+time([[Config for vim-sneak]], true)
+try_loadstring("\27LJ\2\n>\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\31let g:sneak#use_ic_scs = 1\bcmd\bvim\0", "config", "vim-sneak")
+time([[Config for vim-sneak]], false)
+-- Config for: undotree
+time([[Config for undotree]], true)
+try_loadstring("\27LJ\2\n‹\1\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0º\1\t\t\t\tif has(\"persistent_undo\")\n\t\t\t\t   let target_path = expand('~/.nvim_undodir')\n\n\n\t\t\t\t\tlet &undodir=target_path\n\t\t\t\t\tset undofile\n\t\t\t\tendif\n\n\t\t\t\tnnoremap <F5> :UndotreeToggle<CR>\n\t\t\t\bcmd\bvim\0", "config", "undotree")
+time([[Config for undotree]], false)
+-- Config for: trouble.nvim
+time([[Config for trouble.nvim]], true)
+try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\1\2\0B\1\1\1K\0\1\0\nsetup\ftrouble\frequire\0", "config", "trouble.nvim")
+time([[Config for trouble.nvim]], false)
+-- Config for: vim-slime
+time([[Config for vim-slime]], true)
+try_loadstring("\27LJ\2\nÕ\3\0\0\3\0\n\0!6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\1\0'\2\3\0B\0\2\0016\0\0\0009\0\1\0'\2\4\0B\0\2\0016\0\0\0009\0\1\0'\2\5\0B\0\2\0016\0\0\0009\0\1\0'\2\6\0B\0\2\0016\0\0\0009\0\1\0'\2\a\0B\0\2\0016\0\0\0009\0\1\0'\2\b\0B\0\2\0016\0\0\0009\0\1\0'\2\t\0B\0\2\1K\0\1\0#nmap <M-w> <Plug>SlimeLineSend%nmap <M-;> <Plug>SlimeMotionSend%xmap <M-;> <Plug>SlimeRegionSend let g:slime_no_mappings = 1#let g:slime_python_ipython = 1Xlet g:slime_default_config = {\"socket_name\": \"default\", \"target_pane\": \"{down-of}\"}2let g:slime_paste_file = \"$HOME/.slime_paste\" let g:slime_target = \"tmux\"\bcmd\bvim\0", "config", "vim-slime")
+time([[Config for vim-slime]], false)
 
 -- Command lazy-loads
 time([[Defining lazy-load commands]], true)
-pcall(vim.api.nvim_create_user_command, 'Telescope', function(cmdargs)
-          require('packer.load')({'telescope.nvim'}, { cmd = 'Telescope', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
-        end,
-        {nargs = '*', range = true, bang = true, complete = function()
-          require('packer.load')({'telescope.nvim'}, { cmd = 'Telescope' }, _G.packer_plugins)
-          return vim.fn.getcompletion('Telescope ', 'cmdline')
-      end})
 pcall(vim.api.nvim_create_user_command, 'Sayonara', function(cmdargs)
           require('packer.load')({'vim-sayonara'}, { cmd = 'Sayonara', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
         end,
         {nargs = '*', range = true, bang = true, complete = function()
           require('packer.load')({'vim-sayonara'}, { cmd = 'Sayonara' }, _G.packer_plugins)
           return vim.fn.getcompletion('Sayonara ', 'cmdline')
+      end})
+pcall(vim.api.nvim_create_user_command, 'Telescope', function(cmdargs)
+          require('packer.load')({'telescope.nvim'}, { cmd = 'Telescope', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
+        end,
+        {nargs = '*', range = true, bang = true, complete = function()
+          require('packer.load')({'telescope.nvim'}, { cmd = 'Telescope' }, _G.packer_plugins)
+          return vim.fn.getcompletion('Telescope ', 'cmdline')
       end})
 pcall(vim.api.nvim_create_user_command, 'EnMasse', function(cmdargs)
           require('packer.load')({'vim-enmasse'}, { cmd = 'EnMasse', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)

@@ -49,7 +49,8 @@ local function init(use)
 
 
 	use('tpope/vim-unimpaired')
-	use('thinca/vim-visualstar')
+	use('nelstrom/vim-visual-star-search')
+
 
 
 	use({ 
