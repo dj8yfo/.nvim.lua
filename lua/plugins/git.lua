@@ -17,6 +17,10 @@ local function init(use)
 		'lewis6991/gitsigns.nvim',
 		config = function()
 			require('settings.plugins.gitsigns')
+			local map = require('settings.utils').map
+			local silent = { silent = true }
+			map('n', '<leader>Gb', [[<cmd>Gitsigns blame_line<CR>]], silent)
+
 		end
 	})
 end
