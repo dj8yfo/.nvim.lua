@@ -14,6 +14,7 @@ vim.o.splitbelow = false
 vim.o.colorcolumn="100"
 vim.o.guifont="Source Code Pro:h8.0"
 vim.o.clipboard='unnamedplus'
+vim.o.number = true
 
 
 

@@ -26,7 +26,7 @@ local function init(use)
 		end
 	})
 
-	use 'chaoren/vim-wordmotion'
+	-- use 'chaoren/vim-wordmotion'
 
 	use({ 
 		'easymotion/vim-easymotion' ,
