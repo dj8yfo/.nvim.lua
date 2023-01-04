@@ -31,6 +31,7 @@ local function init(use)
 	  requires = { 'nvim-treesitter/nvim-treesitter', opt = true },
 	})
 	use 'theniceboy/nvim-deus'
+	use 'zeis/vim-kolor'
 end
 -- }}}
 return { init = init }
