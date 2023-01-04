@@ -4,6 +4,7 @@ opt.termguicolors = true
 
 vim.g.material_style = "darker"
 vim.cmd [[let g:sonokai_style = 'shusia']]
+vim.cmd [[color aurora]]
 vim.cmd [[color kolor]]
 
 
