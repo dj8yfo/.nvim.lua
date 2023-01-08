@@ -32,13 +32,19 @@ local opts = {
 					prefix = "self",
 				},
 				checkOnSave = {
-					command = "clippy"
+					enable = false,
+					-- command = "clippy"
+					-- extraArgs = {"-p", "solana-replica-node"},
 				},
 				cargo = {
 					-- features = "all",
 					buildScripts = {
 						enable = true,
 					},
+				},
+
+				diagnostics = {
+					enable = false,
 				},
 
 				procMacro = {
@@ -53,4 +59,3 @@ local opts = {
 }
 
 require('rust-tools').setup(opts)
-

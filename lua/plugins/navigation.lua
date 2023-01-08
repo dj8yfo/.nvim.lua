@@ -118,6 +118,42 @@ local function init(use)
 		end,
 	})
 	use 'nanotee/zoxide.vim'
+	-- Lua
+	-- use {
+	--   "folke/trouble.nvim",
+	--   requires = "kyazdani42/nvim-web-devicons",
+	--   config = function()
+	-- 	require("trouble").setup {
+	-- 	  -- your configuration comes here
+	-- 	  -- or leave it empty to use the default settings
+	-- 	  -- refer to the configuration section below
+	-- 		vim.keymap.set("n", "<leader>xw", "<cmd>TroubleToggle workspace_diagnostics<cr>",
+	-- 		  {silent = true, noremap = true}
+	-- 		);
+	-- 		vim.keymap.set("n", "<leader>xd", "<cmd>TroubleToggle document_diagnostics<cr>",
+	-- 		  {silent = true, noremap = true}
+	-- 		);
+	-- 	}
+	--   end
+	-- }
+	--
+
+	use({ 
+		'onsails/diaglist.nvim',
+
+		config = function()
+			require("diaglist").init({
+				-- optional settings
+				-- below are defaults
+				debug = false, 
+
+				-- increase for noisy servers
+				debounce_ms = 150,
+			})
+			vim.cmd[[nmap <space>dw <cmd>lua require('diaglist').open_all_diagnostics()<cr>]]
+			vim.cmd[[nmap <space>d0 <cmd>lua require('diaglist').open_buffer_diagnostics()<cr>]]
+		end,
+	})
 end
 -- }}}
 return { init = init }

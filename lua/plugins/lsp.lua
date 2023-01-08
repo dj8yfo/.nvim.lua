@@ -14,13 +14,6 @@ local function init(use)
 			config = [[require('settings.plugins.lspconfig.langs.rust-tools')]],
 		},
 		{
-			'folke/trouble.nvim',
-			config = function()
-				local trouble = require 'trouble'
-				trouble.setup()
-			end,
-		},
-		{
 			'kosayoda/nvim-lightbulb',
 			setup = function()
 				vim.api.nvim_command 'hi link LightBulbFloatWin YellowFloat'
