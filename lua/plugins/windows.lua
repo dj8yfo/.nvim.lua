@@ -45,7 +45,7 @@ local function init(use)
 		requires = {
 			'nvim-tree/nvim-web-devicons', -- optional, for file icons
 		},
-
+	
 		config = function()
 			require'nvim-tree'.setup {
 				disable_netrw = false,
