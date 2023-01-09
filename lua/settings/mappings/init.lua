@@ -44,6 +44,9 @@ map('n', 'gL', [[<cmd>lua require('settings.functions').file_line_string()<CR>]]
 map('n', '<f11>', [[<cmd>hi Comment guifg=#111111<CR>]], default_opts)
 map('n', '<f12>', [[<cmd>hi Comment guifg=lightgreen<CR>]], default_opts)
 
+map('n', 'gE', [[<cmd>cfile .errors.txt<CR>]], default_opts)
+
+
 
 
 map('n', 'gV', '<esc>ggVG', default_opts)

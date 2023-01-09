@@ -32,7 +32,7 @@ local opts = {
 					prefix = "self",
 				},
 				checkOnSave = {
-					-- enable = false,
+					enable = false,
 					-- command = "clippy"
 					-- extraArgs = {"-p", "solana-replica-node"},
 				},
@@ -44,7 +44,7 @@ local opts = {
 				},
 
 				diagnostics = {
-					-- enable = false,
+					enable = false,
 				},
 
 				procMacro = {
